@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-29T16:46:02+05:30
+
+====== 4. React Components ======
+Created Wednesday 29 July 2020
+
+* All component names should start with a capital letter(very important)
+* Every card exports a class or a function that returns one and only one wrapped JSX element(like a div or React.Fragment tag-for multiple components).
+* Styled should be named as a component-class because CSS is included in the head tag.
+* The index.js renders all the components, and only it should, generally. 

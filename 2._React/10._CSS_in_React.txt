@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-10T02:11:26+05:30
+
+====== 10. CSS in React ======
+Created Thursday 10 September 2020
+
+* index.css is officialy the website CSS.

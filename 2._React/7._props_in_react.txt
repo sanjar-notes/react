@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-06T12:35:25+05:30
+
+====== 7. props in react ======
+Created Sunday 06 September 2020
+
+* props are nothing but custom attributes for components.
+* Change in prop triggers a render update.
+* props are supposed to be read only.
+--------------------
+* **At component use-side **- they can be named anything, except reserved keywords. Values can be specified directly, but in **{} of course**.
+	{{./pasted_image003.png}}
+* **How props work in React** - When we specify prop(s) at the use site, a **//props //object** is created(called **props**) by React, which has all the specified attributes. This object is passed as function parameter in the component function, or is set as a data member of the component class. So accessing it is easy.
+**At component specification-side** - To access the props, there are three obvious ways:
+	a. Using //this.props.propName// - if using class and render() **DON'T USE THIS**
+	b. Naming the component function parameter //props//(or anything) and using //props.propName//
+		{{./pasted_image001.png?width=350}}
+	c. Directly destructuring in the function parameter itself.
+		{{./pasted_image002.png}}
+

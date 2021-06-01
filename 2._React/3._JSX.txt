@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-27T01:31:53+05:30
+
+====== 3. JSX ======
+Created Thursday 27 August 2020
+
+* Short for JavaScipt XML
+* JSX is not necessary for using React, we could have used basic JS too.
+* JSX makes the code intuitive and readable, instead of function calls.
+**Rules**
+1. Everything is the same as HTML, except reserved keywords like
+	* //className// is used instead of //class// for tags
+	* //htmlFor// in the HTML label tag instead of the usual //for//.
+2. All JS code is to be enclosed in {} when used inside a JSX 
+3. All custom tags/components must start with a capital 
+4. //style// require an object instead of a string
+5. All hyphen separated CSS properties are camelCased
+
+A good read on JSX
+● Getting started with JSX - https://flaviocopes.com/jsx/

@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-09T02:26:10+05:30
+
+====== 1. Class based components ======
+Created Wednesday 09 September 2020
+
+* Used for containers, i.e components with state.
+{{{code: lang="js" linenumbers="True"
+import React, { Component } from "react";
+
+class App extends Component
+{
+	constructor() //optional
+	{
+		super(props);
+		this.state = {};
+	}
+	// alternative to contsructor - start
+	state = {
+	}
+	// alternative to contsructor - end
+	render()
+	{
+		return (
+			<div>
+				<h1>Class Based Component</h1>
+			</div>
+		);
+	}
+}
+
+export default App;
+}}}
+
+--------------------
+Things to keep in mind for class based components:
+1. props are directly/automatically accessible as **this.props**
+2. state may be created in the constructor, but is even without it.
+3. render() method is compulsory.

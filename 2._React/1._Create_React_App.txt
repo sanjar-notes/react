@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-20T10:02:46+05:30
+
+====== 1. Create React App ======
+Created Monday 20 July 2020
+
+Prerequistite: Install **create-react-app** from npm.
+
+=== Steps to create app ===
+* Then, go to the empty project directory, open the terminal and do, ''create-react-app'' **app_name**
+* It will download all the dependencies and make some folders, ''package.json'' and other files including a ''.git'' folder.
+* To run the sample app, do '''npm star''t'. The app will run at localhost.
+--------------------
+1. ''node_modules'' - node dependencies, these are hidden in .gitignore
+2. public folder - Contains ''index.html''(all the views are rendered inside a div here, ''id=root''), ''manifest.json''(for web app shortcut), favicon(title icon)
+3. src folder - all our code resides here. Projects to the div in index.html
+	a. ''index.js'' - The main/homepage injector for index.html

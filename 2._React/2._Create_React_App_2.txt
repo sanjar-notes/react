@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-20T13:48:14+05:30
+
+====== 2. Create React App 2 ======
+Created Monday 20 July 2020
+
+* If any of the dependencies update, and we want the latest version. Change the version in package.json and run **npm install**, it will replace the changed dependency.
+* New packages may break the existing app.
+Note: This also means that we can copy the node_module between projects. No need to install it from the internet.
+--------------------
+React Developer Tool - very important
+● How to use the React Developer Tools - https://flaviocopes.com/react-developer-tools/

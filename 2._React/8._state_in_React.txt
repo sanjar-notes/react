@@ -1,0 +1,56 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-29T23:10:21+05:30
+
+====== 8. state in React ======
+Created Wednesday 29 July 2020
+
+In our robofriends example, we need to connect App to CardList.
+There's no way to communicate between the two. The way we do this is to make them children of some parent. The parent supervises the data flow, and ensures that it is one way.
+
+* We use the concept of state.
+* We've used props, a **one way data flow**. But a state needs to communicate.
+* What are pure components - pure functions, they return nothing except an element. No state involved here. They are generally [[https://github.com/uberVU/react-guide/blob/master/props-vs-state.md|preferred]] over
+
+State philosophy:
+1. Parent feeds state to its children.
+2. The child can change the state.
+--------------------
+* When to use state - Whenever we want to alter our component in any form based on it's state.
+e.g like hovering over an element, state use is recommended here.
+--------------------
+**State in React**
+* There are two components, MAIN and INPUT.
+* The **state **variable belongs to the MAIN component.
+* INPUT component causes the state to change.
+* All state object variables are accessed as props.
+
+**How it works**
+The MAIN is implemented as a class having the **state**(reserved keyword) data member. It also contains an arrow(context - this.state) function which takes an event as parameter.
+This function is passed as a prop to the INPUT component. The INPUT component has some original HTML tag. This tag must have a onclick/onChange attribute. e.g input, button etc.
+The onclick function here takes the prop function(defined in MAIN) as value.
+
+* What's inside the function in MAIN?
+	The function calls **this.setState** to change the state w.r.t an event.
+	{{./pasted_image.png}}
+* How to use state in some output component?
+	As a prop.
+* How will the UI change?
+	When the state is changed, React re-renders the components having the changed state variable(s) as prop. INPUT itself may be such a component.
+Doubts:
+1. Why not set onClick/onChange directly to the MAIN function, why pass it as a prop?
+	This is because our component has no oncClick/onChange attribute. Only original HTML tags have an onChange attribute.
+2. Does 
+That's all.
+--------------------
+Steps to use state:
+1. Identify the MAIN component and implement it as a class.
+2. Create the **state **data member(after **super()**). Add to it an //arrow// function(to be added as prop), using **event** parameter and use the **setState **inside it.
+3. Identify the INPUT component, function implementation is OK.
+4. Add to it the function prop(both in use and in component.js).Add an onchange to some original HTML tag which supports onChange and pass the function prop.
+--------------------
+Things to keep in mind:
+* Editing the state directly is considered bad practice. Always use **setState**.
+* Using setState could mean copying a state item, changing it and putting it back in the state.
+
+Q) Why use setState() → This is because it is the only way for React to know that the state has changed and it should re-render.

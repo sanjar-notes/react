@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-27T01:41:31+05:30
+
+====== 1. Conditional rendering in JSX ======
+Created Thursday 27 August 2020
+
+1. We can use the **ternary** operator for conditional rendering, always in {}
+{{./pasted_image001.png}}
+{{./pasted_image.png}}
+2. We can use &&(i.e shortcircuiting) to render tags. In JS && 
+{{./pasted_image002.png}}
+	This works because JS **returns** the //second// value as it is(if it is truthy, instead of a boolean). 
+	{{./pasted_image003.png}}
+	For a ||, the //first// value is **returned** if truthy, else the //second// value.
+	{{./pasted_image004.png}}
+	* These statement return a value. So in order to avoid return for the function, we wrap these statements in a {}
+3. Using if statements
+	If we use the return statement, all the successive code is never run. We can avoid this using an extra {}.
+	{{./pasted_image005.png}}
+4. Using the switch case: similar to if.
+--------------------
+* Practical examples: In the robofriends App, we can show loading if the URL is still loading.
+	{{./pasted_image006.png}}
+* Generally, the conditions are kept inside the return clause, using {} JS if possible.
+
