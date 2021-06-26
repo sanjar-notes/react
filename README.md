@@ -1,6 +1,8 @@
 ## Why
 Followed the crowds 🙄️
+
 But have recently figured out, that React is a way to *reuse* and *automate* webpage creation.
+
 So using it 🤗️
 
 ## How
