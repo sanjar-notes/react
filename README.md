@@ -9,7 +9,7 @@ So using it 🤗️
 Just do it!
 
 ## What
-[React](https://reactjs.org/) is a *library* to make and reuse your own HTML tags.
+[React](https://reactjs.org/) is a *library* to *create* and *reuse* your own HTML tags.
 
 These are notes(mental models) I made while doing [this course(2020 version)](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/).
 
