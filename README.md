@@ -13,7 +13,7 @@ Just do it!
 
 These are notes(mental models) I made while doing [this course(2020 version)](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/).
 
-I have tried to compress, and classify all **trash** information into mangeable chunks
+I have tried to compress, and classify all information into manageable chunks.
 
 As said earlier, I didn't have a *why*, so the notes may be a little unoptimized. Will try to make them comfortable soon.
 
