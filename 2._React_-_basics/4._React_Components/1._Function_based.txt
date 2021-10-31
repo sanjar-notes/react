@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-09-09T02:26:21+05:30
+
+====== 1. Function based ======
+Created Wednesday 09 September 2020
+
+* Used for dumb components (no state).
+* Just return JSX.
+{{{code: lang="js" linenumbers="True"
+import React as 'react';
+
+function App ()
+{
+	return (
+			<div>
+				<h1>Function-Based Component</h1>
+			</div>
+	);
+}
+
+export default App;
+}}}
