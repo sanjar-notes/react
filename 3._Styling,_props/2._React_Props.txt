@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-09-06T12:35:25+05:30
 
-====== 7. props in react ======
+====== 2. React Props ======
 Created Sunday 06 September 2020
 
 * props are nothing but custom attributes for components.

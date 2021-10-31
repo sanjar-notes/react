@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-09-08T02:19:31+05:30
 
-====== 12. Building the deployable ======
+====== 1. Building the deployable ======
 Created Tuesday 08 September 2020
 
 * Just run 'npm run build' in the project folder'

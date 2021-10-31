@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-09-12T18:45:26+05:30
 
-====== 2. external CSS ======
+====== 3. CDN styles ======
 Created Saturday 12 September 2020
 
 * Import it in index.html

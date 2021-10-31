@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-09-08T02:00:06+05:30
 
-====== 11. React lifecycle hooks ======
+====== 1. React lifecycle hooks ======
 Created Tuesday 08 September 2020
 
 * There are some inbuilt functions in React that are great.
