@@ -4,3 +4,8 @@ Creation-Date: 2020-10-22T13:20:38+05:30
 
 ====== 1. RoadMap ======
 Created Thursday 22 October 2020
+
+Ongoing course: https://www.udemy.com/course/react-the-complete-guide-incl-redux/
+
+Useful https://github.com/serodriguez68/react-cheatsheet-udemy-2019
+Also see his course: https://www.udemy.com/course/react-redux/

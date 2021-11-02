@@ -25,5 +25,10 @@ Handled by Babel transpiler.
 	* ''htmlFor'' in HTML label tag instead of ''for''.
 2. JS code is enclosed in braces {}.
 3. Components must start with a capital letter. 
+4. JSX is an expression too, you can store it in variables or return it.
 
 And [[https://flaviocopes.com/jsx/|more]] rules.
+
+=== About JSX ===
+* JSX prevents injection attacks - everything is converted into a string before being rendered.
+* JSX represents objects.
