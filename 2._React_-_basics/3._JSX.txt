@@ -10,6 +10,9 @@ JSX makes the code
 	* Intuitive and readable, instead of function calls.
 	* Both structure and structure-related-logic are kept together.
 
+{{./pasted_image.png}}
+Just imagine, the verbosity and unintuitiveness!
+
 === How ===
 Handled by Babel transpiler.
 
