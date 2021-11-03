@@ -8,17 +8,23 @@ Created Thursday 27 August 2020
 1. **Ternary** operator.
 {{./pasted_image001.png}}
 {{./pasted_image.png}}
-2. AND (&&). Shortcircuiting) helps.
+2. AND (&&). Shortcircuiting helps.
 {{./pasted_image002.png}}
 	This works because JS **returns** the //second// value as it is(if it is truthy, instead of a boolean). 
 	{{./pasted_image003.png}}
 	For a ||, the //first// value is **returned** if truthy, else the //second// value.
 	{{./pasted_image004.png}}
 	* These statement return a value. So in order to avoid return for the function, we wrap these statements in a {}
-3. Using if statements
-	If we use the return statement, all the successive code is never run. We can avoid this using an extra {}.
-	{{./pasted_image005.png}}
-4. Using the switch case: similar to if.
+3. Using if statements and JSX expressions.
+	{{./pasted_image007.png}}
+4. Using switch case.
+5. Using {} and JSX inside it. Expression will be returned. JSX is JS too 😂️.
+{{{code: lang="js" linenumbers="True"
+return (<div>
+	{ false && <p1>Hello<p1>}
+</div>);
+}}}
+
 --------------------
 * Practical examples: In the robofriends App, we can show loading if the URL is still loading.
 	{{./pasted_image006.png}}
