@@ -5,10 +5,10 @@ Creation-Date: 2020-08-27T01:41:31+05:30
 ====== 1. Conditional rendering in JSX ======
 Created Thursday 27 August 2020
 
-1. We can use the **ternary** operator for conditional rendering, always in {}
+1. **Ternary** operator.
 {{./pasted_image001.png}}
 {{./pasted_image.png}}
-2. We can use &&(i.e shortcircuiting) to render tags. In JS && 
+2. AND (&&). Shortcircuiting) helps.
 {{./pasted_image002.png}}
 	This works because JS **returns** the //second// value as it is(if it is truthy, instead of a boolean). 
 	{{./pasted_image003.png}}

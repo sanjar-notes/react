@@ -5,6 +5,7 @@ Creation-Date: 2020-09-06T12:35:25+05:30
 ====== 2. React Props ======
 Created Sunday 06 September 2020
 
+FIXME https://codedamn.com/learn/reactjs/-XO5DrLZdI
 * props are nothing but custom attributes for components.
 * Change in prop triggers a render update.
 * props are supposed to be read only.

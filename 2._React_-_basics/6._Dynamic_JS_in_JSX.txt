@@ -2,6 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-09-09T02:33:31+05:30
 
-====== 6. Dynamic content ======
+====== 6. Dynamic JS in JSX ======
 Created Wednesday 09 September 2020
 
