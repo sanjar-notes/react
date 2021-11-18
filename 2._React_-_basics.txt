@@ -5,6 +5,7 @@ Creation-Date: 2020-07-20T09:22:15+05:30
 ====== 2. React - basics ======
 Created Monday 20 July 2020
 
+FIXME - why React
 * React is a JS library, not a framework.
 * React replaced jQuery
 * It makes websites scalable and predictable in development.
@@ -26,3 +27,18 @@ Principles in web dev over the years:
 	* All the components are independent.
 2. One way data-flow:
 3. Virtual DOM - Handled by React, it is an object which describes our website. Painting is handled in the most optimum way.
+
+=== React.js Alternatives ===
+Angular:
+	* Is a proper framework
+	* Uses TypeScript
+	* Component based
+	* Batteries included - has most of the extra needed modules set.
+React
+	* Is a UI library
+	* Component based
+	* As it is a library, it does not enforce extra needed modules. They may be installed from ''npm''
+Vue
+	* Component based
+	* Has many core modules
+	* From a needed modules POV, it ships with //some// modules, unlike the extremes - React (none) and Angular (most).
