@@ -5,6 +5,17 @@ Creation-Date: 2020-07-29T16:46:02+05:30
 ====== 4. React Components ======
 Created Wednesday 29 July 2020
 
+=== Why ===
+Components are universally useful in building UIs, because:
+* Seperation Of Concerns
+* Reusability
+
+=== How ===
+* HTML, CSS and JavaScript are combined to create components, using the React library.
+* They are also combined using the React library.
+So this is a 2 step process - create units then combine them.
+
+=== What ===
 * All component names should start with a capital letter(very important)
 * Every card exports a class or a function that returns one and only one wrapped JSX element(like a div or React.Fragment tag-for multiple components).
 * Styled should be named as a component-class because CSS is included in the head tag.
