@@ -19,4 +19,6 @@ So this is a 2 step process - create units then combine them.
 * All component names should start with a capital letter(very important)
 * Every card exports a class or a function that returns one and only one wrapped JSX element(like a div or React.Fragment tag-for multiple components).
 * Styled should be named as a component-class because CSS is included in the head tag.
-* The index.js renders all the components, and only it should, generally. 
+* The index.js renders all the components, finally, and only it should, generally. 
+
+It's normal to have ~100 components for a UI, because components of the UI are broken down.
