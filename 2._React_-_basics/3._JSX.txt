@@ -6,7 +6,8 @@ Creation-Date: 2020-08-27T01:31:53+05:30
 Created Thursday 27 August 2020
 
 === Why ===
-JSX makes the code 
+* React uses a declarative approach to code UIs. JSX makes this easy.
+* JSX also makes the code 
 	* Intuitive and readable, instead of function calls.
 	* Both structure and structure-related-logic are kept together.
 
