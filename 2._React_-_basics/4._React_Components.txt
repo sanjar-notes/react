@@ -16,7 +16,7 @@ Components are universally useful in building UIs, because:
 So this is a 2 step process - create units then combine them.
 
 === What ===
-* All component names should start with a capital letter(very important)
+* All component names should start with a capital letter(very important - CamelCase) - React generally treats lowercase elements as standard HTML elements.
 * Every card exports a class or a function that returns one and only one wrapped JSX element(like a div or React.Fragment tag-for multiple components).
 * Styled should be named as a component-class because CSS is included in the head tag.
 * The index.js renders all the components, finally, and only it should, generally. 
