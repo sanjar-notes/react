@@ -27,7 +27,8 @@ Handled by Babel transpiler.
 1. Some reserved keywords are different:
 	* ''className'' instead of ''class'' attribute.
 	* ''htmlFor'' in HTML label tag instead of ''for''.
-2. JS **expressions** can be enclosed in braces {}.
+2. JS **expressions** can be enclosed in braces {}. But avoid this, keep JSX lean - the logic outside JSX and result variable in JSX.
+{{./pasted_image001.png}}
 3. Components must start with a capital letter. 
 4. JSX is an expression too, you can store it in variables or return it.
 
