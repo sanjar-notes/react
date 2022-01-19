@@ -18,4 +18,4 @@ I have tried to compress, and classify all information into manageable chunks.
 As said earlier, I didn't have a *why*, so the notes may be a little unoptimized. Will try to make them comfortable soon.
 
 ## Usage
-Open the [notebook.zim](https://github.com/sanjar-notes/reactjs-notes/blob/master/notebook.zim) file using [Zim](https://www.zim-wiki.org)
+Just clone the repo, it's Markdown 🙌.
