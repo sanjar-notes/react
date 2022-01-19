@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-09-10T02:12:14+05:30
-
-====== 2. import CSS in JS ======
-Created Thursday 10 September 2020
-
-* If we import a CSS file directly into a JS file, the CSS will be imported for the whole website.
-* To make the CSS apply to the component div, do it via some class.

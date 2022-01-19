@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-11-01T04:09:23+05:30
-
-====== 3. Styling, props ======
-Created Monday 01 November 2021
-
