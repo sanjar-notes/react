@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "f07a133335d4a149",
+    "type": "split",
+    "children": [
+      {
+        "id": "0962eb6831aeb71d",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0973595da44ec3e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "4fa7658d12c7ff77",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ce0502fb0cc71744",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ef669d09cd4b068e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "641dd6cf11ded8dd",
+    "type": "split",
+    "children": [
+      {
+        "id": "51ea4234b518c2e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32a684c509df5e87",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "0962eb6831aeb71d",
+  "lastOpenFiles": [
+    "Home.md",
+    "README.md",
+    "1._React_info_and_setup/1._create-react-app/3.React_ecosystem.md",
+    "1._React_info_and_setup/1._create-react-app/3.React_ecosystem/pasted_image.png",
+    "notebook.md",
+    "3._Styling,_props,_children/3._Props_children.md",
+    "3._Styling,_props,_children/1._React_Props.md",
+    "Untitled.md",
+    "3._Styling,_props/1._CSS.md",
+    "3._Styling,_props,_children/2._Styles in React/3._CDN_styles.md"
+  ]
+}
