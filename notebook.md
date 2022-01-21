@@ -15,7 +15,7 @@
 		* [0. React elements](./2._React_-_basics/4._React_Components/0._React_elements.md)
 		* [1. Components](./2._React_-_basics/4._React_Components/1._Components.md)
 		* [1. Function based](./2._React_-_basics/4._React_Components/1._Function_based.md)
-	* [5. import in react](./2._React_-_basics/5._import_in_react.md)
+	* [5. import in react](5._importing_and_exporting_in_React.md)
 	* [6. Dynamic JS in JSX](./2._React_-_basics/6._Dynamic_JS_in_JSX.md)
 		* [1. Conditional rendering in JSX](./2._React_-_basics/6._Dynamic_JS_in_JSX/1._Conditional_rendering_in_JSX.md)
 		* [2. Outputting lists](./2._React_-_basics/6._Dynamic_JS_in_JSX/2._Outputting_lists.md)
