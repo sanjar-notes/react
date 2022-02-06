@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "0962eb6831aeb71d",
+        "id": "18ddf37f38f79c59",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "5._Lifecycle_hooks/2._Deriving_all_hooks_from_lifecycle.md",
+            "mode": "preview",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "5._Lifecycle_hooks/2._Deriving_all_hooks_from_lifecycle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0962eb6831aeb71d",
+  "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
-    "Home.md",
-    "README.md",
-    "1._React_info_and_setup/1._create-react-app/3.React_ecosystem.md",
-    "1._React_info_and_setup/1._create-react-app/3.React_ecosystem/pasted_image.png",
-    "notebook.md",
-    "3._Styling,_props,_children/3._Props_children.md",
-    "3._Styling,_props,_children/1._React_Props.md",
+    "5._Lifecycle_hooks/2._Deriving_all_hooks_from_lifecycle.md",
+    "5._Lifecycle_hooks/1._React_lifecycle_hooks.md",
+    "5._Lifecycle_hooks/pasted_image.png",
     "Untitled.md",
-    "3._Styling,_props/1._CSS.md",
-    "3._Styling,_props,_children/2._Styles in React/3._CDN_styles.md"
+    "6._Deployment/1._Building_the_deployable.md",
+    "4._State/1._Events_and_handlers_in_React.md",
+    "4._State/2._State_using_useState_hook.md",
+    "4._State/2._How_Component_functions_execute.md",
+    "3._Styling,_props,_children/1._React_Props.md",
+    "4._State/1._Multiple_Pages.md"
   ]
 }
