@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "5._Lifecycle_hooks/2._Deriving_all_hooks_from_lifecycle.md",
-            "mode": "preview",
+            "file": "4._State/1._Events_and_handlers_in_React.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5._Lifecycle_hooks/2._Deriving_all_hooks_from_lifecycle.md",
+                "file": "4._State/1._Events_and_handlers_in_React.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,13 +89,13 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
+    "4._State/1._Events_and_handlers_in_React.md",
+    "4._State/2._State_using_useState_hook.md",
     "5._Lifecycle_hooks/2._Deriving_all_hooks_from_lifecycle.md",
     "5._Lifecycle_hooks/1._React_lifecycle_hooks.md",
     "5._Lifecycle_hooks/pasted_image.png",
     "Untitled.md",
     "6._Deployment/1._Building_the_deployable.md",
-    "4._State/1._Events_and_handlers_in_React.md",
-    "4._State/2._State_using_useState_hook.md",
     "4._State/2._How_Component_functions_execute.md",
     "3._Styling,_props,_children/1._React_Props.md",
     "4._State/1._Multiple_Pages.md"
