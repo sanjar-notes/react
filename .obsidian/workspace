@@ -7,8 +7,12 @@
         "id": "18ddf37f38f79c59",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "4._State/5._Child_to_Parent_communication.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -49,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 209.0036334991455
   },
   "right": {
     "id": "641dd6cf11ded8dd",
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "4._State/5._Child_to_Parent_communication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +89,15 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
-    "Untitled.md",
-    "README.md",
-    "4._State/3._Working_with_multiple_states.md",
+    "4._State/5._Child_to_Parent_communication.md",
+    "4._State/4._Two_way_binding.md",
     "4._State/2._State_using_useState_hook.md",
-    "4._State/1._Events_and_handlers_in_React.md",
-    "5._Lifecycle_hooks/2._Deriving_all_hooks_from_lifecycle.md",
-    "5._Lifecycle_hooks/1._React_lifecycle_hooks.md",
-    "5._Lifecycle_hooks/pasted_image.png",
-    "6._Deployment/1._Building_the_deployable.md",
-    "4._State/2._How_Component_functions_execute.md"
+    "4._State/3._Working_with_multiple_states.md",
+    "4._State/Untitled.md",
+    "1._React_info_and_setup/1._create-react-app.md",
+    "1._React_info_and_setup/2._How_React_works.md",
+    "1._React_info_and_setup/2._How_React_works/pasted_image.png",
+    "Untitled.md",
+    "README.md"
   ]
 }
