@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "4._State/5._Child_to_Parent_communication.md",
+            "file": "4._State/5._Lifting_state_up.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4._State/5._Child_to_Parent_communication.md",
+                "file": "4._State/5._Lifting_state_up.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
-    "4._State/5._Child_to_Parent_communication.md",
+    "4._State/5._Lifting_state_up.md",
     "4._State/4._Two_way_binding.md",
     "4._State/2._State_using_useState_hook.md",
+    "4._State/1._Events_and_handlers_in_React.md",
     "4._State/3._Working_with_multiple_states.md",
     "4._State/Untitled.md",
     "1._React_info_and_setup/1._create-react-app.md",
     "1._React_info_and_setup/2._How_React_works.md",
     "1._React_info_and_setup/2._How_React_works/pasted_image.png",
-    "Untitled.md",
-    "README.md"
+    "Untitled.md"
   ]
 }
