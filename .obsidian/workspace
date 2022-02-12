@@ -7,12 +7,8 @@
         "id": "18ddf37f38f79c59",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "2._React_-_basics/2._React_Components/2._Function_based_component.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2._React_-_basics/2._React_Components/2._Function_based_component.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +84,15 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
+    "2._React_-_basics/5._Rendering_lists/pasted_image003.png",
+    "2._React_-_basics/5._Rendering_lists/Pasted image 20220212185622.png",
+    "2._React_-_basics/5._Rendering_lists/pasted_image001.png",
+    "2._React_-_basics/5._Rendering_lists.md",
+    "2._React_-_basics/4._Conditional_rendering_in_JSX.md",
     "2._React_-_basics/2._React_Components/2._Function_based_component.md",
     "2._React_-_basics/2._React_Components/1._Components.md",
     "2._React_-_basics/2._React_Components/0._React_elements.md",
-    "2._React_-_basics/5._Rendering_lists/pasted_image003.png",
-    "2._React_-_basics/5._Rendering_lists/pasted_image001.png",
     "2._React_-_basics/5._Outputting_lists/pasted_image.png",
-    "2._React_-_basics/5._Outputting_lists/pasted_image002.png",
-    "2._React_-_basics/5._Rendering_lists.md",
-    "2._React_-_basics/pasted_image.png",
-    "2._React_-_basics/4._Conditional_rendering_in_JSX.md"
+    "2._React_-_basics/5._Outputting_lists/pasted_image002.png"
   ]
 }
