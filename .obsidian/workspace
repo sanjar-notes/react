@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2._React_-_basics/5._Rendering_lists.md",
+            "file": "3._Styling,_props,_children/2._Styles in React/2._import_CSS_files.md",
             "mode": "source",
             "source": false
           }
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2._React_-_basics/5._Rendering_lists.md",
+                "file": "3._Styling,_props,_children/2._Styles in React/2._import_CSS_files.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,15 +89,15 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
-    "2._React_-_basics/5._Rendering_lists.md",
-    "3._Styling,_props,_children/2._Styles in React/3._import_CSS_in_JS.md",
-    "3._Styling,_props,_children/2._Styles in React/3._CDN_styles.md",
+    "3._Styling,_props,_children/2._Styles in React/2._import_CSS_files.md",
     "3._Styling,_props,_children/2._Styles in React/1._Normal_styling.md",
+    "3._Styling,_props,_children/2._Styles in React/2._import_CSS_files 1.md",
+    "3._Styling,_props,_children/2._Styles in React/3._CDN_styles.md",
     "3._Styling,_props,_children/2._Styles in React/2._Dynamic_styling.md",
+    "3._Styling,_props,_children/1._React_Props.md",
+    "2._React_-_basics/5._Rendering_lists.md",
+    "2._React_-_basics/5._Rendering_lists/Pasted_image_20220212185622.png",
     "Home/2._Resources.md",
-    "Home/1._RoadMap.md",
-    "Home/0._Motivation.md",
-    "README.md",
-    "1._React_info_and_setup/2._How_React_works.md"
+    "Home/1._RoadMap.md"
   ]
 }

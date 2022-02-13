@@ -7,5 +7,6 @@
   "spellcheck": true,
   "showLineNumber": false,
   "showFrontmatter": false,
-  "newLinkFormat": "relative"
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true
 }
