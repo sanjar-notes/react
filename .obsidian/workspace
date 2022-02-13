@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Home/2._Resources.md",
+            "file": "2._React_-_basics/5._Rendering_lists.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "rendering lists",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,12 +49,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 209.0036334991455,
-    "collapsed": true
+    "width": 209.0036334991455
   },
   "right": {
     "id": "641dd6cf11ded8dd",
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Home/2._Resources.md",
+                "file": "2._React_-_basics/5._Rendering_lists.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,15 +90,15 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
+    "2._React_-_basics/5._Rendering_lists.md",
+    "3._Styling,_props,_children/2._Styles in React/3._import_CSS_in_JS.md",
+    "3._Styling,_props,_children/2._Styles in React/3._CDN_styles.md",
+    "3._Styling,_props,_children/2._Styles in React/1._Normal_styling.md",
+    "3._Styling,_props,_children/2._Styles in React/2._Dynamic_styling.md",
     "Home/2._Resources.md",
     "Home/1._RoadMap.md",
     "Home/0._Motivation.md",
     "README.md",
-    "1._React_info_and_setup/2._How_React_works.md",
-    "1._React_info_and_setup/2._How_React_works/pasted_image.png",
-    "2._React_-_basics/5._Rendering_lists.md",
-    "2._React_-_basics/5._Rendering_lists/pasted_image003.png",
-    "2._React_-_basics/5._Rendering_lists/Pasted image 20220212185622.png",
-    "2._React_-_basics/5._Rendering_lists/pasted_image001.png"
+    "1._React_info_and_setup/2._How_React_works.md"
   ]
 }
