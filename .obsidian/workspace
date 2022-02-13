@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3._Styling,_props,_children/2._Styles in React/2._import_CSS_files.md",
+            "file": "3._Styling,_props,_children/2._Styles in React/1._Normal_styling.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 209.0036334991455
+    "width": 209.0036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "641dd6cf11ded8dd",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3._Styling,_props,_children/2._Styles in React/2._import_CSS_files.md",
+                "file": "3._Styling,_props,_children/2._Styles in React/1._Normal_styling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,8 +90,8 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
-    "3._Styling,_props,_children/2._Styles in React/2._import_CSS_files.md",
     "3._Styling,_props,_children/2._Styles in React/1._Normal_styling.md",
+    "3._Styling,_props,_children/2._Styles in React/2._import_CSS_files.md",
     "3._Styling,_props,_children/2._Styles in React/2._import_CSS_files 1.md",
     "3._Styling,_props,_children/2._Styles in React/3._CDN_styles.md",
     "3._Styling,_props,_children/2._Styles in React/2._Dynamic_styling.md",
