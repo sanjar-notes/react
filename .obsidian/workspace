@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Home/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md",
+            "file": "home/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Home/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md",
+                "file": "home/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
-    "Home/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md",
-    "Home/2_Resources/2_React_the_complete_guide/2_Section_6_-_Styling_in_React.md",
-    "Home/2_Resources/2_React_the_complete_guide/1_Until_section_5.md",
-    "3._Styling,_props,_children/2._Styles in React/1._Normal_styling.md",
-    "3._Styling,_props,_children/2._Styles in React/2._Dynamic_styling.md",
-    "3._Styling,_props,_children/2._Styles in React/3._Styled_components.md",
-    "Home/2_Resources/2_React_the_complete_guide.md",
-    "Home/2_Resources/1_Complete_Web_Developer_2020.md",
-    "Home/0._Motivation.md",
-    "Home/2._Resources.md"
+    "home/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md",
+    "home/2_Resources/2_React_the_complete_guide/2_Section_6_-_Styling_in_React.md",
+    "home/2_Resources/2_React_the_complete_guide/1_Until_section_5.md",
+    "vault/3 1._styling,_props,_children/2._Styles in React/1._Normal_styling.md",
+    "vault/3 1._styling,_props,_children/2._Styles in React/2._Dynamic_styling.md",
+    "vault/3 1._styling,_props,_children/2._Styles in React/3._Styled_components.md",
+    "home/2_Resources/2_React_the_complete_guide.md",
+    "home/2_Resources/1_Complete_Web_Developer_2020.md",
+    "home/0._Motivation.md",
+    "home/2._Resources.md"
   ]
 }
