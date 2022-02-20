@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "vault/3._styling,_props,_children/1._React_Props.md",
+            "file": "vault/3._styling,_props,_children/1_1_PropTypes_and_defaultProps.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/3._styling,_props,_children/1._React_Props.md",
+                "file": "vault/3._styling,_props,_children/1_1_PropTypes_and_defaultProps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
+    "vault/3._styling,_props,_children/1_1_PropTypes_and_defaultProps.md",
     "vault/3._styling,_props,_children/1._React_Props.md",
     "vault/3._styling,_props,_children/2._Styles in React/1._Normal_styling.md",
     "vault/3._styling,_props,_children/2._Styles in React/2._Dynamic_styling.md",
@@ -97,7 +98,6 @@
     "vault/3._styling,_props,_children/2._Styles in React/3._CDN_styles.md",
     "home/2_Resources/2_React_the_complete_guide/2_Section_6_-_Styling_in_React.md",
     "home/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md",
-    "home/2_Resources/2_React_the_complete_guide/1_Until_section_5.md",
-    "home/2_Resources/2_React_the_complete_guide.md"
+    "home/2_Resources/2_React_the_complete_guide/1_Until_section_5.md"
   ]
 }
