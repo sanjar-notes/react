@@ -53,8 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256,
-    "collapsed": true
+    "width": 256
   },
   "right": {
     "id": "641dd6cf11ded8dd",
@@ -97,8 +96,8 @@
     "vault/3._styling,_props,_children/2._Styles in React/2._import_CSS_in_JS.md",
     "vault/3._styling,_props,_children/2._Styles in React/1._Inline_styles.md",
     "vault/3._styling,_props,_children/2._Styles in React/3._CDN_styles.md",
-    "home/2_Resources/2_React_the_complete_guide/2_Section_6_-_Styling_in_React.md",
-    "home/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md",
-    "home/2_Resources/2_React_the_complete_guide/1_Until_section_5.md"
+    "homeZ/2_Resources/2_React_the_complete_guide/2_Section_6_-_Styling_in_React.md",
+    "homeZ/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md",
+    "homeZ/2_Resources/2_React_the_complete_guide/1_Until_section_5.md"
   ]
 }
