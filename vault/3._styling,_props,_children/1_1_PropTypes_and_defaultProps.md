@@ -70,6 +70,7 @@ MyReceivingComponent.propTypes = { // lowercase propTypes
 }
 ```
 - `isRequired` for `propTypes` entries is appended to the last to indicate the prop should always be received, i.e. it cannot be blank.
+- `isRequired` and default value are mutually exclusive - If a prop is tagged `isRequired`, a default value for it makes no sense, and should be omitted. If it's not `isRequired`, a default value should always be specified.
 - Only `PropTypes.bool` (`boolean`) and `PropTypes.func` (`function`) are named unusually.
 - We can combine the types of values and make complex types using `PropType`.
 - For more types, see https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
