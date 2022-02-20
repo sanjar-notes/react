@@ -16,7 +16,7 @@ It is to be noted that we are specifying props that are being received, not bein
 
 Also, note that for both `propTypes` and `defaultProps`, it does not matter if we use a props object or de-structure them. Just make sure the names of the receiving props are named correctly during specification.
 
-During specification, both values are lowercase and follow component name. Like so:
+During specification, both values are lowercase, follow component name and are plural. Like so:
 ```jsx
 MyComponent.propTypes = { // lowercase start
 	name: PropTypes.string // capital here, coz it's a constant
@@ -64,8 +64,9 @@ MyReceivingComponent.propTypes = { // lowercase propTypes
 	genericType: PropTypes.instanceOf(ClassName), // prop is an object of type ClassName
 }
 ```
-`isRequired` is appended to the last to indicate the prop should always be received, i.e. it cannot be blank.
-For more types, see https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
+- `isRequired` for `propTypes` entries is appended to the last to indicate the prop should always be received, i.e. it cannot be blank.
+- Only `PropTypes.bool` (`boolean`) and `PropTypes.func` (`function`) are named unusually.
+- For more types, see https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
 
 ---
 ###### defaultProps
