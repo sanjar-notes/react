@@ -46,14 +46,19 @@ MyReceivingComponent.propTypes = { // lowercase propTypes
 	action: PropTypes.func.isRequired, // function and always required
 
 	numArr: PropTypes.arrayOf(PropTypes.number), // array of numbers
-	enumm: PropTypes.oneOf(['News', 'Photos', 'Game']) // enum - will be one of these
-	oneType: PropTypes.oneOfType([ // one of these types
+	enumm: PropTypes.oneOf(['News', 'Photos', 'Game']) // enum - one of values
+	oneType: PropTypes.oneOfType([ // one of types
 		PropTypes.string,
 		PropTypes.number
 	])
-	optionalShape: PropTypes.shape({ // object and it's shape. Can be nested.
+	optionalShape: PropTypes.shape({ // object and it's minimalist shape. Can be nested. More name-value pairs could be added.
 		color: PropTypes.string,
 		fontSize: PropTypes.number
+	})
+	exactShape: PropTypes.exact({ // exact object, cannot have extra/less name value pairs
+		name: PropTypes.string,
+		fontSize: PropTypes.number,
+		id: PropTypes.string,
 	})
 	anyTypeProp: PropTypes.any, // any data type is acceptable
 
@@ -66,6 +71,7 @@ MyReceivingComponent.propTypes = { // lowercase propTypes
 ```
 - `isRequired` for `propTypes` entries is appended to the last to indicate the prop should always be received, i.e. it cannot be blank.
 - Only `PropTypes.bool` (`boolean`) and `PropTypes.func` (`function`) are named unusually.
+- We can combine the types of values and make complex types using `PropType`.
 - For more types, see https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
 
 ---
@@ -81,3 +87,11 @@ MyReceivingComponent.defaultProps = {
 ```
 
 That' all.
+
+#### Single child for wrapper
+To specify that a single component is wrapper around our component (see [3._Wrapper_components](3._Wrapper_components.md)), do this:
+```jsx
+MyComponent.propTypes = {
+	children: propTypes.element.isRequired,
+}
+```
