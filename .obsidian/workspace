@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "vault/2._React_-_basics/1._JSX.md",
+            "file": "home/2_Resources/2_React_the_complete_guide/4_Section_8_-_Practice_Project.md",
             "mode": "source",
             "source": false
           }
@@ -53,8 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256,
-    "collapsed": true
+    "width": 256
   },
   "right": {
     "id": "641dd6cf11ded8dd",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/2._React_-_basics/1._JSX.md",
+                "file": "home/2_Resources/2_React_the_complete_guide/4_Section_8_-_Practice_Project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,15 +89,15 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
+    "home/2_Resources/2_React_the_complete_guide/4_Section_8_-_Practice_Project.md",
+    "home/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md",
+    "vault/4._State/5._Lifting_state_up.md",
+    "vault/5._Lifecycle_hooks/1._React_lifecycle_hooks.md",
     "vault/2._React_-_basics/1._JSX.md",
     "vault/3._styling,_props,_children/1_1_PropTypes_and_defaultProps.md",
     "vault/3._styling,_props,_children/1._React_Props.md",
     "vault/3._styling,_props,_children/2._Styles in React/1._Normal_styling.md",
     "vault/3._styling,_props,_children/2._Styles in React/2._Dynamic_styling.md",
-    "vault/3._styling,_props,_children/2._Styles in React/2._import_CSS_in_JS.md",
-    "vault/3._styling,_props,_children/2._Styles in React/1._Inline_styles.md",
-    "vault/3._styling,_props,_children/2._Styles in React/3._CDN_styles.md",
-    "home/2_Resources/2_React_the_complete_guide/2_Section_6_-_Styling_in_React.md",
-    "home/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md"
+    "vault/3._styling,_props,_children/2._Styles in React/2._import_CSS_in_JS.md"
   ]
 }
