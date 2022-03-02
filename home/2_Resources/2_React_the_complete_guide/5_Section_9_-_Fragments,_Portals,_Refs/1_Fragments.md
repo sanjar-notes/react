@@ -1,5 +1,6 @@
 # 1. Fragments
 Created Thursday 24 February 2022
+- [ ] in vault
 
 #### `div` soup
 - A function in JavaScript can ultimately return one object. This is OK, but leads to a not so good practice of wrapping sibling components in a parent containers like `div`s, even if it is not needed.

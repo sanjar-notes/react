@@ -1,5 +1,6 @@
 # 3. Section 7 - Debugging React apps
 Created Wednesday 16 February 2022
+ - [ ] in vault
 
 Doing this now.
 
