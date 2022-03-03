@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/2_Portals.md",
+            "file": "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/105_Portals.md",
             "mode": "source",
             "source": false
           }
@@ -53,8 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 470,
-    "collapsed": true
+    "width": 470
   },
   "right": {
     "id": "641dd6cf11ded8dd",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/2_Portals.md",
+                "file": "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/105_Portals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,10 +89,10 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
-    "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/2_Portals.md",
+    "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/105_Portals.md",
+    "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/103_Fragments.md",
     "home/2_Resources/2_React_the_complete_guide/4_Section_8_-_Practice_Project.md",
     "home/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md",
-    "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/1_Fragments.md",
     "home/2_Resources/2_React_the_complete_guide/1_Until_section_5.md",
     "home/2_Resources/2_React_the_complete_guide/2_Section_6_-_Styling_in_React.md",
     "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs.md",
