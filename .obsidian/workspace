@@ -7,12 +7,8 @@
         "id": "18ddf37f38f79c59",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "vault/4._State/5._Lifting_state_up.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/4._State/5._Lifting_state_up.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +84,15 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
-    "vault/4._State/5._Lifting_state_up.md",
-    "assets/pasted_image001.png",
-    "assets/pasted_image001 2.png",
-    "assets/pasted_image001 1.png",
-    "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/106_Refs.md",
-    "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/105_Portals.md",
-    "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/103_Fragments.md",
-    "home/2_Resources/2_React_the_complete_guide/4_Section_8_-_Practice_Project.md",
-    "home/2_Resources/2_React_the_complete_guide/3_Section_7_-_Debugging_React_apps.md",
-    "home/2_Resources/2_React_the_complete_guide/1_Until_section_5.md"
+    "vault/6._Deployment.md",
+    "vault/5._Lifecycle_hooks.md",
+    "vault/4._State.md",
+    "vault/3_Styling,_props.md",
+    "vault/2_React_-_basics.md",
+    "vault/0_npm.md",
+    "vault/2_React_-_basics/6_Organizing_Components.md",
+    "vault/2_React_-_basics/5_Rendering_lists.md",
+    "vault/2_React_-_basics/5_Outputting_lists.md",
+    "vault/2_React_-_basics/4_Conditional_rendering_in_JSX.md"
   ]
 }

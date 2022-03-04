@@ -90,7 +90,7 @@ MyReceivingComponent.defaultProps = {
 That' all.
 
 #### Single child for wrapper
-To specify that a single component is wrapper around our component (see [3._Wrapper_components](3._Wrapper_components.md)), do this:
+To specify that a single component is wrapper around our component (see [3_Wrapper_components](3_Wrapper_components.md)), do this:
 ```jsx
 MyComponent.propTypes = {
 	children: propTypes.element.isRequired,
