@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/106_Refs.md",
+            "file": "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/107_controlled_vs_uncontrolled_components.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 185
+    "width": 705,
+    "collapsed": true
   },
   "right": {
     "id": "641dd6cf11ded8dd",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/106_Refs.md",
+                "file": "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/107_controlled_vs_uncontrolled_components.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +90,8 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
+    "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/107_controlled_vs_uncontrolled_components.md",
+    "home/2_RoadMap.md",
     "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/106_Refs.md",
     "vault/1_React_info_and_setup/2_Why_React.md",
     "vault/1_React_info_and_setup/3_How_React_works.md",
@@ -96,8 +99,6 @@
     "vault/2_React_-_basics/2_React_Components/1_Components.md",
     "vault/2_React_-_basics.md",
     "vault/6._Deployment.md",
-    "vault/5._Lifecycle_hooks.md",
-    "vault/4._State.md",
-    "vault/3_Styling,_props.md"
+    "vault/5._Lifecycle_hooks.md"
   ]
 }
