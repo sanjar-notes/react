@@ -1,4 +1,4 @@
-# 2. How React works
+# 3. How React works
 Created Tuesday 08 September 2020
 
 ### What makes React revolutionary?
