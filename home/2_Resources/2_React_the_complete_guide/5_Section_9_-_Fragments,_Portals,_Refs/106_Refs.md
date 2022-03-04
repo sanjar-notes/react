@@ -26,7 +26,7 @@ function MyComponent {
     event.preventDefault();
     // 3 - reading/writing from/to the refVariable, and hence to the DOM
 
-	getFromRocket🚀(refVariable.current.value);
+	getFromRocket(refVariable.current.value);
 
 	refVariable.current.value = ''; // clearing the input
   }

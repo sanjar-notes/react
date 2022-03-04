@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "vault/1_React_info_and_setup/2_Why_React.md",
+            "file": "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/106_Refs.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/1_React_info_and_setup/2_Why_React.md",
+                "file": "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/106_Refs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
+    "home/2_Resources/2_React_the_complete_guide/5_Section_9_-_Fragments,_Portals,_Refs/106_Refs.md",
     "vault/1_React_info_and_setup/2_Why_React.md",
     "vault/1_React_info_and_setup/3_How_React_works.md",
     "vault/2_React_-_basics/2_React_Components/1_Function_based.md",
@@ -97,7 +98,6 @@
     "vault/6._Deployment.md",
     "vault/5._Lifecycle_hooks.md",
     "vault/4._State.md",
-    "vault/3_Styling,_props.md",
-    "vault/0_npm.md"
+    "vault/3_Styling,_props.md"
   ]
 }
