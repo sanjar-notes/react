@@ -19,4 +19,7 @@ i.e [Lifecycle of a component](https://projects.wojtekmaj.pl/react-lifecycle-met
 
 * the **componentDidUpdate** has two params, componentDidUpdate(prevProps, prevState)
 
+Functional component lifecycle hooks: https://wavez.github.io/react-hooks-lifecycle/
+![](../../assets/Pasted%20image%2020220306145937.png)
+
 

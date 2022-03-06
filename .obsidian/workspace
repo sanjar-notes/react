@@ -7,8 +7,12 @@
         "id": "18ddf37f38f79c59",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "vault/5_Lifecycle_hooks/1_React_lifecycle_hooks.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -36,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dirty",
+                "query": "lifecycle",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 369
+    "width": 180
   },
   "right": {
     "id": "641dd6cf11ded8dd",
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "vault/5_Lifecycle_hooks/1_React_lifecycle_hooks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,6 +89,7 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
+    "vault/5_Lifecycle_hooks/1_React_lifecycle_hooks.md",
     "home/2_Resources/2_React_the_complete_guide/5_Until_section_5.md",
     "home/2_Resources/2_React_the_complete_guide/9_Fragments,_Portals,_Refs/107_controlled_vs_uncontrolled_components.md",
     "home/2_RoadMap.md",
@@ -92,7 +98,6 @@
     "vault/1_React_info_and_setup/3_How_React_works.md",
     "vault/2_React_-_basics/2_React_Components/1_Function_based.md",
     "vault/2_React_-_basics/2_React_Components/1_Components.md",
-    "vault/2_React_-_basics.md",
-    "vault/6._Deployment.md"
+    "vault/2_React_-_basics.md"
   ]
 }
