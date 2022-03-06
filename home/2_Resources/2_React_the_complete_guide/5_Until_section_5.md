@@ -1,4 +1,4 @@
-# 1. Until section 5
+# 5. Until section 5
 Created Wednesday 16 February 2022
 
 I've already incorporated my learnings into the mental model.

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "vault/5_Lifecycle_hooks/1_React_lifecycle_hooks.md",
+            "file": "home/2_Resources/2_React_the_complete_guide/9_Fragments,_Portals,_Refs/107_controlled_vs_uncontrolled_components.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vault/5_Lifecycle_hooks/1_React_lifecycle_hooks.md",
+                "file": "home/2_Resources/2_React_the_complete_guide/9_Fragments,_Portals,_Refs/107_controlled_vs_uncontrolled_components.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
-    "vault/5_Lifecycle_hooks/1_React_lifecycle_hooks.md",
-    "home/2_Resources/2_React_the_complete_guide/5_Until_section_5.md",
     "home/2_Resources/2_React_the_complete_guide/9_Fragments,_Portals,_Refs/107_controlled_vs_uncontrolled_components.md",
+    "home/2_Resources/2_React_the_complete_guide/9_Fragments,_Portals,_Refs/103_Fragments.md",
+    "home/2_Resources/2_React_the_complete_guide/5_Until_section_5.md",
+    "home/2_Resources/2_React_the_complete_guide/6_Styling_in_React.md",
+    "home/2_Resources/2_React_the_complete_guide/7_Debugging_React_apps.md",
+    "home/2_Resources/2_React_the_complete_guide/8_Practice_Project.md",
+    "vault/5_Lifecycle_hooks/1_React_lifecycle_hooks.md",
     "home/2_RoadMap.md",
     "home/2_Resources/2_React_the_complete_guide/9_Fragments,_Portals,_Refs/106_Refs.md",
-    "vault/1_React_info_and_setup/2_Why_React.md",
-    "vault/1_React_info_and_setup/3_How_React_works.md",
-    "vault/2_React_-_basics/2_React_Components/1_Function_based.md",
-    "vault/2_React_-_basics/2_React_Components/1_Components.md",
-    "vault/2_React_-_basics.md"
+    "vault/1_React_info_and_setup/2_Why_React.md"
   ]
 }

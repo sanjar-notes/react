@@ -1,4 +1,4 @@
-# 2. Section 6 - Styling in React
+# 6. Styling in React
 Created Wednesday 16 February 2022
 - [ ] in vault
 - Inline styles - done.
