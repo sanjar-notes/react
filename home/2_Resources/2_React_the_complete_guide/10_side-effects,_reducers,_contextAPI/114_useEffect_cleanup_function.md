@@ -46,7 +46,8 @@ function MyComponent() {
 	...
 };
 ```
-
+See this 
+![](../../../../assets/Screen_Recording_2022-03-08_at_11.50.23_PM.gif)
 Here the timeouts will be set and unset when the user is typing, and finally one will be run if the user stops typing. This reduces network calls, and when they have typed successfully, a request is sent. 
 
 This way of validating typed input is called "de-bouncing". An example where this is used - GitHub new repo name does not exist tick mark, Gmail new username 'taken' validation.
