@@ -28,6 +28,9 @@ To avoid this, we can actually wait for some time after the user has stopped (fi
 
 But again, as the `setTimeout` is set for each keystroke, but never removed, we'll have a cascading (repeating) effect from the enqueued `setTimeout`s. The solution is to remove the timeouts after each render, and set a new Timeout. This is perfect for the `useEffect`, as the cleanup is run before the `useEffect` function runs. The code would look something like this:
 ```jsx
+import {useEffect} from 'react';
+
+function MyComponent() {
 	...
 	useEffect(() => {
 		const timeoutVar = setTimeout(
@@ -41,6 +44,7 @@ But again, as the `setTimeout` is set for each keystroke, but never removed, we'
 			, 400);
 	}, [enteredField]);
 	...
+};
 ```
 
 Here the timeouts will be set and unset when the user is typing, and finally one will be run if the user stops typing. This reduces network calls, and when they have typed successfully, a request is sent. 
