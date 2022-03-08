@@ -44,6 +44,7 @@ It has two pieces:
 
 ###### When to use `useEffect`?
 FIXME - can be made better
+
 Use it when:
 1. The task is a side-effect. Note that all possible side-effect code is a part of `useEffect`, i.e. `useEffect` is for side-effects, the converse may not be true.
 2. It is computationally expensive and/or not needed on each render.
