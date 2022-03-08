@@ -10,7 +10,7 @@ Tasks other than these 2 are "side effects". Example - http requests, computatio
 
 ### Why
 Side effects cannot be coded "as is" into the component function, because:
-- They'll be implemented each time the component is rendered, i.e. function is executed. This may be very expensive, or not needed.
+- They'll be executed each time the component is rendered, i.e. function is executed. This may be very expensive, or not needed.
 - If the side effects change state (using `useState`), then this will trigger an infinite loop. How: `side-effect` --> `change state` --> `re-render due to change state` --> `side-effect` 🔁 and so on.
 
 So how do we code side effects into components, in a controllable way. The answer is the `useEffect` hook.
