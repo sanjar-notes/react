@@ -29,7 +29,7 @@ const MyComponent() {
 ```
 It has two pieces:
 1. Dependency array - just variables. React keeps track of these.
-2. A function that runs *after* every render if any dependencies have changed, including the first render. Side effect code goes into this function.
+2. A function that runs *after* every render if any dependencies have changed, including the first render (independent of dependency array). Side effect code goes into this function.
 
 ###### Note on dependency array
 1. If dependency = `undefined`, i.e. absent. Function will run after every render.
