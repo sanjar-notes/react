@@ -39,7 +39,7 @@ function MyComponent() {
 			};
 
 		return (() => { // cleanup function
-			removeTimeout(timeOutVar);
+			clearTimeout(timeOutVar);
 		})
 			, 400);
 	}, [enteredField]);
