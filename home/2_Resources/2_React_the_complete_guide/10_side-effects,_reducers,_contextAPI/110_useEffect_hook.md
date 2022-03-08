@@ -46,5 +46,4 @@ Use it when:
 1. The task is a side-effect. Note that all possible side-effect code is a part of `useEffect`, i.e. `useEffect` is for side-effects, the converse may not be true.
 2. It is computationally expensive and/or not needed on each render.
 3. For http requests, DB/`localStorage` read/writes may use `useEffect`.
-4. Try to avoid `useEffect` as much as possible - FIXME: Why, Really?
-5. You'll know.
+4. You'll know.
