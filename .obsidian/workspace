@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "home/2_Resources/2_React_the_complete_guide/9_Fragments,_Portals,_Refs/107_controlled_vs_uncontrolled_components.md",
+            "file": "home/2_Resources/2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/110_useEffect_hook.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 180
+    "width": 180,
+    "collapsed": true
   },
   "right": {
     "id": "641dd6cf11ded8dd",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home/2_Resources/2_React_the_complete_guide/9_Fragments,_Portals,_Refs/107_controlled_vs_uncontrolled_components.md",
+                "file": "home/2_Resources/2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/110_useEffect_hook.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +90,15 @@
   },
   "active": "18ddf37f38f79c59",
   "lastOpenFiles": [
+    "home/2_Resources/2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/110_useEffect_hook.md",
+    "home/2_Resources/2_React_the_complete_guide/6_Styling_in_React.md",
+    "home/2_Resources/2_React_the_complete_guide/7_Debugging_React_apps.md",
     "home/2_Resources/2_React_the_complete_guide/9_Fragments,_Portals,_Refs/107_controlled_vs_uncontrolled_components.md",
     "home/2_Resources/2_React_the_complete_guide/9_Fragments,_Portals,_Refs/103_Fragments.md",
     "home/2_Resources/2_React_the_complete_guide/5_Until_section_5.md",
-    "home/2_Resources/2_React_the_complete_guide/6_Styling_in_React.md",
-    "home/2_Resources/2_React_the_complete_guide/7_Debugging_React_apps.md",
     "home/2_Resources/2_React_the_complete_guide/8_Practice_Project.md",
     "vault/5_Lifecycle_hooks/1_React_lifecycle_hooks.md",
     "home/2_RoadMap.md",
-    "home/2_Resources/2_React_the_complete_guide/9_Fragments,_Portals,_Refs/106_Refs.md",
-    "vault/1_React_info_and_setup/2_Why_React.md"
+    "home/2_Resources/2_React_the_complete_guide/9_Fragments,_Portals,_Refs/106_Refs.md"
   ]
 }
