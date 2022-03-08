@@ -35,6 +35,7 @@ It has two pieces:
 1. If dependency = `undefined`, i.e. absent. Function will run after every render.
 2. If dependency = [] (empty array), the function will execute once, i.e. after first render.
 3. If the dependency array has any candidates, the function will run after every render, given the dependencies have changed.
+4. In-built functions, second element of `useState()` array, or anything defined outside the component should not be passed as a dependency, because it has no effect. Basically, only pass stuff that is changed/can change inside the component function (or its parent).
 
 ### What
 - `useEffect` is the solution to the problem of placement (and therefore execution) of side-effect (s) code.
