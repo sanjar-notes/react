@@ -2,9 +2,13 @@
 Created Tuesday 12 March 2022
 - [ ] in vault
     
-### Why
-`useReducer` is a syntax sugar for `useState` . It is preferred if the state is complex (has many parts).
-- `useReducer` is an "additional" hook.
+### Why (when to use it instead of `useState`)
+`useReducer` is a syntax sugar for `useState` . It is preferred over `useState` if the state:
+- Is complex (has many parts).
+- The state and data inside it are highly related (OK, but Why?).
+- Types of updates are more, as using `useState` would result in a lot of functions, which makes the JSX code bulky.
+
+`useReducer` is an "additional" hook, and `useState` is the primary hook.
 
 ### How
 4 things needed for useReducer are:
