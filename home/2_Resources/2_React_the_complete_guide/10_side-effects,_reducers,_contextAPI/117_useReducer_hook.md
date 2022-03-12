@@ -46,7 +46,7 @@ function MyComponent () {
 }
 ```
 About the syntax:
-1. It's a convention to name the case argument 'type'. It's not a rule.
+1. It's a convention to name the case argument 'type', and the state related argument 'payload'. It's not a rule though.
 2. The reducer function is kept outside the component. This is not a very strict rule, but is the recommended way. Why: it doesn't re-prepare the reducer function every time that the component is run, which is good memory+time wise.
 
 - Also, as in `useState`, dispatch causes a re-render of the component, with the new state.
