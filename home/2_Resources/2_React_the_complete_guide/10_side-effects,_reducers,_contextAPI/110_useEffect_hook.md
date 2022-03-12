@@ -1,6 +1,6 @@
 # 110. useEffect hook
 Created Tuesday 08 March 2022
-- [ ] in vault
+- [x] in vault
 
 #### What is an effect, aka "side effect"?
 The main job of React is to:
