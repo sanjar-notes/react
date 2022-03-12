@@ -57,3 +57,6 @@ is:
 	4. Component is drawn.
 3.  Step 2 repeats.
 Note: `const` is OK for the read variable, because we never assign (`=`) anything to it. It's changed internally.
+
+#### Computation of initialState
+If the initial state is a large computation, we would not want to include it in the component, because it would execute on every re-render. Instead, pass a function to `useState` instead of the intial value. This function will only be run once (when the component first renders), and never again. This way the computation is done only once, as needed.
