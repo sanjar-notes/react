@@ -8,5 +8,6 @@
   "showLineNumber": false,
   "showFrontmatter": false,
   "newLinkFormat": "relative",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "readableLineLength": true
 }
