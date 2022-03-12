@@ -3,11 +3,9 @@ Created Tuesday 12 March 2022
 - [ ] in vault
     
 ### Why
-`useReducer` is kind of a syntax sugar (FIXME: is it really, or close to) for `useState` . It is preferred if:
-1. The state is complex and has many parts.
-2. Goal state depends on the previous state.
-
+`useReducer` is a syntax sugar for `useState` . It is preferred if the state is complex (has many parts).
 - `useReducer` is an "additional" hook.
+
 ### How
 4 things needed for useReducer are:
 1. State - to be read
@@ -59,7 +57,10 @@ About the syntax:
 	const [stateVar, dispatchFunc] = useReducer(reducerFunc, intialArg, initFunc);
 			// the initial value is now initFunc(initialArg).
 	```
+
 ### What
 - [Here](https://github.com/exemplar-codes/react-hello-world/blob/5a83a92598ad832fb882a43ede103946b9815458/src/Apps/UseReducerDemo/UseReducerDemo.jsx) is a simple example.
 
-So `useReducer` is like a syntax sugar (FIXME: is it like, or totally?) of  `useState`, functionally.
+So `useReducer` is a syntax sugar of  `useState`, functionally.
+
+[Here](https://devtrium.com/posts/how-to-use-react-usereducer-hook#what-is-react-usereducer-hook-and-how-to-use-it)'s a good article for useReducer I took info from.
