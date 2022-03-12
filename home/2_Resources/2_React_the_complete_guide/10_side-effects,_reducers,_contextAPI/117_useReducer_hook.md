@@ -54,10 +54,10 @@ Also, as in `useState`, dispatch causes a re-render of the component, with the n
 #### Computed initialState
 - The `useReducer`, and hence `initialState` is ignored after the first render, the whole statement is.
 - There is an alternative syntax, that's especially useful if the initial value is the result of an expensive computation, and so should be run once during the first render. Only the `useReducer` statement changes.
-```jsx
+	```jsx
 	const [stateVar, dispatchFunc] = useReducer(reducerFunc, intialArg, initFunc);
-	// the initial value is now initFunc(initialArg).
-```
+			// the initial value is now initFunc(initialArg).
+	```
 ### What
 [Here](https://github.com/exemplar-codes/react-hello-world/blob/5a83a92598ad832fb882a43ede103946b9815458/src/Apps/UseReducerDemo/UseReducerDemo.jsx) is a simple example.
 
