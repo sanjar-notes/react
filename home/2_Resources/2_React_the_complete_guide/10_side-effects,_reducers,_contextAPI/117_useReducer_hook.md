@@ -22,13 +22,13 @@ import React, { useReducer } from 'react';
 function reducerFunc(state, action) {
 	// latest state,
 	// action is the variable passed to dispath
-	switch(action.argVal)
+	switch(action.type)
 	{
 		case 'CASE_VAL':
-			return {...state, name: action.argVal}; // becomes state
+			return {...state, name: action.payload}; // becomes state
 		...
 		default:
-			return state;
+			throw new Error(`Unknown reducer type: ${action.type}`);
 	}
 }
 
@@ -40,7 +40,7 @@ function MyComponent () {
 			...
 			{state.name}
 			...
-			<button onClick={ ()=>dispatch({type: 'CASE_VAL', argVal: 'arg'}) }>Name<button>
+			<button onClick={ ()=>dispatch({type: 'CASE_VAL', payload: 'arg'}) }>Name<button>
 			...
 			</>);
 }
@@ -49,7 +49,8 @@ About the syntax:
 1. It's a convention to name the case argument 'type'. It's not a rule.
 2. The reducer function is kept outside the component. This is not a very strict rule, but is the recommended way. Why: it doesn't re-prepare the reducer function every time that the component is run, which is good memory+time wise.
 
-Also, as in `useState`, dispatch causes a re-render of the component, with the new state.
+- Also, as in `useState`, dispatch causes a re-render of the component, with the new state.
+- Having a `default` case which returns an error is a good practice, it helps avoid errors.
 
 #### Computed initialState
 - The `useReducer`, and hence `initialState` is ignored after the first render, the whole statement is.
@@ -59,6 +60,6 @@ Also, as in `useState`, dispatch causes a re-render of the component, with the n
 			// the initial value is now initFunc(initialArg).
 	```
 ### What
-[Here](https://github.com/exemplar-codes/react-hello-world/blob/5a83a92598ad832fb882a43ede103946b9815458/src/Apps/UseReducerDemo/UseReducerDemo.jsx) is a simple example.
+- [Here](https://github.com/exemplar-codes/react-hello-world/blob/5a83a92598ad832fb882a43ede103946b9815458/src/Apps/UseReducerDemo/UseReducerDemo.jsx) is a simple example.
 
 So `useReducer` is like a syntax sugar (FIXME: is it like, or totally?) of  `useState`, functionally.
