@@ -43,7 +43,7 @@ return (<div>
 
 export default MyComponent;
 ```
-
+- [Need and derivation](https://github.com/exemplar-codes/react-hello-world/tree/5a83a92598ad832fb882a43ede103946b9815458/src/Apps/UseRefDemo) of the `useRef` hook.
 
 ### What
 - Note that using `useRef` does not re-render the page, unlike `useState` which does re-render.
