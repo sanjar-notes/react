@@ -1,6 +1,7 @@
 # 114. useEffect cleanup function
 Created Tuesday 08 March 2022
-
+- [ ] in vault
+    
 ### Why
 Situation: The useEffect function may create eventListeners, or timeouts. Of course, we want only the latest ones, to avoid a cascading effect from old eventListeners, timeouts. 
 
