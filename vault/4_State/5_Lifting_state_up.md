@@ -45,6 +45,7 @@ export default Child;
 
 ### What
 - It should be noted that we need "state" to pass data upwards (child --> parent). Can't be done without state. The reason is that the `setFunc` changes the state, which is a variable outside the flow of the component function. And also that the `setFunc` is exportable (of course it is, no big deal!).
+- Also, the above point helps design a component, as it makes it imperative for stuff that's to be lifted up be a state variable, and not a usual variable.
   
 ### Conclusion
 So basically, we're making state available to the parent via a function passed via prop.
