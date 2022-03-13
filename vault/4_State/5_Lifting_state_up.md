@@ -44,4 +44,4 @@ export default Child;
 ```
 
 ### Conclusion
-So basically, we're making state available to the child via a function passed via prop.
+So basically, we're making state available to the parent via a function passed via prop.
