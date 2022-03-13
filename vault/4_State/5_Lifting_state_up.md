@@ -2,7 +2,7 @@
 Created Friday 11 February 2022
 
 #### Why
-Parent can communicate (i.e. send data) down to children using props. 
+Parent can communicate (i.e. send data) down to children using props.
 
 But how do children communicate back to parents. Also, is this even needed ? Yes, it is needed. It's needed when:
 1. Entered input needs to change state of the app. So communication must happen from the input component to the display component, via a common ancestor.
