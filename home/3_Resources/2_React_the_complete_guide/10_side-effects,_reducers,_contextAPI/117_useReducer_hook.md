@@ -11,7 +11,7 @@ Created Tuesday 12 March 2022
 `useReducer` is an "additional" hook, and `useState` is the primary hook.
 
 ### How
-4 things needed for useReducer are:
+The 4 things needed for useReducer are:
 1. State - to be read
 2. Dispatch function - to be called with case argument and state related argument.
 3. Reducer - this sets the new state based on the case argument and state related argument.
