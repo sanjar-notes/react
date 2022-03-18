@@ -8,7 +8,7 @@ Refs (short for references) is a way to access DOM nodes directly in React. It i
 ### How
 There are 3 parts to the code:
 1. Declare the ref variable.
-2. Tag the ref variable to the HTML element being monitored (being "referred" 👀).
+2. Tag the ref variable to the HTML element being monitored (being "referenced" 👀).
 3. Write code that reads, writes to using the ref. Note, this should be outside of any JSX. WHY? FIXME.
 
 - The ref variable has a property called `current` whose value is an object with name-values being element attributes (including `value` for `input`s). In short all attributes are present in `refVariable.current`.
