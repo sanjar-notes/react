@@ -40,7 +40,7 @@ It has two pieces:
 
 ### What
 - `useEffect` is the solution to the problem of placement (and therefore execution) of side-effect (s) code.
-- `useEffect` is not like `useState`. i.e. it won't trigger re-render due dependency array change. It will do so only if state is changed inside the function, which is not the question here. Again, to reiterate - `useEffect` runs the function after every render if any dependency has changed.
+- `useEffect` is not like `useState`. i.e. it won't trigger re-render due dependency array change. It will do so only if state is changed using `set` of `useState` inside the function, which is not the question here. Again, to reiterate - `useEffect` runs the function after every render if any dependency has changed.
 - Additionally, `useEffect` may be used as a refactor to repeated code, due to presence of a dependency array.
 
 ###### When to use `useEffect`?
