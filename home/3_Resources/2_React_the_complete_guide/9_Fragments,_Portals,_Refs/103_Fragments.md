@@ -3,7 +3,7 @@ Created Thursday 24 February 2022
 - [ ] in vault
 
 #### `div` soup
-- A function in JavaScript can ultimately return one object. This is OK, but leads to a not so good practice of wrapping sibling components in a parent containers like `div`s, even if it is not needed.
+- A function in JavaScript can ultimately return one object. This is OK, but leads to a not so good practice of wrapping sibling components in parent containers like `div`s, even if it is not needed.
 - This needs to be done in JSX, for JavaScript.
 - It leads to something known as "`div` soup", i.e. many nested `div` inside each other in the final HTML rendered on the page, which are neither needed and don't provide any semantic structure.
 <html></html>
