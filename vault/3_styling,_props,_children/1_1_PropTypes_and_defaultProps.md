@@ -14,7 +14,7 @@ Also, sometimes we are supposed to receive a prop but it is not passed, this can
 
 It is to be noted that we are specifying props that are being received, not being sent. This is because sent ones are already known - they may be a prop or created just here.
 
-Also, note that for both `propTypes` and `defaultProps`, it does not matter if we use a props object or de-structure them. Just make sure the names of the receiving props are named correctly during specification.
+Also, note that for both `propTypes` and `defaultProps`, while receiving props, it does not matter if we use a props object or de-structure them. Just make sure the names of the receiving props are named correctly during specification.
 
 During specification, both values are lowercase, follow component name and are plural. Like so:
 ```jsx
