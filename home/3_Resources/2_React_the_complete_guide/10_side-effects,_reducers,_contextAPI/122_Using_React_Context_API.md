@@ -77,3 +77,4 @@ import AppComponent = () => {
 - The hook provides a read/write object for each user(consumer component). A write re-renders the parent component, effectively re-rendering all descendant components.
 
 - One must be careful to not use context for reusable components, which must use props (which are basically arguments for them).
+- So use context only when there's lot of plumbing needed AND for *specific* components.
