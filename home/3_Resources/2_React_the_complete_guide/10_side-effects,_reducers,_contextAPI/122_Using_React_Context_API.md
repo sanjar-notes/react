@@ -78,5 +78,7 @@ Tip: For better IDE autocompletion, just add some attributes (called default con
 - React context is thus a way to have a global state across components.
 - The hook provides a read/write object for each user(consumer component). A write re-renders the parent component, effectively re-rendering all descendant components.
 
+- One should absolutely use `useState` in the context component, for persistence and automatic re-renders.
+
 - One must be careful to not use context for reusable components, which must use props (which are basically arguments for them).
 - So use context only when there's lot of plumbing needed AND for *specific* components.
