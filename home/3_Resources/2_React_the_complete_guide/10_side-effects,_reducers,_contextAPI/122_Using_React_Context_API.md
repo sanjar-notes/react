@@ -72,6 +72,8 @@ import AppComponent = () => {
 };
 ```
 
+Tip: For better IDE autocompletion, just add some attributes (called default context) in the context component.
+
 ### What
 - React context is thus a way to have a global state across components.
 - The hook provides a read/write object for each user(consumer component). A write re-renders the parent component, effectively re-rendering all descendant components.
