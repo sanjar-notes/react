@@ -82,3 +82,5 @@ Tip: For better IDE autocompletion, just add some attributes (called default con
 
 - One must be careful to not use context for reusable components, which must use props (which are basically arguments for them).
 - So use context only when there's lot of plumbing needed AND for *specific* components.
+
+- Context component(s) and the store folder are nice way to handle all data within the app, in a dedicated place.
