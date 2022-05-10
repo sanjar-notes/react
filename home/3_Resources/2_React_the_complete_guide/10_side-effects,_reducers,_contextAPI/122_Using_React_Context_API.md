@@ -81,6 +81,6 @@ Tip: For better IDE autocompletion, just add some attributes (called default con
 - One should absolutely use `useState`, `useEffect` in the context component, for persistence and automatic re-renders. FIXME: is `useState` even required if writing to context already causes re-render?
 
 - One must be careful to not use context for reusable components, which must use props (which are basically arguments for them).
-- So use context only when there's lot of plumbing needed AND for *specific* components.
+- So use context only when there's lot of plumbing needed AND the components involved are *specific*(i.e. not reused).
 
 - Context component(s) and the store folder are nice way to handle all data within the app, in a dedicated place.
