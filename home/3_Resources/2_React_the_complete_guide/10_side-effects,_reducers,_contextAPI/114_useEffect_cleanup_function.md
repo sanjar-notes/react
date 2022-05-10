@@ -5,7 +5,7 @@ Created Tuesday 08 March 2022
 ### Why
 Situation: The useEffect function may create eventListeners, or timeouts. Of course, we want only the latest ones, to avoid a cascading effect from old eventListeners, timeouts. 
 
-So, the cleanup code should be associated with `useEffect`, and run **before** every `useEffect` function call, except the first execution (after 1st render).
+To do this 'cleanup', some cleanup code can be associated with `useEffect`, that runs **before** every `useEffect` function call, except the first execution (after 1st render).
 
 This "cleanup" function can be specified as a callback from the function in `useEffect`.
 
