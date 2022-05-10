@@ -13,7 +13,7 @@ Created Tuesday 12 March 2022
 ### How
 The 4 things needed for `useReducer` are:
 1. State - to be read
-2. Dispatch function - to be called with case argument and state related argument.
+2. Dispatch function - to be called with case argument and payload(state related argument). This function is provided by the hook.
 3. Reducer - this sets the new state based on the case argument and state related argument. This function is usually a switch case.
 4. Initial value of the state.
 
@@ -42,7 +42,7 @@ function MyComponent () {
 			...
 			{state.name}
 			...
-			<button onClick={ ()=>dispatch({type: 'CASE_VAL', payload: 'arg'}) }>Name<button>
+			<button onClick={ ()=>dispatchFunc({type: 'CASE_VAL', payload: 'arg'}) }>Name<button>
 			...
 			</>);
 }
