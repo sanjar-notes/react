@@ -8,7 +8,7 @@ Passing props or lifting state visibly is not good, better use a component-wide 
 ### How
 The 3 steps when using the Context API, obviously (logically), are:
 1. **Create** the context. This is done in a standalone file.
-2. **Provide** the context at the appropriate place (component). It's made available to all descendents of the selected root component.
+2. **Provide** the context at the appropriate place (component). It's made available to all descendents of the selected root component. Remember to **specify** the context value (object) at this stage.
 3. **Consume** the context. Of course in a descendent.
 
 There are two ways of consuming Context:
