@@ -53,4 +53,4 @@ export default MyComponent;
 
 #### Where are refs used ?
 - refs are very handy for forms or for reading stuff from the DOM.
-- refs have helped in eliminating state base input reading mechanisms that would change on every keystroke (using `onChange`). Using `useState` is also OK, but `useRef` is better suited here.
+- refs have helped in eliminating state based input reading mechanisms that would change on every keystroke (using `onChange`). Using `useState` is also OK, but `useRef` is better suited here.
