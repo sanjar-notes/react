@@ -52,7 +52,7 @@ About the syntax:
 2. The reducer function is kept outside the component. This is not a very strict rule, but is the recommended way. Why: it doesn't re-prepare the reducer function every time that the component is run, which is good memory+time wise.
 
 - Also, as in `useState`, dispatch causes a re-render of the component, with the new state.
-- Having a `default` case which returns an error is a good practice, it helps avoid errors.
+- Having a `default` case (in the reducer function) that returns an error is a good practice, it helps avoid errors.
 
 #### Computed initialState
 - The `useReducer`, and hence `initialState` is ignored after the first render, the whole statement is.
