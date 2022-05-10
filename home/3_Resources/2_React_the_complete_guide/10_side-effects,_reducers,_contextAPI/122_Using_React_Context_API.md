@@ -24,7 +24,7 @@ const AuthContext = React.createContext({});
 
 export default AuthContext;
 ```
-2. To **provide**, or place the store at the place of use - just import and wrap the context component (ContextComponent.`Provider`) around the ancestor component. This means that the context is available for all descendents, and the ancestor will re-render if any change occurs in the context.
+2. To **provide**, or place the store at the place of use - import and wrap the context component (ContextComponent.`Provider`) around the ancestor component. This means that the context is available for all descendents, and the ancestor will re-render if any change occurs in the context.
    
    Remember to provide the context object here as a `value`.
 ```jsx
