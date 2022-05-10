@@ -64,7 +64,7 @@ About the syntax:
 
 ### What
 - [Here](https://github.com/exemplar-codes/react-hello-world/blob/5a83a92598ad832fb882a43ede103946b9815458/src/Apps/UseReducerDemo/UseReducerDemo.jsx) is a simple example.
-- `useReducer` is like having a signal + payload (action), an API(logic - reducer) and a backend (state). It's a good coding pattern. Makes the code sweet.
+- `useReducer` is like having a signal + payload (action) - an API(logic - reducer) and a backend (state). It's a good coding pattern. Makes the code sweet.
 So `useReducer` is a syntax sugar of  `useState`, functionally.
 
 [Here](https://devtrium.com/posts/how-to-use-react-usereducer-hook#what-is-react-usereducer-hook-and-how-to-use-it)'s a good article for useReducer I took info from.
