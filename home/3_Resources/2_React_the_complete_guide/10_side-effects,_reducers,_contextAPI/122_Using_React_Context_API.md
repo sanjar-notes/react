@@ -13,7 +13,7 @@ The 3 steps when using the Context API, obviously (logically), are:
 
 There are two ways of consuming Context:
 1. Using the `Consumer` component. This just looks a tad ugly.
-2. Using the `useContext` hook. Looks good.
+2. Using the `useContext` hook. Looks better.
 
 ###### Details of using React Context
 1. To **Create** the context, first make a React component called context. This is a JavaScript file. It's recommended to store this in a folder called 'store'.
