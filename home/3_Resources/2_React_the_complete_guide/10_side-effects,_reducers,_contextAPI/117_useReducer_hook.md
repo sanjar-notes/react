@@ -14,7 +14,7 @@ Created Tuesday 12 March 2022
 The 4 things needed for `useReducer` are:
 1. State - to be read
 2. Dispatch function - to be called with case argument and state related argument.
-3. Reducer - this sets the new state based on the case argument and state related argument.
+3. Reducer - this sets the new state based on the case argument and state related argument. This function is usually a switch case.
 4. Initial value of the state.
 
 The basic syntax for `useReducer` is:
