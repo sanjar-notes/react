@@ -16,7 +16,7 @@ There are two ways of consuming Context:
 2. Using the `useContext` hook. Looks better.
 
 ###### Details of using React Context
-1. To **Create** the context, first make a React component called context. This is a JavaScript file. It's recommended to store this in a folder called 'store'.
+1. To **Create** the context, make a React component named something like 'context'. This is done in separate a JavaScript file. It's recommended to store this in a folder called 'store'.
 ```js
 import React from 'react';
 
