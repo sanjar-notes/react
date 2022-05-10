@@ -50,4 +50,4 @@ The place of use of the code doesn't get affected in any way.
 
 
 #### Where is this useful ?
-This is useful for things that need to rendered outside of the code components, but is tied to them - like modals (which need state-flipper and other props), but should ideally be placed just beside the root `div` of the React app.
+This is useful for things that need to rendered outside of the code components, but is tied to them - like modals (which need state-flipper and other props, but should ideally be placed just beside the root `div` of the React app).
