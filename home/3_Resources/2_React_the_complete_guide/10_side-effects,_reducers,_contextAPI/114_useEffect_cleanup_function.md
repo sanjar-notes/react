@@ -57,3 +57,7 @@ This way of validating typed input is called "de-bouncing". An example where thi
 - `useEffect` is a way to run code w.r.t the life-cycle phases, which includes things like:
 	- Run code after each render, by passing no dependency array.
 	- Run code after before component is updated, i.e. using the cleanup function.
+
+###### Class components and useEffect
+- `useEffect` is essentially an API that's equivalent to the slightly imperative way to handle code that runs w.r.t lifecycle phases, as done in class components.
+- `useEffect` made it difficult for the developer to make incoherent lifecycle code, resulting in bugs. Thus, it made development easier by removing the 'bad' possibilities which were possible due to imperative access to lifecycle functions. FIXME: really, is this true?
