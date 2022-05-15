@@ -52,3 +52,12 @@ See this
 Here the timeouts will be set and unset when the user is typing, and finally one will be run if the user stops typing. This reduces network calls, and when they have typed successfully, a request is sent. 
 
 This way of validating typed input is called "de-bouncing". An example where this is used - GitHub new repo name does not exist tick mark, Gmail new username 'taken' validation.
+
+###### useEffect is directly related to component lifecycle phases -  this is key to understanding when to use useEffect
+- `useEffect` is a way to run code w.r.t the life-cycle phases, which includes things like:
+	- Run code after each render, by passing no dependency array.
+	- Run code after before component is updated, i.e. using the cleanup function.
+
+###### Class components and useEffect
+- `useEffect` is essentially an API that's equivalent to the slightly imperative way to handle code that runs w.r.t lifecycle phases, as done in class components.
+- `useEffect` made it difficult for the developer to make incoherent lifecycle code, resulting in bugs. Thus, it made development easier by removing the 'bad' possibilities which were possible due to imperative access to lifecycle functions. FIXME: really, is this true?
