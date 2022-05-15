@@ -7,3 +7,5 @@ Projects:
 3. https://github.com/exemplar-codes/pocket-calculator - something I made on my own, for practice.
 4. https://github.com/exemplar-codes/course-selection-styling - in course demo project.
 5. https://github.com/exemplar-codes/todo_like_list - after styling in React section. For practicing everything until that point.
+6. [Login Page](https://github.com/exemplar-codes/login-page)
+7. [React Meals](https://github.com/exemplar-codes/react-meals)
