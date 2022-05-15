@@ -1,7 +1,6 @@
 # 3. Projects
 Created Thursday 13 February 2022
 
-Projects:
 1. [React Hello World]https://github.com/exemplar-codes/react-hello-world - a project to play with React, has many sub-projects.
 2. [Expense Tracker](https://github.com/exemplar-codes/expense-tracker-react) - in course demo project.
 3. [Pocket Calculator](https://github.com/exemplar-codes/pocket-calculator) - something I made on my own, for practice.
