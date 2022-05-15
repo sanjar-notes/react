@@ -14,7 +14,7 @@ In this case, we pass props or lift state up through components that don't have 
 This is fine from a functionality point of view.
 
 ##### Problem
-But this is not good from a code-design point of view, because only relevant data should remain at relevant places. Data not related to a component should not at all be handled to it, i.e. for "plumbing" purposes.
+But this is not good from a code-design point of view, because only relevant data should remain at relevant places. Data not related to a component should not at all be handled in it, i.e. for "plumbing" purposes.
 
 Even if the code-design is ignored, for bigger apps, this leads to bad code, because it becomes difficult to know which component is actually using the data and which component is just used for forwarding data.
 

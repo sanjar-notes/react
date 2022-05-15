@@ -10,7 +10,7 @@ The main job of React is to:
 Tasks other than these 2 are "side effects". Example - http requests, computation, timers, using `localStorage`, listening to user input etc. Note that some normal ops can also be considered side-effects - like listening to user input for validation.
 
 ### Why
-Side effects cannot be coded "as is" into the component function, because:
+Side effects should not be coded "as is" into the component function, because:
 - They'll be executed each time the component is rendered, i.e. function is executed. This may be very expensive, or not needed.
 - If the side effects change state (using `useState`), then this will trigger an infinite loop. How: `side-effect` --> `change state` --> `re-render due to change state` --> `side-effect` 🔁 and so on.
 
@@ -50,4 +50,4 @@ Use it when:
 1. The task is a side-effect. Note that all possible side-effect code is a part of `useEffect`, i.e. `useEffect` is for side-effects, the converse may not be true.
 2. It is computationally expensive and/or not needed on each render.
 3. For http requests, DB/`localStorage` read/writes may use `useEffect`.
-4. You'll know.
+4. When we need to run code triggered w.r.t the component life-cycle, i.e. run code on each render. This is a very important point.

@@ -7,7 +7,7 @@ This is an implementation of state, so that components are redrawn when state is
 #### How
 A life-cycle method (informally called a hook) is used. It is added to the component's code.
 
-A variable is captured as state, and managed by the hook.
+A variable is captured as state and managed by the hook.
 When an update call using the hook is made, the component is re-rendered. So UI is synced with the state.
 
 #### What
