@@ -1,4 +1,4 @@
-# 0. React lifecycle
+# 1. React lifecycle
 Created Tuesday 30 May 2022
 
 ### Why
