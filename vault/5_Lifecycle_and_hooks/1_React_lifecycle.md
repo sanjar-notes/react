@@ -1,5 +1,5 @@
 # 1. React lifecycle
-Created Tuesday 30 May 2022
+Created Monday 30 May 2022
 
 ### Why
 It is important to know and understand the component/app lifecycle in React in order to correctly:

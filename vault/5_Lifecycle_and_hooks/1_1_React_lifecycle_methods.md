@@ -1,5 +1,5 @@
 # 1.1. React lifecycle methods
-Created Tuesday 30 May 2022
+Created Monday 30 May 2022
 
 FIXME: copied as of now, to be re-written if needed.
 
