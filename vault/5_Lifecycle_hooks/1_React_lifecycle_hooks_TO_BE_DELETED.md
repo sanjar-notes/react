@@ -13,7 +13,7 @@ This function checks if the component has already mounted, and runs if it has mo
 
 *****
 
-![](../../assets/pasted_image002%201%201.png)
+
 i.e [Lifecycle of a component](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) - as of Sept 2020
 ![](../../assets/pasted_image001%201%201.png)
 

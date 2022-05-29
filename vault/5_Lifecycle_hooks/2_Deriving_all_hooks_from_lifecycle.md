@@ -1,4 +1,4 @@
-# 1. React lifecycle hooks
+# 2. Deriving all hooks from lifecycle
 Created Tuesday 06 February 2022
 
 ### Why
