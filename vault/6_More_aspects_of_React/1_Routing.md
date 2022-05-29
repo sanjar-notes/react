@@ -2,9 +2,10 @@
 Created Monday 30 May 2022
 
 FIXME:
-1. What is routing in SPA?
-2. What is react-router library
-3. How to code it
+1. What is routing in SPA? 
+2. Why do we need it? Maybe this will help: https://stackoverflow.com/q/39636411/11392807
+3. What is react-router library
+4. How to code it
 ---
 4. Add this info if needed
 React Router refers to the standard library used for routing in React. It permits us for building a single-page web application in React with navigation without even refreshing the page when the user navigates. It also allows to change the browser URL and will keep the user interface in sync with the URL. React Router will make use of the component structure for calling the components, using which appropriate information can be shown. Since React is a component-based framework, it’s not necessary to include and use this package. Any other compatible routing library would also work with React.
