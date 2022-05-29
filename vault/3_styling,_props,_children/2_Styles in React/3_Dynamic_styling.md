@@ -1,4 +1,4 @@
-# 2. Dynamic styling
+# 3. Dynamic styling
 Created Sunday 13 February 2022
 
 - For inline styles, we can use a ternary expression, AND/OR operator, format strings to set values/whole `style` object. Example:

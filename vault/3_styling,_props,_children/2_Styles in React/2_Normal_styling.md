@@ -1,4 +1,4 @@
-# 1. Normal styling
+# 2. Normal styling
 Created Sunday 13 February 2022
 
 <https://speakerdeck.com/vjeux/react-css-in-js-react-france-meetup>

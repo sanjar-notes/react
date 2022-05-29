@@ -1,4 +1,4 @@
-# 2. Styled components
+# 5. Styled components
 Created Sunday 13 February 2022
 
 ### Why
