@@ -46,7 +46,7 @@ React
 
 Vue
 
-* Component based
+* Component based****
 * Has many core modules
 * From a needed modules POV, it ships with *some* modules, unlike the extremes - React (none) and Angular (most).
 
