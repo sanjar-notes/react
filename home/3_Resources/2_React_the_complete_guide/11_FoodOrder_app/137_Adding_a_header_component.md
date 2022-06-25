@@ -6,3 +6,16 @@ Created Saturday 25 June 2022
 - It is normal and desirable to have a bunch of generic components that are used all over the app. They can be stored in a folder called 'shared' or 'UI'.
 
 - `label` HTML element in React uses `htmlFor` instead of `for`.
+
+- One can rewrite multiple attributes on an element succinctly, by using the spread operator. As usual, key-value of the object will match the attribute names and values.
+```jsx
+function App (){
+	const attribs = {name: 'Sanjar', age: 24};
+	return <>
+		...
+		<Item id={attribs.name} age={attribs.age} height={5.10}/> <!-- longer -->
+		<Item {...attribs} height={5.10} /> <!-- equivalent, consise -->
+		...
+	</>;
+}
+```
