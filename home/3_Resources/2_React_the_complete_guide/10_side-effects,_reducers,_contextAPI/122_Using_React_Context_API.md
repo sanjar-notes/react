@@ -38,7 +38,7 @@ const AppCommonAncestor = () => {
 			</AuthContext.Provider>);
 };
 ```
-3.  To consume the context, import the context component and use the `useContext` hook. Using the hook actually provides a read/write copy of the context, so that re-renders are possible (from the first ancestor).
+3.  To consume the context, import the context component and use the `useContext` hook. Using the hook actually provides a read only<span title="write is achieved using functions, similar to lifting state up">*</span> copy of the context, so that re-renders are possible (from the first ancestor).
 ```jsx
 import React from 'react';
 
@@ -49,7 +49,7 @@ import AppComponent = () => {
 	
 	return (<>
 			{ 
-			// can now read, write to ctx 
+			// can read ctx. writing is done by function invocation
 			}
 			</>);
 };
@@ -65,7 +65,7 @@ import AppComponent = () => {
 	return (<AuthContext.Consumer>
 			{ 
 				(ctx) => {
-					// can now read, write to ctx 
+					// can read ctx. writing is done by function invocation
 					}
 			}
 			</AuthContext.Consumer>);
@@ -76,7 +76,7 @@ Tip: For better IDE autocompletion, just add some attributes (called default con
 
 ### What
 - React context is thus a way to have a global state across components.
-- The hook provides a read/write object for each user(consumer component). A write re-renders the ancestor component, effectively re-rendering all descendant components.
+- The hook provides a read only object for each user(consumer component). A write re-renders the ancestor component, effectively re-rendering all descendant components.
 
 - One should absolutely use `useState`, `useEffect` in the context component, for persistence and automatic re-renders. FIXME: is `useState` even required if writing to context already causes re-render?
 
