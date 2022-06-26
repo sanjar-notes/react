@@ -87,7 +87,7 @@ Tip: For better IDE auto-completion, just add some attributes (called default co
 
 ### Architectural style for context
 There are two ways to write code when using context:
-1. Have a file containing the context, and specify the provider at the "root" (ancestor) of the UI subset. The stateful logic, in this case is specified at the "root" component, and is accessible within the same file.
+1. Have a file containing the context, and specify the `Provider` `value` separately at the "root" (ancestor) of the UI subset. The stateful logic, in this case is specified at the "root" component, a core UI component. Note that all context is accessible within this "root" component.
 	```jsx
 	// FoodContext.js
 	const FoodContext = React.createContext({});
@@ -111,7 +111,7 @@ There are two ways to write code when using context:
 	}
 	export default FoodRoot;
 	```
-2. Have a single file to specify both the context and provider (use `props.children` here), and export both. Essentially, all context (including state logic) resides in the context file, and not in any core UI component. Note that the context is not available at the "Provider" component ("FoodRoot.jsx" here).
+2. Have a single file to specify both the context and `Provider` `value` , then export both (use `props.children` for the Provider being exported). Essentially, all context (including state logic) resides in the context file, and not in any core UI component. Note that the context is not available at the "Provider" component ("FoodRoot.jsx" here).
 	```jsx
 	// FoodContext.js
 	const FoodContext = React.createContext({});
