@@ -98,7 +98,7 @@ There are two ways to write code when using context:
 	import FoodContext from './store_path/FoodContext';
 
 	function FoodRoot () {
-		// whole tree's state logic start
+		// the UI subset tree's state logic start
 		const [count, setCount] = useState(0);
 		// state logic end
 
