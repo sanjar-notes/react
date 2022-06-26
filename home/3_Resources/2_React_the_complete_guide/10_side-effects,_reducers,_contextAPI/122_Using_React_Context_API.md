@@ -72,7 +72,7 @@ import AppComponent = () => {
 };
 ```
 
-Tip: For better IDE autocompletion, just add some attributes (called default context) in the context component.
+Tip: For better IDE auto-completion, just add some attributes (called default context) in the context component.
 
 ### What
 - React context is thus a way to have a global state across components.
