@@ -7,7 +7,7 @@ The main job of React is to:
 1. Render UI
 2. React to user input.
 
-Tasks other than these 2 are "side effects". Example - http requests, computation, timers, using `localStorage`, listening to user input etc. Note that some normal ops can also be considered side-effects - like listening to user input for validation.
+Tasks other than these 2 are "side effects". Example - HTTP requests, DOM manipulation, computation, timers, using `localStorage`, listening to user input etc. Note that some normal ops can also be considered side-effects - like listening to user input for validation.
 
 ### Why
 Side effects should not be coded "as is" into the component function, because:
