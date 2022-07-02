@@ -7,7 +7,7 @@ The main job of React is to:
 1. Render UI
 2. React to user input.
 
-Tasks other than these 2 are "side effects". Example - http requests, computation, timers, using `localStorage`, listening to user input etc. Note that some normal ops can also be considered side-effects - like listening to user input for validation.
+Tasks other than these 2 are "side effects". Example - HTTP requests, DOM manipulation, computation, timers, using `localStorage`, listening to user input etc. Note that some normal ops can also be considered side-effects - like listening to user input for validation.
 
 ### Why
 Side effects should not be coded "as is" into the component function, because:
@@ -44,9 +44,13 @@ It has two pieces:
 - Additionally, `useEffect` may be used as a refactor to repeated code, due to presence of a dependency array.
 
 ###### When to use `useEffect`?
-FIXME - can be made better
+It should be used whenever you feel like running 3 life-cycle hooks, namely:
+ - `componentDidMount`
+ - `componentDidUpdate`
+ - `componentWillUnmount`
+See [this](https://blog.logrocket.com/guide-to-react-useeffect-hook/) for details. FIXME: refactor useEffect pages (this and the next page).
 
-Use it when:
+Some common situations:
 1. The task is a side-effect. Note that all possible side-effect code is a part of `useEffect`, i.e. `useEffect` is for side-effects, the converse may not be true.
 2. It is computationally expensive and/or not needed on each render.
 3. For http requests, DB/`localStorage` read/writes may use `useEffect`.
