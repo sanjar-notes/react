@@ -9,6 +9,6 @@ Answers
 1. dqwd
 2. Okay here are the observations:
 	1. Files are never re-run on render. Yeah, it doesn't make sense.
-	2. Component functions are run again on re-render.
+	2. Component functions are run again on re-render (i.e. of course, due to state change in relevant component/ancestor)
 	3. Hooks are NOT run again, even if the re-render is caused by an ancestor.
 	This means that a de-hooked copy of the function is kept in memory at all times.
