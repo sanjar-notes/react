@@ -7,14 +7,22 @@ Created Monday 11 July 2022
 
 ### How
 - State changes are batched in order, for a given state. And yes, multiple state changes can be batched for the same state.
-- If there are multiple state updates, but for different states, i.e. if state change calls are close together (i.e. in synchronous order), then they are batched, and only *one* re-evaluation takes place.
+- If there are multiple state updates, but for different states, i.e. if state change calls are close together (i.e. in a synchronous chain), then they are batched, and only *one* re-evaluation takes place.
   ```jsx
 	const handler = () => {
 			setText('Hello');
 			// state is not updated here
 			setAge(24);
 		};
-  ```
+	```
+	```jsx
+	// even this, somewhat convulted example, works, React is smart in batching state changes
+	const handler = () => {
+		(() => setText('Hello'))();
+			// state is not updated here
+		(() => setAge(24))();
+	}
+	```
 - The component is re-evaluated (and re-rendered) only after the all state changes have been processed.
   ![](../../../../assets/Pasted%20image%2020220711042015.png)
 - Use a callback in the state mutation function, if the state to be set depends on the previous state. Do this because the latest state from the batch is available as the param. Example:
