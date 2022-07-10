@@ -1,5 +1,5 @@
 # 157. useCallback and its dependencies
-Created Sunday 11 July 2022
+Created Monday 11 July 2022
 
 ### Why
 What is the use of the dependency array in `useCallback` ? To answer this, let's think of how `useCallback` works. Consider the following code:

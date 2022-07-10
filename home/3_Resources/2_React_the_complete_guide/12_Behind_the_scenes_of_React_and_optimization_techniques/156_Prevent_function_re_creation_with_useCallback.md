@@ -32,6 +32,7 @@ Will the `Button` be re-evaluated when it is clicked here? Yes, it will be, even
 [1, 2, 3] === [1, 2, 3] // false, non-primitive variables are compared by address, in addition to value.
 false === false // true, primitive values are compared by value.
 ```
+- The function returned by `useState` is guaranteed to remain constant irrespective of re-renders.
 
 ### Why
 The situation discussed above makes it impossible to use `React.memo` with usual in-component created functions (a.k.a callbacks).

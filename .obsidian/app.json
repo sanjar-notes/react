@@ -9,5 +9,11 @@
   "showFrontmatter": false,
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "fileSortOrder": "alphabetical",
+  "spellcheckLanguages": [
+    "en-US"
+  ],
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./"
 }
