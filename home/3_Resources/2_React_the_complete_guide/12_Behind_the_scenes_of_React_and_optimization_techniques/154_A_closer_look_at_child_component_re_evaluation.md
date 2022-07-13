@@ -1,7 +1,7 @@
 # 154. A closer look at child component re evaluation
 Created Monday 04 July 2022
 
-### Component re-render causes re-running of child components too
+### Component re-evaluation causes re-running of child components too
 On re-render, the function re-executes, which includes re-execution of all UI component it returns. Example:
 ```jsx
 	function MyComponent() {
