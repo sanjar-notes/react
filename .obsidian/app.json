@@ -9,5 +9,17 @@
   "showFrontmatter": false,
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "fileSortOrder": "alphabetical",
+  "spellcheckLanguages": [
+    "en-US"
+  ],
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./",
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
