@@ -5,11 +5,12 @@ Created Tuesday 14 March 2022
 ### Why
 Passing props or lifting state visibly is not good, better use a component-wide state.
 
+
 ### How
 The 3 steps when using the Context API, obviously (logically), are:
 1. **Create** the context. This is done in a standalone file.
-2. **Provide** the context at the appropriate place (component). It's made available to all descendents of the selected root component. Remember to **specify** the context value (object) at this stage.
-3. **Consume** the context. Of course in a descendent.
+2. **Provide** the context at the appropriate place (component). It's made available to all descendants of the selected root component. Remember to **specify** the context value (object) at this stage.
+3. **Consume** the context. Of course in a descendant.
 
 There are two ways of consuming Context:
 1. Using the `Consumer` component. This just looks a tad ugly.
@@ -28,12 +29,14 @@ export default AuthContext;
    
    Remember to provide the context object here as a `value`.
 ```jsx
-import React from 'react';
+import React, { useState } from 'react';
 
 import AuthContext from './path_to_auth-context';
 
 const AppCommonAncestor = () => {
-	return (<AuthContext.Provider value={name: 'Unnamed'}> 
+	const [val, setVal] = useState(0);
+	
+	return (<AuthContext.Provider value={val, setVal}> 
 			{/* code as usual */}
 			</AuthContext.Provider>);
 };
@@ -72,7 +75,8 @@ import AppComponent = () => {
 };
 ```
 
-Tip: For better IDE auto-completion, just add some attributes (called default context) in the context component.
+**Tip**: For better IDE auto-completion, just add some attributes (called default context) in the context component.
+
 
 ### What
 - React context is thus a way to have a global state across components.
@@ -85,6 +89,7 @@ Tip: For better IDE auto-completion, just add some attributes (called default co
 
 - Context component(s) and the store folder are nice way to handle all data within the app, in a dedicated place.
 
+
 ### Architectural style for context
 There are two ways to write code when using context:
 1. Have a file containing the context, and specify the `Provider` `value` separately at the "root" (ancestor) of the UI subset. The stateful logic, in this case is specified at the "root" component, a core UI component. Note that all context is accessible within this "root" component.
@@ -93,6 +98,7 @@ There are two ways to write code when using context:
 	const FoodContext = React.createContext({});
 	export default FoodContext;
 	```
+	
 	```jsx
 	// FoodRoot.jsx
 	import FoodContext from './store_path/FoodContext';
@@ -122,7 +128,7 @@ There are two ways to write code when using context:
 		return 
 		(
 			<FoodContext.Provider value={{count, setCount}}>
-				... <!-- can use count, setCount here -->
+				{props.children /* IMPORTANT */}
 			</FoodContext.Provider>
 		);
 	}
@@ -130,6 +136,7 @@ There are two ways to write code when using context:
 	export default FoodContext;
 	export { FoodContextProvider };
 	```
+	
 	```jsx
 	// FoodRoot.jsx
 	import { FoodContextProvider } from './store_path/FoodContext';
@@ -138,12 +145,11 @@ There are two ways to write code when using context:
 		return 
 		(
 			<FoodContextProvider>
-				... <!-- CANNOT use count, setCount here -->
+				... <!-- CANNOT use count, setCount directly here -->
 			</FoodContextProvider>
 		);
 	}
 	export default FoodRoot;
 	```
-
 - Note that both styles don't affect the consumption of the context in any way, and that we still need to export the context.
 - What to use? Well both have their pros and cons. In case 1, context is available in the "Provider" component, but not in case 2. The con of case 1 is that the Provider is clogged with context details, which may be removed from it and placed in the context, to make the code lean.
