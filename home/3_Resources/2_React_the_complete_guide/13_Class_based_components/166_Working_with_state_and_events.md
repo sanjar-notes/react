@@ -1,5 +1,5 @@
 # 166. Working with state and events
-Created Monday 14 July 2022
+Created Monday 15 July 2022
 
 Goal: convert a functional stateful component from class based one.
 
