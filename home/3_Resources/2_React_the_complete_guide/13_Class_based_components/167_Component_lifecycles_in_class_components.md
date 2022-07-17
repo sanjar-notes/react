@@ -119,4 +119,6 @@ In short, the important thing to note here is that components are instantiated o
 
 Source: https://reactjs.org/docs/reconciliation.html#component-elements-of-the-same-type
 
+It could be argued that this an arbitrary decision by the React team, one could have re-instantiated custom components on each render and only saved previous state (which is obvious - it should be saved), and not previous props. It does, however, make a change to React, in that we have retained some extra information, i.e. previous props, which may be used if needed. If previous props are not saved, it does not matter if you re-instantiate or not, at-least from an API point of view (ignoring performance), because the amount of information, and hence the set of possible actions would remain unchanged.
+
 FIXME: get a little more comfortable with how this works. I'm a little foggy with this, but it doesn't matter, this is a nuanced implementation detail.
