@@ -12,6 +12,8 @@ The 3 steps when using the Context API, obviously (logically), are:
 2. **Provide** the context at the appropriate place (component). It's made available to all descendants of the selected root component. Remember to **specify** the context value (object) at this stage.
 3. **Consume** the context. Of course in a descendant.
 
+Note: Both the provider and consumer are generated from the context. Remembering this makes it very easy to remember the whole syntax of context API.
+
 There are two ways of consuming Context:
 1. Using the `Consumer` component. This just looks a tad ugly.
 2. Using the `useContext` hook. Looks better.
