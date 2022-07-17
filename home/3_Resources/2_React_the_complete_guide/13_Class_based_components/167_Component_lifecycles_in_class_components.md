@@ -113,9 +113,9 @@ export default UserFinder;
 
 ### An important observation - re-instantiation of components is avoided, unless absolutely needed
 The `componentDidUpdate` function receives previous props, in addition to previous state.
-Having previous state was fine, but why does it receive previous props. Well the answer to this question is that when comparing two custom components of the same type, even if there are changes in props, the instance of the component remains the same (this is actually the reason state is preserved between renders), while props and state may change. Of course React runs the `render` method and then diffs it with the existing tree.
+Having previous state was fine, but why does it receive previous props? Well the answer to this question is that when comparing (during tree diffing) two *custom* components of the same type, even if there are changes in props, the instance of the component remains the same (this is actually the reason state is preserved between renders), irrespective of prop changes. Of course React runs the `render` method and then diffs it with the existing tree.
 
-In short, the important thing to note here is that component's are instantiated only once, even between multiple renders, including if the re-render call came from the ancestor. i.e. re-evaluation is related to `render` output instead of `constructor`.
+In short, the important thing to note here is that components are instantiated only once, even between multiple renders, including if the re-render call came from the ancestor i.e. re-evaluation is related to `render` output instead of `constructor`.
 
 Source: https://reactjs.org/docs/reconciliation.html#component-elements-of-the-same-type
 
