@@ -93,7 +93,7 @@ import AppComponent = () => {
 
 
 ### Architectural style for context
-There are two ways to write code when using context:
+There are two ways to write code when using context - because "context by default does not contain state":
 1. Have a file containing the context, and specify the `Provider` `value` separately at the "root" (ancestor) of the UI subset. The stateful logic, in this case is specified at the "root" component, a core UI component. Note that all context is accessible within this "root" component.
 	```jsx
 	// FoodContext.js
