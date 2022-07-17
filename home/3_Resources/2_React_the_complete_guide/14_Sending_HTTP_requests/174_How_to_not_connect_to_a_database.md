@@ -8,11 +8,12 @@ Created Monday 15 July 2022
 But why?
 - This is difficult to do (technically).
 - All client side code is available to the user (i.e. via the browser dev tools, for example). Connecting *directly* to a database in a client app would, thus, expose database credentials to the outside world, which is not desirable and a huge security concern.
+	Note: to know more about client-side code accessibility by the user, see [this](https://academind.com/tutorials/hide-javascript-code).
 - Performance issues.
 
 In short, it's not secure.
 
-How do we then read/write data persistently?
+How do we then read/write data persistently in our client-side app (React app, for example)?
 
 ##### Back-end App
 We employ a "back-end app" as a bridge between the client-app (React in this case) and the database. Essentially, it's a program running on the server, which is connected to the database program. 
