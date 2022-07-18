@@ -125,7 +125,7 @@ function TimedRequestApp() {
 		.finally(() => {
 			setLoading(false));
 			clearTimeout(limitTimer); // prevents execution if request successful
-		}
+		});
 	}
 	
 	return <>
