@@ -6,7 +6,7 @@ To make send/receive data from/to the server. We usually use HTTP (or HTTPS).
 
 
 ### How
-- As a React app is fundamentally JavaScript code that runs in the browser, we can use browser APIs (like `fetch`) as well as HTTP request libraries (like "axios").
+- A React app is fundamentally JavaScript code that runs in the browser, so we can use browser APIs (like `fetch`) as well as HTTP request libraries (like "axios").
 - We'll be using the built in `fetch` because it's supported by all browsers, as of now.
 
 - Because network requests are handled asynchronously, we'll need to use state to cause a re-render when the request finishes.
@@ -83,7 +83,7 @@ To make network requests:
 #### How to make requests with a time limit? (not discussed in course)
 Well, it is simple. Use [axios](https://stackoverflow.com/a/62082804/11392807) for straightforward code.
 
-If using fetch, do this:
+If using `fetch`, do this:
 1. Maintain an extra state "timeLimitExceeded" initialized to `false`.
 2. Run the request (e.g. `fetch`) and a timer (with time limit) beside each other. Save this timer.
 3. Nest this request and timer into a "void" promise, using `new Promise((resolve, reject) => ...)`. Resolve inside the network request, and reject with an error inside the timer.
