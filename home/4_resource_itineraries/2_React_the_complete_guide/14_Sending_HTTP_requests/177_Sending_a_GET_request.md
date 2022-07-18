@@ -1,4 +1,4 @@
-# 176. Sending a GET request
+# 177. Sending a GET request
 Created Monday 18 July 2022
 
 ### Why
@@ -80,7 +80,7 @@ To make network requests:
 
 
 ### Extra
-###### How to make requests with a time limit? (not discussed in course)
+#### How to make requests with a time limit? (not discussed in course)
 Well, it is simple. Use [axios](https://stackoverflow.com/a/62082804/11392807) for straightforward code.
 
 If using fetch, do this:
@@ -139,3 +139,37 @@ function TimedRequestApp() {
 export default TimedRequestApp;
 ```
 Of course, we can also use `Promise.all`.
+
+#### Using async-await
+Make the request handler an `async` function and replace `.then` by `await`s. Example:
+```jsx
+import { useState, useEffect } from 'react';
+
+const App() {
+	const [data, setData] = useState(null);
+	const [loading, setLoading] = useState(false);
+	
+	async function getProfile() {
+		setLoading(true); // synchronous piece
+		
+		const response = await fetch('https://api.github.com/users/sanjarcode');
+		const data = await response.json();
+		
+		setData(data); // synchronous piece
+		setLoading(false); // synchronous piece
+	}
+
+	const dataSignature = JSON.stringify(data); // to avoid infinite re-renders
+	// need to stringify because object is a non-primitive data type
+	
+	useEffect(getProfile, [dataSignature]);
+	
+	return <>
+			<p>{loading && 'Loading...'}</p>
+			<p>{!loading && data && JSON.stringify(data)}</p>
+		   </>;
+}
+
+export default App;
+```
+I have not completed learning about `async/await`, but it seems like replacing `.then` by `await` and using `try/catch/finally` blocks instead of `.catch`, `.finally` seems to work.
