@@ -2,11 +2,11 @@
 Created Sunday 10 July 2022
 
 ### Why
-- In the last page, we acknowledged that React when a component re-evaluates, so do all of it's constituents, even if their props haven't change (which includes not having any). This *is* inefficient.
+- In the last page, we acknowledged that in React, when a component re-evaluates, so do all of it's constituents, even if their props haven't change (which includes not having any). This *is* inefficient.
 
 ### How
 - Solving the problem
-	- The solution is simple, just compare the old and new props and run the component function only if there's a change. React provides this functionality out of the box.
+	- The solution is simple, just compare the old and new props and run the component function only if there's a change. If there's no change, return the stored copy of the render output, i.e. don't compute it again. React provides this functionality out of the box.
 	- This optimization is a trade-off though - prop diffing vs function re-evaluation. 
 		- And it depends (on number/complexity of props, number of child components) which is costly, so use `React.memo` with care.
 		- If it's known that props will change frequently, it's better to avoid using `React.memo`.
