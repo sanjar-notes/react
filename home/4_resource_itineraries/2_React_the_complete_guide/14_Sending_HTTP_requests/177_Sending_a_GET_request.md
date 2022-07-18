@@ -7,7 +7,7 @@ To make send/receive data from/to the server. We usually use HTTP (or HTTPS).
 
 ### How
 - A React app is fundamentally JavaScript code that runs in the browser, so we can use browser APIs (like `fetch`) as well as HTTP request libraries (like "axios").
-- We'll be using the built in `fetch` because it's supported by all browsers, as of now.
+- We'll be using the built in `fetch` because it's supported by all browsers, as of now. By default the HTTP verb is `GET`.
 
 - Because network requests are handled asynchronously, we'll need to use state to cause a re-render when the request finishes.
 - There are two cases for fetching:
