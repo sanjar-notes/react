@@ -77,7 +77,7 @@ export default App;
 To make network requests:
 1. Use some state to render change on request success.
 2. Also keep a "isLoading" variable, and use it to show some loading state, like an animation or text.
-3. Use `useEffect` if request must be sent on App/component load. For event triggered fetches (like button clicks), there's no need to use `useEffect`. The event callback can do the network request.
+3. Use `useEffect` if request must be sent on App/component load. For event triggered fetches (like button clicks), there's no need to use `useEffect`, the event callback can do the network request.
 
 
 ### Extra
@@ -140,37 +140,3 @@ function TimedRequestApp() {
 export default TimedRequestApp;
 ```
 Of course, we can also use `Promise.all`.
-
-#### Using async-await
-Make the request handler an `async` function and replace `.then` by `await`s. Example:
-```jsx
-import { useState, useEffect } from 'react';
-
-const App() {
-	const [data, setData] = useState(null);
-	const [loading, setLoading] = useState(false);
-	
-	async function getProfile() {
-		setLoading(true); // synchronous piece
-		
-		const response = await fetch('https://api.github.com/users/sanjarcode');
-		const data = await response.json();
-		
-		setData(data); // synchronous piece
-		setLoading(false); // synchronous piece
-	}
-
-	const dataSignature = JSON.stringify(data); // to avoid infinite re-renders
-	// need to stringify because object is a non-primitive data type
-	
-	useEffect(getProfile, [dataSignature]);
-	
-	return <>
-			<p>{loading && 'Loading...'}</p>
-			<p>{!loading && data && JSON.stringify(data)}</p>
-		   </>;
-}
-
-export default App;
-```
-I have not completed learning about `async/await`, but it seems like replacing `.then` by `await` and using `try/catch/finally` blocks instead of `.catch`, `.finally` seems to work.
