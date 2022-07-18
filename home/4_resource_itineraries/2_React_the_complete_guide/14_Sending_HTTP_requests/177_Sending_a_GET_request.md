@@ -1,6 +1,8 @@
 # 177. Sending a GET request
 Created Monday 18 July 2022
 
+[Section project](https://github.com/exemplar-codes/react-http-app)
+
 ### Why
 To make send/receive data from/to the server. We usually use HTTP (or HTTPS).
 
