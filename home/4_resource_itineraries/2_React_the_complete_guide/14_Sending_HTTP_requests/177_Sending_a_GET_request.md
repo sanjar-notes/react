@@ -10,6 +10,7 @@ To make send/receive data from/to the server. We usually use HTTP (or HTTPS).
 - We'll be using the built in `fetch` because it's supported by all browsers, as of now. By default the HTTP verb is `GET`.
 
 - Because network requests are handled asynchronously, we'll need to use state to cause a re-render when the request finishes.
+- Keep an "isLoading" boolean state too. We set this to `true` on button click or App/component load, just before invoking the network request. We also add a conditional UI component for rendering "Loading..." text/animation. We set "isLoading" back to `false` once the request is complete. This is a standard UX practice.
 - There are two cases for fetching:
 	- Without `useEffect` - if fetch is triggered by the user or some other event.
 	- With `useEffect` - need to fetch on app/component load.
