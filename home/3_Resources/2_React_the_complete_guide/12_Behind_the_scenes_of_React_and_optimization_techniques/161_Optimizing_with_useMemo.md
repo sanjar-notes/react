@@ -68,7 +68,7 @@ function App(props)
 		return <>...</>;
 	}
 	```
-	Suppose the UI tree evaluates. When `App` re-evaluates, it will cause re-evaluation of `Child`, but will it recompute `sortedList`? Yes, it will. Reason: `props.list` has changed, because when `App` re-evaluated, it re-created the prop, and it won't be equal to stored prop (by the hook) because `Array` is not a primitive data type.
+	Suppose the UI tree evaluates. When `App` re-evaluates, it will cause re-evaluation of `Child`, but will it recompute `sortedList`? Yes, it will. Reason: `props.list` *has* changed, because when `App` was re-evaluated, it re-created the prop, and it won't be equal to stored prop (by the hook) because `Array` is not a primitive data type.
 
 	How to solve this? Use `useMemo` in `App` (the parent) with an empty dependency array. This will ensure that the list is not re-created. The code will look like this
 	```jsx
