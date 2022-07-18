@@ -75,4 +75,67 @@ export default App;
 ### What
 To make network requests:
 1. Use some state to render change on request success.
-2. Use `useEffect` if request must be sent on App/component load. For event triggered fetches (like button clicks), there's no need to use `useEffect`. The event callback can do the network request.
+2. Also keep a "isLoading" variable, and use it to show some loading state, like an animation or text.
+3. Use `useEffect` if request must be sent on App/component load. For event triggered fetches (like button clicks), there's no need to use `useEffect`. The event callback can do the network request.
+
+
+### Extra
+###### How to make requests with a time limit? (not discussed in course)
+Well, it is simple. Use [axios](https://stackoverflow.com/a/62082804/11392807) for straightforward code.
+
+If using fetch, do this:
+1. Maintain an extra state "timeLimitExceeded" initialized to `false`.
+2. Run the request (e.g. `fetch`) and a timer (with time limit) beside each other. Save this timer.
+3. Nest this request and timer into a "void" promise, using `new Promise((resolve, reject) => ...)`. Resolve inside the network request, and reject with an error inside the timer.
+4. Mutate "timeLimitExceeded" state to `true` in the catch clause of this promise. Add some UI element conditionally which displays an appropriate message.
+5. In the `finally` clause, clear the timeout, using `window.clearTimeout`. Doing this to avoid running the timer if request was successful.
+6. Nest this void promise inside a function.
+7. Use this function in `useEffect` or as an event callback.
+
+Code example:
+```jsx
+import { useState } from 'react';
+
+function TimedRequestApp() {
+	const [data, setData] = useState(null);
+	const [loading, setLoading] = useState(false);
+	const [timeLimitExceeded, setTimeLimitExceeded] = useState(false);
+
+	const maxTimeLimit = 10000; // in millisecond
+	
+	function requestHandler() {
+		setLoading(true);
+		setTimeLimitExceeded(false); // remove existing message
+
+		let limitTimer;
+		new Promise((resolve, reject) => {
+			limitTimer = setTimeout(() => {
+				reject(new Error('Time Limit Exceeded'));
+			}, maxTimeLimit)
+
+			fetch(url).then(response => response.json()).then(data => {
+				...
+				// app-data logic
+				...
+			
+				resolve();
+			})
+		})
+		.catch(() => setTimeLimitExceeded(true))
+		.finally(() => {
+			setLoading(false));
+			clearTimeout(limitTimer); // prevents execution if request successful
+		}
+	}
+	
+	return <>
+			<button onClick={requestHandler}>Load Data</button>
+			{loading && <p>Loading...</p>}
+			{timeLimitExceeded && <p>Time Limit Exceeded! Try again</p>}
+			{!loading && !timeLimitExceeded && data && JSON.stringify(data)}
+		   </>;
+}
+
+export default TimedRequestApp;
+```
+Of course, we can also use `Promise.all`.
