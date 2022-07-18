@@ -1,5 +1,5 @@
 # 174. How to (Not) connect to a database
-Created Monday 15 July 2022
+Created Monday 18 July 2022
 
 ##### Talking to a DB directly from client side app
 - Browser-side apps don't, and shouldn't directly talk to databases.

@@ -1,5 +1,5 @@
 # 178. Using async await
-Created Monday 19 July 2022
+Created Tuesday 19 July 2022
 
 Make the request handler an `async` function and replace `.then` by `await`s. Example:
 ```jsx
