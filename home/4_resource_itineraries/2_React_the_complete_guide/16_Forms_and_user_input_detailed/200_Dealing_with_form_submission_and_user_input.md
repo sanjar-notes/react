@@ -10,3 +10,5 @@ Which one to use?
 - If input value is wanted on each keystroke, `onChange` is better.
 
 Note that in both ways, resetting the input is possible, but writing to the DOM (using `ref`) is not a clean way to use React. In short, prefer state if there is need for 2-way-binding (i.e. for input resets), either with `ref` or `onChange`, by setting the `value` property in the `input` tag.
+
+- Remember to clear the input on form submission. Doing this is possible with 2-way-binding, as shown earlier in the course.
