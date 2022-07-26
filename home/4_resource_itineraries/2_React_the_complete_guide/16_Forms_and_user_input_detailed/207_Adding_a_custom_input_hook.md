@@ -10,3 +10,5 @@ Steps to make the custom hook:
 4. Return whatever is *used* in component.
 
 See [result](https://github.com/exemplar-codes/reactjs-forms-user-input/commit/7c091cddd97723b9ba21ae4d9d35cd3b3d362edd). This code has less repetition and code for the component is focused on UI instead of form logic.
+
+Note: Alternatively, we can make custom Input component that work for multiple kind of inputs.
