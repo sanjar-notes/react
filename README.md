@@ -19,3 +19,6 @@ As said earlier, I didn't have a *why*, so the notes may be a little unoptimized
 
 ## Usage
 Just clone the repo, it's Markdown 🙌.
+
+* TOC
+{:toc}
