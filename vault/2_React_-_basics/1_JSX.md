@@ -66,9 +66,7 @@ function ExpenseItem(props) {
 ```JSX
 const day = 24;
 const month = 'March';
-return (<div>
-			{{day}<span>th</span> {month}}
-		</div>);
+return <div>{day}<span>th</span> {month}</div>;
 // 24th March
 ```
 6. `true`, `false`, `null` and `undefined` are rendered as empty whitespace. To really render them, convert to string first, like so `String(null)`.
