@@ -6,6 +6,8 @@ Created Thursday 28 July 2022
 - "Subscription" callbacks can be set-up with the store. These subscriptions trigger the callback when the store changes.
 - Store mutation is triggered when by running the "dispatch" function and passing an "action", which calls a "reducer". This *reducer* mutates the store.
 The process continues 🔄.
-  ![](../../../../assets/Pasted%20image%2020220728123846.png)
 
 As evident, Redux has nothing to do with React. It's a standalone library.
+
+For React apps, we can subscribe in such a way that component relevant store changes causes re-render of the component.
+![](../../../../assets/Pasted%20image%2020220728123846.png)
