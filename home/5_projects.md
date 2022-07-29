@@ -11,3 +11,6 @@ Created Thursday 13 February 2022
 8. [React Working and Optimizations](https://github.com/exemplar-codes/react-working-and-optimizations)
 9. [React With Classes](https://github.com/exemplar-codes/react-with-classes)
 10. [React HTTP app](https://github.com/exemplar-codes/react-http-app) - learn to work with HTTP in React.
+11. [React Forms User Input](https://github.com/exemplar-codes/reactjs-forms-user-input) - learn to work with forms in React
+12. [Redux Demo](https://github.com/exemplar-codes/redux-demo) - core Redux demo.
+13. [Redux React Demo](https://github.com/exemplar-codes/redux-react-demo) - using Redux in React apps.
