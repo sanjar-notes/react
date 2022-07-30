@@ -19,4 +19,4 @@ Subscriptions to components are automatically managed(i.e. added on component mo
 
 
 ### Questions
-How to access the correct state and dispatch function if there are multiple providers in the UI sub-tree root? Neither `useSelector` nor `useDispatch` take a store as argument. I have observed that the innermost provider is chosen as the store state.
+How to access the correct state and dispatch function if there are multiple providers in the UI ancestor?? Neither `useSelector` nor `useDispatch` take a store as argument. I have observed that the innermost provider is chosen as the store state.
