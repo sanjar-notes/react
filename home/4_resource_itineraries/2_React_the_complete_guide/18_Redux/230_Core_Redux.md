@@ -35,7 +35,7 @@ There are 4 constructs in core Redux:
 ```js
 const {createStore} from 'redux';
 
-const initialState = {count: 0}; // 0 initialization
+const initialState = {count: 0, showCount: true}; // 0 initialization
 
 const reducer = (state = initalState, action) => { // 1. Reducer
 	switch(action.type) {
@@ -49,6 +49,10 @@ const reducer = (state = initalState, action) => { // 1. Reducer
 			
 		case 'INCREASE_BY':
 			return {...state, count: state.count + action.delta};
+			break;
+			
+		case 'TOGGLE':
+			return {...state, showCount: !state.showCount};
 			break;
 	}
 
