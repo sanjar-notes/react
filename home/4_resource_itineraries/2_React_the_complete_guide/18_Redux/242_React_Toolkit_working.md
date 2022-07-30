@@ -92,5 +92,11 @@ Note:
 2. When accessing store data using `useSelector`, the key of the callback param must match the slice reducer name. If there's only one reducer passed directly to `configureStore`, the data is directly accessible. See [code](https://github.com/exemplar-codes/react-redux-demo/commit/d5ca4e7de8525e6a536506f6ff5f29e61acefc2e#diff-5541be143e3e2a0dcdfefeb9ca7c2ac4cb3eb7965e000bd10669f31f125755cf).
 3. All data passed to the action creator during dispatch is made available as `payload` in attribute of the action in the slice reducer.
 4. Every attribute `reducer` is singular at all places except during slice creation, where it's plural.
+5. Store drilling w.r.t slice reducer name is there only when consuming store data, not in the slice's `reducers`.
 
 See [code](https://github.com/exemplar-codes/react-redux-demo/commit/1546db08861125733265e11773d1909acf3fc30c) for this whole page.
+
+
+### Questions
+1. Can a reducer in a slice access values from another slice? No, each reducer can access only slice in it's data. If two slices wish to use each other's data, they should be combined into a single slice OR one can do some acrobatics to get reducers to share data.
+2. Can two slices have data with the same name? Yes, there's no scope of collision as reducers are confined to their own slices. This may cause confusion amongst developers of the project, though. See [code](https://github.com/exemplar-codes/react-redux-demo/commit/8d2ef9f3838979384acec94cb51cf64bfcaff0ca).
