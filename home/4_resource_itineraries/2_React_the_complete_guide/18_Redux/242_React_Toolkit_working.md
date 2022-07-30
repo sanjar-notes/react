@@ -93,6 +93,7 @@ Note:
 3. All data passed to the action creator during dispatch is made available as `payload` in attribute of the action in the slice reducer.
 4. Every attribute `reducer` is singular at all places except during slice creation, where it's plural.
 5. Store drilling w.r.t slice reducer name is there only when consuming store data, not in the slice's `reducers`.
+6. Slices are kept in different files, and only the slice's action creators object and reducer are exported, since they're needed during dispatch and store creation, respectively.
 
 See [code](https://github.com/exemplar-codes/react-redux-demo/commit/1546db08861125733265e11773d1909acf3fc30c) for this whole page.
 
