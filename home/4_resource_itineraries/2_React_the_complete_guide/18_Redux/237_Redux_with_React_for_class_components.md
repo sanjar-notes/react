@@ -53,7 +53,18 @@ Subscriptions to components are automatically managed(i.e. added on component mo
 
 Note: 
 1. In both *mapStateToProps* and *mapDispatchToProps*, we only have to return an object props to be added. Existing props are merged with this object.
-2. `connect` works for functional components too. So this way of consuming and dispatching may be used by functional components too.
+2. `connect` works for functional components too. So this way of consuming and dispatching may be used by functional components too. This works because the a functional or class component, is essentially the same and `connect` doesn't care. So, this, works too:
+	```jsx
+	import {connect} from 'react-redux';
+	
+	function MyComponent(props) {
+	}
+	
+	function mapStateToProps() {}
+	function mapDispatchToProps() {}
+	
+	export default connect(mapStateToProps, mapDispatchToProps)(MyComponent);
+	```
 
 ### Questions
 How to access the correct state and dispatch function if there are multiple providers in the UI sub-tree root? Neither `mapStateToProps` nor `mapDispatchToProps` take a store as argument. I have observed that the innermost provider is chosen as the store state.
