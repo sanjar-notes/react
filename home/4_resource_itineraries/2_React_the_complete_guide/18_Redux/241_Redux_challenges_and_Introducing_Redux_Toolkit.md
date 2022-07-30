@@ -9,6 +9,7 @@ List of potential problems with existing way of using Redux(i.e. `redux` + `reac
 
 - Redux Toolkit solves these problems and makes working with Redux with React easier.
 - Redux Toolkit is created by the same team as `redux` and `react-redux`.
+- Redux Toolkit is also known as RTK.
 
 ### Why Redux Toolkit?
 FIXME(reasons - to make the reducer and store maintainable by chunking it into multiple reducers and "slices")
