@@ -7,7 +7,7 @@ There are 5 things when using `redux` with `react-redux`:
 3. **Consuming** data from store, for class components - all data to be consumed is provided through props. We have to define a function, by convention called "*mapStateToProps*" which takes in the store state as argument and must return an object of to-be-props pointing to relevant parts of the store state. This object will be added to existing props of the component. Example:
 	```jsx
 	function mapStateToProps(state) {
-		return {count: state.count, showCountL state.showCount};
+		return { count: state.count, showCount: state.showCount };
 	}
 	```
 4. **Dispatching** store changes in class components - this is also done by adding functions to props. One needs to define a function, by convention called "*mapDispatchToProps*" which provides the dispatch function of the store as it's first argument. We must return an object of to-be-added-props which help in mutating the store. There are two ways to do this - pass the dispatch function itself as a prop, or create functions which call the dispatch function, and are called from inside the component. Example:
