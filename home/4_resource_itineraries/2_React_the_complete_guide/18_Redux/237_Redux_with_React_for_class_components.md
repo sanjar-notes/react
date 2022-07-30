@@ -52,8 +52,13 @@ There are 5 things when using `redux` with `react-redux`:
 Subscriptions to components are automatically managed(i.e. added on component mount and remove on component dismount) by `react-redux`. In short, any change in the store will re-render relevant components in the UI sub-tree.
 
 Note: 
-1. In both *mapStateToProps* and *mapDispatchToProps*, we only have to return an object props to be added. Existing props are merged with this object.
-2. `connect` works for functional components too. So this way of consuming and dispatching may be used by functional components too. This works because the a functional or class component, is essentially the same and `connect` doesn't care. So, this, works too:
+1. In both *mapStateToProps* and *mapDispatchToProps*, we only have to return an object of props to be added. Existing props are merged with this object.
+2. Both *mapStateToProps* and *mapDispatchToProps* have latest (really?, FIXME) props available to them as the second parameter. i.e.:
+	```jsx
+	function mapStateToProps(state, props) { return {}; }
+	function mapDispatchToProps(state, props) { return {}; 
+	```
+3. `connect` works for functional components too. So this way of consuming and dispatching may be used by functional components too. This works because the a functional or class component, is essentially the same and `connect` doesn't care. So, this, works too:
 	```jsx
 	import {connect} from 'react-redux';
 	
