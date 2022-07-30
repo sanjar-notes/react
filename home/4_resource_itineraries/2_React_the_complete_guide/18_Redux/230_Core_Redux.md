@@ -13,10 +13,10 @@ There are 4 constructs in core Redux:
 
 
 #### Details
-1. Reducer - this is a function that takes in 2 parameters, latest state and something called "action". The "action" is the same as argument passed to the dispatch function. It must must return the new state. Note:
+1. **Reducer** - this is a function that takes in 2 parameters, latest state and something called "action". The "action" is the same as argument passed to the dispatch function. It must must return the new state. Note:
 	1. DO NOT mutate the state directly, this can cause unforeseen bugs. Instead return a copy of the new state.
 	2. It must return the complete state, as redux *will not* merge the returned object with the state, i.e. behaves exactly like `React.useState`.
-2. Store - this is created using `redux.createStore(reducerFunc)`, takes reducer as the first argument. It has the following attributes:
+2. **Store** - this is created using `redux.createStore(reducerFunc)`, takes reducer as the first argument. It has the following attributes:
 	1. `store.latestState()` - latest snapshot of the store.
 	2. `store.dispatch` - can dispatch to cause store mutation
 	3. `store.subscribe(callback)` - subscribe to the store via callback.
@@ -28,8 +28,8 @@ There are 4 constructs in core Redux:
 		const initialState = {count: 0};
 		const reducer = (state=initialState, action) => {};
 		```
-3. Subscribers - callbacks without any parameter. Subscribed using `store.subscribe`, triggered on store change. Subscriptions are optional. There can be multiple subscriptions.
-4. Dispatch call - using `store.dispatch`, the first argument (aka "action") will be made available as-is to the reducer as its second param. The "action" may be of any data type, but it is generally an object carrying a "type" string field and an optional "payload" variable.
+3. **Subscribers** - callbacks without any parameter. Subscribed using `store.subscribe`, triggered on store change. Subscriptions are optional. There can be multiple subscriptions.
+4. **Dispatch** call - using `store.dispatch`, the first argument (aka "action") will be made available as-is to the reducer as its second param. The "action" may be of any data type, but it is generally an object carrying a "type" string field and an optional "payload" variable.
 
 #### Code sample
 ```js
