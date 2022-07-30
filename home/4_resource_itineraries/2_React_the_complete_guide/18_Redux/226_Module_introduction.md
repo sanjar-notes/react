@@ -7,5 +7,5 @@ Created Wednesday 27 July 2022
 
 This course section will be about:
 1. What is Redux? And why is it needed?
-2. Redux basics and using Redux with React.
+2. Redux (`redux`) basics and using Redux with React (`react-redux`).
 3. Redux Toolkit - simplifies working with Redux.
