@@ -9,3 +9,7 @@ This course section will be about:
 1. What is Redux? And why is it needed?
 2. Redux (`redux`) basics and using Redux with React (`react-redux`).
 3. Redux Toolkit - simplifies working with Redux.
+
+
+### Why Redux?
+FIXME(reasons - better dev tools, easy debugging, predictable state change make app execution predictable which is desirable)
