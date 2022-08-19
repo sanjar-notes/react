@@ -96,7 +96,7 @@ Note:
 6. Slices are kept in different files, and only the slice's action creators object and reducer are exported, since they're needed during dispatch and store creation, respectively.
 
 - See [code](https://github.com/exemplar-codes/react-redux-demo/commit/1546db08861125733265e11773d1909acf3fc30c) for this whole page.
-- RTK with class based components is also easy, because all needed functions `connect`, *mapStateToProps* and *mapDispatchToProps* are all still part of `react-redux` package. See [code](https://github.com/exemplar-codes/react-redux-demo/commit/7c8c403f547abeaf542ff73cb052e1dd46db04a2).
+- RTK with class based components is also [easy](./237_Redux_with_React_for_class_components.md), because all needed functions `connect`, *mapStateToProps* and *mapDispatchToProps* are all still part of `react-redux` package. See [code](https://github.com/exemplar-codes/react-redux-demo/commit/7c8c403f547abeaf542ff73cb052e1dd46db04a2).
 
 
 ### Questions
