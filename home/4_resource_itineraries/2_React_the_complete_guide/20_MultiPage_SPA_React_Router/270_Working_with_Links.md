@@ -8,3 +8,9 @@ Instead of `a` tags, use the `Link` component provided React Router,  for intern
 1. Changes the URL
 2. Prevents requests on URL change
 3. Re-renders the app, so that `Route`s are evaluated according to the new URL.
+   
+Syntax wise:
+```jsx
+<a href="/welcome">Welcome</a>; // NO. will reload page.
+<Link to="/welcome">Welcome</Link>; // Yes, will do client side routing.
+```
