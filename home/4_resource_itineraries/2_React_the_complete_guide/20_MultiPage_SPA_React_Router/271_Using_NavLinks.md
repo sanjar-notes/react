@@ -2,10 +2,9 @@
 Created Sunday 28 August 2022
 
 ### Why
-Consider this [code](https://github.com/exemplar-codes/react-router-demo/commit/28ac9b51da8d683876eca2e41d0a6bd2ef826621). There's an important feature that's missing - we should be able to somehow highlight where we are (by highlighting the link). This, if done, normally, will take some custom code.
+Consider this [code](https://github.com/exemplar-codes/react-router-demo/commit/28ac9b51da8d683876eca2e41d0a6bd2ef826621). There's an important feature that's missing - we should be able to somehow highlight where we are (by highlighting the link). This, if done, normally, will take some custom code, i.e. something like `className={window.location.pathname === '.../path' ? {styles_for_navLink}: {}}`.
 
-But React Router provides a functionality to add CSS classes to a links based on the current URL. Instead of `Link` (which is agnostic to current URL), use `NavLink`, which will add a class to the link for a given URL.
-
+React Router provides a functionality to *add* CSS classes to links based on the current URL. Instead of `Link` (which is agnostic to current URL), use `NavLink`, which accepts a class as prop that get applied conditionally based on current URL.
 
 ### How
 Syntax:
@@ -25,9 +24,9 @@ import classes from './MyComponent.module.css';
 ```
 will render as:
 ```html
-<a href="/welcome" class="myActiveClass">... <!-- URL === '/welcome', prop used --> 
+<a href="/welcome" class="myActiveClass">... <!-- URL === '/welcome', prop used - string or CSS module - #1, #2 --> 
 
-<a href="/welcome" class="active">... <!-- URL === '/welcome', prop not used -->
+<a href="/welcome" class="active">... <!-- URL === '/welcome', prop not used, #3 -->
 
 <a href="/welcome" >... <!-- URL !== '/welcome', no class by Router -->
 ```
