@@ -9,7 +9,7 @@ What do we want - we want to have a set of URLs and their corresponding views, w
 ![](../../../../assets/Pasted%20image%2020220827092957.png)
 
 #### Why Client-Side Routing?
-This flow needed, as mentioned above, is the default in a traditional multi-page application - where each URL has a corresponding HTML page, which is loaded when the URL changes. But this has the disadvantage of "request response load" latency, which is the reason we're building an SPA in the first place.
+The needed flow, as mentioned above, is the default in a traditional multi-page application - where each URL has a corresponding HTML page, which is loaded when the URL changes. But this has the disadvantage of "request response load" latency, which is the reason we're building an SPA in the first place.
 ![](../../../../assets/Pasted%20image%2020220827093139.png)
 
 #### What we want
