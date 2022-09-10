@@ -8,7 +8,7 @@ Created Sunday 28 August 2022
 ### Solution
 Instead of `a` tags, use the `Link` component provided React Router,  for internal links (i.e. within the app). The `Link` component, on click:
 1. Changes the URL
-2. Prevents requests on URL change
+2. Prevents requests, and page reload on URL change
 3. Re-renders the app, so that `Route`s are evaluated according to the new URL.
    
 - Syntax - takes in a `to` prop of type string
@@ -18,7 +18,7 @@ Instead of `a` tags, use the `Link` component provided React Router,  for intern
 	<Link to="/welcome">Welcome</Link>; // will do client side routing
 	```
 
-Note: `Link`s won't work outside `BrowserRouter`. This is not usually a concern because `BrowserRouter` nests the root component.
+Note: `Link`s, like `Route`s, don't work outside `BrowserRouter`. This is not usually a concern because `BrowserRouter` nests the root component.
 
 ### About Link
 - Visually, both `a` and `Link` behave in the same way.
