@@ -15,5 +15,7 @@ The needed flow, as mentioned above, is the default in a traditional multi-page 
 #### What we want
 We want to add routing code to our SPA shell, so that it overrides the browser default (of loading a new page on URL change), and instead change the DOM to match the view when the URL changes.
 
+In simple terms, we watch for the URL change or back/forward button events.
+
 We do this via a library called React-Router.
 ![](../../../../assets/Pasted%20image%2020220827093503.png)
