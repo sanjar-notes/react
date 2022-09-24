@@ -4,7 +4,7 @@ Created Sunday 28 August 2022
 ### Why
 Consider this [code](https://github.com/exemplar-codes/react-router-demo/commit/28ac9b51da8d683876eca2e41d0a6bd2ef826621). There's an important feature that's missing - we should be able to somehow highlight on what page we are (by highlighting the link). This, if done, normally, will take some custom code, i.e. something like `className={window.location.pathname === '.../path' ? {styles_for_navLink}: {}}`.
 
-React Router provides a functionality to *add* CSS classes to `Link`s based on the current URL. Instead of `Link` (which is agnostic to current URL), use `NavLink`, which accepts a class as prop that get applied conditionally based on current URL.
+React Router provides a functionality to *add* CSS classes to `Link`s based on the current URL. Instead of `Link` (which is agnostic to current URL), use `NavLink`, which accepts a class as prop that gets applied conditionally based on current URL.
 
 ### How
 Syntax:
