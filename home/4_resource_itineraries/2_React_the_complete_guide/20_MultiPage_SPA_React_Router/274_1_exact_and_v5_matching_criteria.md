@@ -1,8 +1,8 @@
 # 274.1. exact and v5 matching criteria
 Created Saturday 24 September 2022
 
-## Situation
-React Router v5 matching criteria is not very intuitive. But it is simple:
+## v5 matching criteria
+React Router v5 matching criteria is not very intuitive (i.e. it does not respect specificity). But it is simple:
 ```js
 const matchingCriteria = () => url.startsWith(route); 
 
@@ -10,7 +10,8 @@ const matchingCriteria = () => url.startsWith(route);
 // it's actually - "ancestor list prefix equals"
 ```
 
-This can be leads to an issue. Consider the following code:
+## Situation
+The matching criteria leads to an issue. Consider the following code:
 ```jsx
 function App() {
   return (
