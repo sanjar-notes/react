@@ -23,6 +23,7 @@ function App() {
 Of course, we don't have the value of username here.
 Let's get it.
 
+
 ## Accessing dynamic params
 - Dynamic params of a `Route` are made available to all descendant components. All get the same params, irrespective of depth.
 - To access them, use the `useParams` hook inside a descendant component.
@@ -49,3 +50,48 @@ function AppChild() {
 	return null;
 }
 ```
+
+
+## Notes (edge case)
+- If a descendant has multiple dynamic `Route` ancestors, the nearest ancestor dictates the dynamic route(i.e. accessed params key names). Values remain the same of course.
+    Example:
+	```jsx
+	function App() {
+		console.log(useParams()); // won't work, blank {}. Why: only descendants can access dynamic params
+		return (
+	      <Route path="/:username" exact>
+			<AppChild /> <!-- gets username -->
+		    <Route path="/:usernameX" exact>
+		        <AppChild /> <!-- gets usernameX -->
+		    </Route>
+		    <AppChild /> <!-- gets username -->
+	      </Route>
+	  );
+	}
+	
+	function AppChild() {
+		console.log(useParams()); // will work
+		return null;
+	}
+	```
+	If possible, reuse a dynamic route param when setting a nested `Route` to avoid confusion. Example:
+	```jsx
+	function App() {
+		return (
+	      <Route path="/quotes/:quoteId" exact>
+	        <AppChild />
+	      </Route>
+	  );
+	}
+	
+	function AppChild() {
+		const { quoteId } = useParams();
+		
+		return (
+		      <Route path={`/quotes/${quoteId}/comments`} exact>
+			    <!-- this is a static routes set dynamically, instead of using dynamic routes again-->
+				<AppChildChild />
+		      </Route>
+		  );
+	}
+	```
