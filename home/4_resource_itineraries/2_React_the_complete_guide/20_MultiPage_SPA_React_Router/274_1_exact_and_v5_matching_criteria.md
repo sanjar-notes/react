@@ -56,3 +56,6 @@ The `exact` prop is internally part of the criteria. After introduction of `Rout
 ```js
 const matchingCriteria = (exact) => exact ? url === route : url.startsWith(route); 
 ```
+
+## Notes
+This matching criteria issue can happen with all parts of React Router, e.g.`NavLink`'s activation. And so it supports the `exact`
