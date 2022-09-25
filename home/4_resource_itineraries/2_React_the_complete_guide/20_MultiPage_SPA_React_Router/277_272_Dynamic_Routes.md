@@ -31,6 +31,8 @@ Let's get it.
 
 Note: only descendants of a dynamic `Route` (i.e. a `Route` with a dynamic `path` props) can access dynamic params, the dynamic `Route` component itself cannot.
 
+- The dynamic params are available as an object if keys being name of dynamic param and values it's value as a `string`.
+
 Example:
 ```jsx
 function App() {
