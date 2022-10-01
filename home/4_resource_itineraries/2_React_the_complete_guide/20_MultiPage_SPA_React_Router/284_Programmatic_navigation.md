@@ -35,3 +35,6 @@ function App() {
   );
 }
 ```
+
+## Note
+The page re-renders on navigation, always. Even if the new URL is the same as the current one, or we use `history.replace()`.
