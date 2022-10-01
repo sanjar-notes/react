@@ -8,13 +8,13 @@ Navigate when a button is clicked. Or more generally, navigate programmatically.
 
 
 ## How
-Simple, use the History API.
-Let React Router know about such navigation.
+Simple, use the native History API.
+But it'll be helpful if React Router instance knows about such navigation.
 Optionally, save/load/retain some state and run a callback function.
 
 
 ## What
-- React Router has a `useHistory` hook that returns a history object that's in sync with the router.
+- React Router has a `useHistory` hook that returns a 'History' object that's in sync with the router.
 - The history object has many useful functions, such as:
 	1. `push(newPath)` - navigates page and pushes the new path as browser history, allowing for the navigation buttons (forward/back) to work. Note: `push` has nothing to do with appending to nested routes.
 	2. `replace(newPath)` - navigates page but doesn't make any changes to the history.

@@ -4,7 +4,7 @@ Created Sunday 25 September 2022
 - This is much simpler than it sounds.
 - React Router can handle nested routes (e.g. `/welcome/get-started`) too.
 
-- To do so, just keep the `Route.path` prop same as the whole route, i.e. `/welcome/get-started`.
+- To do so, just set the `Route.path` prop as the whole route, i.e. `/welcome/get-started`.
 
 ## What
 1. `Route` components can be nested within one another. Example:

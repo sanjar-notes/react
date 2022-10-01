@@ -28,16 +28,16 @@ Let's get it.
 - Dynamic params of a `Route` are made available to all descendant components. All get the same params, irrespective of depth.
 - To access them, use the `useParams` hook inside a descendant component.
 - One can have a mix of dynamic and non-dynamic route nodes. e.g. things like `/home/:username`, `/:username/:repository` or `/:username/settings` are all OK.
-- One dynamic param can match only one node of the route.
+- One dynamic param can match only one node of the route, i.e. `/users/:name` won't match `/users/1/sanjar` because `:name` cannot match two nodes `1` and `sanjar`.
 
 Note: only descendants of a dynamic `Route` (i.e. a `Route` with a dynamic `path` props) can access dynamic params, the dynamic `Route` component itself cannot.
 
-- The dynamic params are available as an object if keys being name of dynamic param and values it's value as a `string`.
+- The dynamic params are made available (using `useParams`) as an object. keys being name of dynamic param and values being the value as a `string`.
 
 Example:
 ```jsx
 function App() {
-	console.log(useParams()); // won't work, blank {}. Why: only descendants can access dynamic params
+	console.log(useParams()); // won't work, blank {}. Reason: only descendants can access dynamic params
 	return (
       <Route path="/:username" exact>
         <AppChild />
@@ -53,11 +53,11 @@ function AppChild() {
 
 
 ## Notes (edge case)
-- If a descendant has multiple dynamic `Route` ancestors, the nearest ancestor dictates the dynamic route(i.e. accessed params key names). Values remain the same of course.
+- If a descendant has multiple dynamic `Route` ancestors, the nearest ancestor dictates the dynamic route names (i.e. accessed params key names). Values remain the same of course.
     Example:
 	```jsx
 	function App() {
-		console.log(useParams()); // won't work, blank {}. Why: only descendants can access dynamic params
+		console.log(useParams()); // won't work, blank {}. Reason: only descendants can access dynamic params
 		return (
 	      <Route path="/:username" exact>
 			<AppChild /> <!-- gets username -->
