@@ -7,7 +7,7 @@ React Router v5 matching criteria is not very intuitive (i.e. it does not respec
 const matchingCriteria = () => url.startsWith(route); 
 
 // kind of
-// it's actually - "ancestor list prefix equals"
+// it's actually - "ancestor list prefix, equals"
 ```
 
 ## Situation
@@ -58,4 +58,4 @@ const matchingCriteria = (exact) => exact ? url === route : url.startsWith(route
 ```
 
 ## Notes
-This matching criteria issue can happen with all parts of React Router, e.g.`NavLink`'s activation. And so it supports the `exact`
+This matching criteria issue can happen with all parts of React Router, e.g.`NavLink`'s activation. And so it supports the `exact` prop.

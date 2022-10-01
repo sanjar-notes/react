@@ -1,7 +1,7 @@
 # 275. Nested routes
 Created Sunday 25 September 2022
 
-- This much simpler than it sounds.
+- This is much simpler than it sounds.
 - React Router can handle nested routes (e.g. `/welcome/get-started`) too.
 
 - To do so, just keep the `Route.path` prop same as the whole route, i.e. `/welcome/get-started`.
