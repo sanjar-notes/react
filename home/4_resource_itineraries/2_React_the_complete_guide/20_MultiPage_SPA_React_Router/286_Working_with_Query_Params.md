@@ -86,3 +86,6 @@ function App() {
 ```
 
 Note: The page re-renders on navigate, even if only query params are being (potentially) updated.
+
+
+Concrete examples - [read](https://github.com/exemplar-codes/react-router-practice/commit/b21696a8fe8879ba6ef16e51cd16e263d70b55a3), [write](https://github.com/exemplar-codes/react-router-practice/commit/555aa078dab004549a4ce10683dd904a312664f6)
