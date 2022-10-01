@@ -35,7 +35,7 @@ function App() {
 
 	const age = qparams.get('age'); // we get 'age' as string, '2'
 	
-	return <h1>My page</h1>;
+	return <h1>Age: {age}</h1>;
 }
 ```
 
