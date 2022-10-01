@@ -38,6 +38,7 @@ function App() {
 	return <h1>Age: {age}</h1>;
 }
 ```
+Note that URL params are accessible before page load, since URL determine the page (even in case of React Router, FIXME: (really, always??)).
 
 ### 2. Writing to query params
 We used the `useHistory` hook to navigate to a different path.
