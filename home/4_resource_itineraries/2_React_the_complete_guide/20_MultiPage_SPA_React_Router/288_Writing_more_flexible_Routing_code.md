@@ -32,7 +32,7 @@ function Child {
 }
 ```
 
-## String creation issue (optional)
+## Path object instead of string (optional)
 We are not hardcoding strings now, but we are still creating strings using `+`  or string interpolation.
 
 There is a better way.
@@ -58,3 +58,4 @@ const onClickHandler = () => history.push({ search: "sort=true" });
 ## Note
 1. When creating paths using `useRouteMatch().url` and remaining path, `"/"` must be added in between.
 2. While specifying route as object, the `pathname` still needs a prefix `/`. But having a `?` for query params is optional (has no effect).
+3. `useRouteMatch()` also has the dynamic URL skeleton used by the parent, as well as the actual URL (which we have used) and the dynamic path params object.
