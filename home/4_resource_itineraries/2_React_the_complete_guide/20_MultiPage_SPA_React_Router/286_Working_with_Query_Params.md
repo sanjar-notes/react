@@ -44,7 +44,7 @@ Note that URL params are accessible before page load, since URL determine the pa
 We used the `useHistory` hook to navigate to a different path.
 It also works with query params.
 There are two ways to do this:
-- Set the string yourself, i.e.`history.push("..../?age=2")`
+- Set the string yourself, i.e.`history.push("..../?age=2")` or inside `Link`(e.g. `Link to="/welcome?age=2">`.
 - Use `URLSearchParams` to create the query string, and push the formed string to `history.push()`. To create the query string, we also need the path, and so `useLocation` is also needed.
 
 Example (manual string creation):
