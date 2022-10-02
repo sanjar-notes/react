@@ -24,3 +24,4 @@ See [code](https://github.com/exemplar-codes/react-router-demo/commit/c32a78bf71
 
 Note:
 - `Route` is not case sensitive by default. To make it case sensitive, use the `sensitive` boolean prop.
+- `Route.path` always needs the prefix `/`.
