@@ -59,7 +59,9 @@ const onClickHandler = () => history.push({ search: "sort=true" });
 const onClickHandler = () => history.push({ pathname: "/welcome", search: "sort=true" });
 ```
 
+[Demo example](https://github.com/exemplar-codes/react-router-demo/commit/d1504734fdce1b56f5451510aff8798f6ab2af5b), [Concrete example](https://github.com/exemplar-codes/react-router-practice/commit/dab486262673816e4a4779b715e82f96a1ecd2a8)
+
 ## Note
 1. When creating paths using `useRouteMatch().url` and remaining path, `"/"` must be added in between.
 2. While specifying route as object, the `pathname` still needs a prefix `/`. But having a `?` for query params is optional (has no effect).
-3. `useRouteMatch()` also has the dynamic URL skeleton used by the parent, as well as the actual URL (which we have used) and the dynamic path params object.
+3. `useRouteMatch()` also has the dynamic URL skeleton used by the parent, as well as the actual URL (which we have used), the dynamic path params object and also a boolean called `isExact` to know if the parent had been matched "exactly" ([code](https://github.com/exemplar-codes/react-router-demo/commit/b673946f50d8b2de846c0cd72fd39a86db68c39a)).
