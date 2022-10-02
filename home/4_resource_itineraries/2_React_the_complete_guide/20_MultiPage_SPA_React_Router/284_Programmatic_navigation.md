@@ -37,4 +37,12 @@ function App() {
 ```
 
 ## Note
-The page re-renders on navigation, always. Even if the new URL is the same as the current one, or we use `history.replace()`. FIXME(from what level does the re-render happen, from `index.js`?)
+1. The page re-renders on navigation, always. Even if the new URL is the same as the current one, or we use `history.replace()`. FIXME(from what level does the re-render happen, from `index.js`?)
+2. The `useHistory` returned object works on the URI alone, not the URL. If you wish to go to an external site, programmatically, use the native JS `window.location.replace` with "https://" (or "https://" or "ftp://" etc) as string prefix.
+	Example:
+	```jsx
+	const onClickHandler = () => window.location.replace("https://google.com"); // works
+	
+	const onClickHandler = () => window.location.replace("google.com"); // won't work, will change URI only
+	```
+	Reason: Navigating to an external site will ALWAYS reload the page, and thus, React Router has got nothing to do with such "external" navigation.
