@@ -41,18 +41,22 @@ All the places where we have supplied strings, i.e. `Link.to`, `NavLink.to`, `Ro
 
 Example:
 ```jsx
-const match = useMatchParams();
-
 <Link to={{ search: "sort=true" }}>Sort</Link>;
 
 <Link to={{ pathname: "/welcome" }}>Welcome page</Link> // replace URI
 
+const match = useMatchParams();
 <Link to={{ pathname: match.url + "/welcome" }}>Welcome page</Link>
+
+<Link to={{ pathname: "/welcome", search: "userid=2" }}>Welcome page</Link>
 
 
 
 const history = useHistory();
+
 const onClickHandler = () => history.push({ search: "sort=true" });
+
+const onClickHandler = () => history.push({ pathname: "/welcome", search: "sort=true" });
 ```
 
 ## Note
