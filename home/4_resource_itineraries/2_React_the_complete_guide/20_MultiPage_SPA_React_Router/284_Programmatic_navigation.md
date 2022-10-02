@@ -45,4 +45,4 @@ function App() {
 	
 	const onClickHandler = () => window.location.replace("google.com"); // won't work, will change URI only
 	```
-	Reason: Navigating to an external site will ALWAYS reload the page, and thus, React Router has got nothing to do with such "external" navigation.
+	Reason: Navigating to an external site will ALWAYS reload the page, and thus, React Router has got nothing to (and cannot) do with such "external" navigation.
