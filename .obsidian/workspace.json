@@ -1,0 +1,111 @@
+{
+  "main": {
+    "id": "5a3fa4a184bbabc2",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa4863247c8cd125",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b4a5f80e412bc0fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/4_resource_itineraries/2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/117_useReducer_hook.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "288b450e6a1efce7",
+    "type": "split",
+    "children": [
+      {
+        "id": "d87b7d45588a68e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef380ff8bd113d5f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8a41c038bed18729",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "![",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 537.5026054382324
+  },
+  "right": {
+    "id": "9e90ea53fd69e3c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "0562beaa5bb612db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7eb76224338785e1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "home/4_resource_itineraries/2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/117_useReducer_hook.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b4a5f80e412bc0fa",
+  "lastOpenFiles": [
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/267_What_is_Routing_and_Why.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/266_Module_Introduction.md",
+    "assets/Pasted image 20220304215035.png",
+    "vault/1_React_info_and_setup/1_create-react-app/1_Folder_structure.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/13_Class_based_components/167_Component_lifecycles_in_class_components.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/114_useEffect_cleanup_function.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/276_Redirecting_the_user.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/277_272_Dynamic_Routes.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/283_Adding_a_not_found_page.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/284_Programmatic_navigation.md"
+  ]
+}
