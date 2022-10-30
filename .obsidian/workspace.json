@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b4a5f80e412bc0fa",
+            "id": "dacc5a188c5b9127",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.md",
+                "file": "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/299_Exploring_routing_issues_and_finishing_deployment.md",
                 "mode": "source",
                 "source": false
               }
@@ -62,7 +62,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 249.5086555480957
   },
   "right": {
     "id": "9e90ea53fd69e3c8",
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.md",
+                "file": "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/299_Exploring_routing_issues_and_finishing_deployment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.md"
+                "file": "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/299_Exploring_routing_issues_and_finishing_deployment.md"
               }
             }
           }
@@ -106,17 +106,17 @@
     "direction": "horizontal",
     "width": 217.5
   },
-  "active": "b4a5f80e412bc0fa",
+  "active": "dacc5a188c5b9127",
   "lastOpenFiles": [
+    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/295_Deployment_steps.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/294_Module_Introduction.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/299_Exploring_routing_issues_and_finishing_deployment.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/298_Getting_started_with_deployment.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/297_Building_the_code_for_production.md",
     "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/285_Prompt_before_navigation.md",
     "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/286_Working_with_Query_Params.md",
     "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/284_Programmatic_navigation.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/277_272_Dynamic_Routes.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/270_Working_with_Links.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/295_Deployment_steps.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/269_Defining_and_using_Routes.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/267_What_is_Routing_and_Why.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/266_Module_Introduction.md"
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/277_272_Dynamic_Routes.md"
   ]
 }

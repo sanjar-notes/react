@@ -10,4 +10,4 @@ But, practically, there are more steps needed for a performant deployment. These
 2. Optimize code - make file sizes as small as possible.
 3. Build - execute pre-written scripts to generate HTML, CSS and JS.
 4. Deploy - place the production files on a server.
-5. Configuration - configure the server.
+5. Configuration - configure the server for SPA friendly routing.
