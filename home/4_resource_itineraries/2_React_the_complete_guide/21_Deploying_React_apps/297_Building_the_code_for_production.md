@@ -11,6 +11,7 @@ Note:
 - This "optimization" done on "build" is configured by default by React and libraries, and refers to bundle size optimization, not the performance of what the code does. Things like `useMemo`, `React.memo`, app architecture need to be done separately.
 - The build step will automatically generate multiple `.js` and `.css` files for each of the lazy loaded entities.
 
+
 ## How
 Not important now.
 
