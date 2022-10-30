@@ -1,6 +1,7 @@
 {
   "baseFontSize": 16,
   "accentColor": "",
-  "showViewHeader": true,
-  "nativeMenus": false
+  "showViewHeader": false,
+  "nativeMenus": false,
+  "theme": "system"
 }

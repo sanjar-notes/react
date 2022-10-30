@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home/4_resource_itineraries/2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/117_useReducer_hook.md",
-                "mode": "preview",
+                "file": "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -33,16 +33,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ef380ff8bd113d5f",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
             "id": "8a41c038bed18729",
             "type": "leaf",
             "state": {
@@ -56,12 +46,23 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "41a88d4d74219db3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 537.5026054382324
+    "width": 200
   },
   "right": {
     "id": "9e90ea53fd69e3c8",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home/4_resource_itineraries/2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/117_useReducer_hook.md",
+                "file": "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,25 +88,35 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "1345223fb8b03e8b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 217.5
   },
   "active": "b4a5f80e412bc0fa",
   "lastOpenFiles": [
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/267_What_is_Routing_and_Why.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/266_Module_Introduction.md",
-    "assets/Pasted image 20220304215035.png",
-    "vault/1_React_info_and_setup/1_create-react-app/1_Folder_structure.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/13_Class_based_components/167_Component_lifecycles_in_class_components.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/114_useEffect_cleanup_function.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/276_Redirecting_the_user.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/285_Prompt_before_navigation.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/286_Working_with_Query_Params.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/284_Programmatic_navigation.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.md",
     "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/277_272_Dynamic_Routes.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/283_Adding_a_not_found_page.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/284_Programmatic_navigation.md"
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/270_Working_with_Links.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/295_Deployment_steps.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/269_Defining_and_using_Routes.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/267_What_is_Routing_and_Why.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/266_Module_Introduction.md"
   ]
 }

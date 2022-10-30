@@ -84,7 +84,7 @@
       "Ensures that there is exactly one line break at the end of a document.": false
     }
   },
-  "lintOnSave": true,
+  "lintOnSave": false,
   "displayChanged": true,
   "foldersToIgnore": []
 }
