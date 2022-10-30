@@ -15,11 +15,14 @@
     "en-US"
   ],
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "./",
+  "attachmentFolderPath": "assets",
   "pdfExportSettings": {
     "pageSize": "A4",
     "landscape": false,
     "margin": "0",
     "downscalePercent": 100
-  }
+  },
+  "showInlineTitle": false,
+  "showIndentGuide": true,
+  "foldHeading": true
 }
