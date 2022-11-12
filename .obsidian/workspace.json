@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4843aefd8419f177",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/4_resource_itineraries/2_React_the_complete_guide/22_Adding_authentication_to_React_apps/301_Module_introduction.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f36d6d69b12d5832",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home/4_resource_itineraries/2_React_the_complete_guide/22_Adding_authentication_to_React_apps/302_What_How_and_Why.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -78,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.md",
+                "file": "home/4_resource_itineraries/2_React_the_complete_guide/22_Adding_authentication_to_React_apps/302_What_How_and_Why.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.md"
+                "file": "home/4_resource_itineraries/2_React_the_complete_guide/22_Adding_authentication_to_React_apps/302_What_How_and_Why.md"
               }
             }
           }
@@ -104,19 +129,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217.5
+    "width": 217.5,
+    "collapsed": true
   },
-  "active": "dacc5a188c5b9127",
+  "active": "f36d6d69b12d5832",
   "lastOpenFiles": [
-    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/297_Building_the_code_for_production.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/298_Getting_started_with_deployment.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/299_Exploring_routing_issues_and_finishing_deployment.md",
-    "home/5_projects.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/295_Deployment_steps.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/294_Module_Introduction.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/22_Adding_authentication_to_React_apps/301_Module_introduction.md",
+    "assets/Pasted image 20221103132042.png",
+    "home/4_resource_itineraries/2_React_the_complete_guide/22_Adding_authentication_to_React_apps/302_What_How_and_Why.md",
+    "home/4_resource_itineraries/1_Complete_Web_Developer_2020.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/6_Styling_in_React_INCOMPLETE.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/7_Debugging_React_apps.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/8_Practice_Project.md",
     "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/285_Prompt_before_navigation.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/286_Working_with_Query_Params.md",
-    "home/4_resource_itineraries/2_React_the_complete_guide/20_MultiPage_SPA_React_Router/284_Programmatic_navigation.md"
+    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/297_Building_the_code_for_production.md",
+    "home/4_resource_itineraries/2_React_the_complete_guide/21_Deploying_React_apps/294_Module_Introduction.md"
   ]
 }
