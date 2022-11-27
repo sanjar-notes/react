@@ -14,3 +14,5 @@ The location of token in the request is decided by the backend creator. Most com
 3. As a query string, e.g. `[link]?token=[token]`.
 
 In any case, using HTTPS is very important for all auth traffic, atleast.
+
+Code: from [here](https://github.com/exemplar-codes/react-auth-basic-practice/commit/96512287b1f38a41e8c3d0ab808d070fcc45ce60) to [here](https://github.com/exemplar-codes/react-auth-basic-practice/commit/9b0b3398668295488292e0494df6f18b38b95ff3).
