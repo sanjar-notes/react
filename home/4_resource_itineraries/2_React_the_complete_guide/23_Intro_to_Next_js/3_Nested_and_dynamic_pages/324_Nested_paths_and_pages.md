@@ -53,8 +53,9 @@ function HelpPageEnglish() {
 export default HelpPageEnglish;
 ```
 
-Note: we don't need to export `React`, Next.js has it autoloaded, which is how most React app projects are configured.
-
+Notes: 
+1. There's no need to export `React` in files, Next.js has it autoloaded, which is how most React app projects are configured.
+2. Components that are not pages, i.e used by page components should be kept out of `/pages`, for example kept in a `/components` folder. This avoids confusion in development and in routing. (FIXME, is it an error if they are in `/pages`?). See [code](https://github.com/exemplar-codes/nextjs-first-tutorial/commit/10e01472c5bfe2365e0bfc65a6ddb8a2ef571aba).
 
 ## Starting the dev server
 Run `npm run dev` and go to `localhost:3000` (most probably) to see the web app.
