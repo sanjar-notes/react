@@ -38,3 +38,5 @@ export default MyArticles;
 
 - For external links or for a code-splitted SSR part of the app, simply use an HTML `a` tag.
 - It's not styled as a link, perhaps to avoid confusion with HTML `a` tag.
+
+[Code](https://github.com/exemplar-codes/nextjs-first-tutorial/commit/89347c85d0516a1269daa78b3ca0d7bc8dab744e)
