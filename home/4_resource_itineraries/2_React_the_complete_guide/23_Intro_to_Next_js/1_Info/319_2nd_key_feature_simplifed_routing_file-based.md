@@ -22,6 +22,6 @@ All pages, in Next.js, are kept in the pages folder. The name of the file in `pa
 
 To specify nested routes, we basically make a folder, with the children pages (routes) being files or folders (for more nesting, if needed).
 
-![](../../../../assets/Pasted%20image%2020221206014240.png)
+![](../../../../../assets/Pasted%20image%2020221206014240.png)
 
 **Opinion**: The whole SSR experience can be optimized, maybe in some cases, if we do code-splitting along with SSR, which can be used to reduce bundle size.
