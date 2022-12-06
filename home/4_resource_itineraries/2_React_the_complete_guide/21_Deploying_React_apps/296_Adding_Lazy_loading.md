@@ -75,3 +75,5 @@ FIXME, questions:
 
 ## Advice
 Lazy loading is optional for small apps, but it's almost compulsory for large apps.
+
+[See full code example](https://github.com/exemplar-codes/react-router-practice/tree/lazy_loading)
