@@ -18,6 +18,7 @@ Next.js has a simple solution. Use square brackets for of the route parameter pa
 Examples (request route <=> file in `pages/`):
 - `/{id}` - `[id].js`
 - `/news/{newsId}` - `/news/[newsId].js`
+- `/users/{id}/details` - `/users/[id]/details.js` (yes, a dynamic route can have children).
 
 
 ## What
