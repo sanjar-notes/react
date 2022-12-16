@@ -44,7 +44,12 @@ export default MyApp;
 
 Note: `_app.js` does is a helper page, and so does not take part in filename-routing (it still applies to all pages anyway).
 
+[Code - app-wide navbar](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/7020d006a5e22595b764213023efd2ee1d8a8101)
+
+
 ## Extras - global styles
 - Next.js recommends we put all "to be applied globally styles" inside the `_app.js` file only.
+- CSS, SCSS and modules (for both) are supported by default in a  `create-next-app` app.
+- All styles except in `_app.js_` will be scoped to the `default export` component in the file.
 
-[Code - app-wide navbar](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/7020d006a5e22595b764213023efd2ee1d8a8101)
+More info on styles, see the [docs](https://nextjs.org/docs/basic-features/built-in-css-support).
