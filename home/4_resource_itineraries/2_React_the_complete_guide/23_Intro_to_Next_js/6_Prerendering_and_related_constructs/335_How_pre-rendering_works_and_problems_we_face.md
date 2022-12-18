@@ -52,5 +52,6 @@ This is safe though, from a functionality point of view, since Next.js will stil
 
 
 ## Pre-rendering in Next.js, in a nutshell
-- SSG/SSR/ISR is decided for each page (by marked by existence of `getStaticProps`/`getServerSideProp`, and is therefore not a global setting (i.e. for all pages).
-- Again, re-emphasizing that Next.js's default behavior is pre-rendering on every request, even if there's no `getServerSideProps` for the page.
+- **Page-wise mechanism** - SSG/SSR/ISR is decided for each page (by marked by existence of `getStaticProps`/`getServerSideProp`, and is therefore not a global setting (i.e. for all pages).
+- **Default behavior** - Again, re-emphasizing that Next.js's default behavior is pre-rendering on every request, even if there's no `getServerSideProps` for the page.
+- **First snapshot only** - Only the first snapshot of the page component is considered for pre-rendering. So things like `useEffect` are ignored for pre-rendering. They are still included in the the bundle though.
