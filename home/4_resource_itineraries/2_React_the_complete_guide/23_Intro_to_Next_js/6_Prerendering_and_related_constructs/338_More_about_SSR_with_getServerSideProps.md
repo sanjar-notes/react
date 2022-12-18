@@ -71,6 +71,6 @@ The function must return an *object*. Attributes:
 
 
 ## When to use SSR
-Prefer SSG, then ISR if it's possible - if data velocity is slow, or the page doesn't need real time updates, like a blog. 
+Prefer SSG, then ISR if it's possible - if data velocity is slow, or the page doesn't need real time updates, like a blog.
 
-Otherwise use SSR - data velocity is high, a dashboard page.
+Use SSR - data velocity is high (for a dashboard page, for example) or need access to request and/or response object.
