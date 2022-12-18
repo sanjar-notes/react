@@ -63,7 +63,7 @@ export async function getStaticProps() {
   }
 }
 ```
-
+[Code example](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/93c7b7deb8b45b21172f46012eec56e7b250e9a1)
 
 
 ## Important thing about pre-rendering in Next.js
