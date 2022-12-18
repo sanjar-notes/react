@@ -42,7 +42,28 @@ It is only available for pages. To use it export a function named `getServerSide
 SSR, like SSG, also doesn't mean all data has to there that the page uses, i.e. the page could hydrate parts of it on the client.
 
 ## ISR
-Will study later.
+For medium-low velocity data, we may wish to rebuild our site in, say, 10 seconds. This pre-rendering technique is called Increment Static Regeneration (ISR).
+
+This can be achieved using the `getStaticProps` function. 
+
+Of course, we'd need a running server for this to happen.
+
+To do this, add a `revalidate` attribute in the object returned by `getStaticProps`, value being the time to re-build, in seconds.
+
+In simple words, the data is not older than `t` seconds.
+
+Example:
+```js
+export const MyPage = ({someProp}) => { ... };
+
+export async function getStaticProps() {
+  return {
+	props: {...},
+	revalidate: 10
+  }
+}
+```
+
 
 
 ## Important thing about pre-rendering in Next.js
