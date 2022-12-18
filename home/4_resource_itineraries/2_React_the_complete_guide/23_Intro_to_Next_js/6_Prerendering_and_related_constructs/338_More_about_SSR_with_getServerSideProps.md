@@ -62,13 +62,13 @@ export function getServerSideProps(context) {
 
 
 ## Return value
-The function must return an *object*. Attributes:
+The function must return a non-empty *object*. Attributes:
 1. `props` - props for the page component, must be an object. So `{ props: {} }` is the minimal return value.
 2. `notFound` - boolean. True returns the 404 page.
 3. `redirect` - send a redirect response. Shape - `{ destination: string, permanent: boolean }`. Destination can be internal or external. For old HTTP clients, send a `statusCode` attribute, and omit `permanent`.
 
-[Code example](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/10d26ba4876d4ba1243c8adb0839b347afb24a30)
-
+[Simple code example](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/87f32ea191fa16e12e7641cd7ecea0489b452e4a)
+[More realistic code example](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/7e75f3024dd337914382b4fa77d5a00ab9a153bf)
 
 ## When to use SSR
 Prefer SSG, then ISR if it's possible - if data velocity is slow, or the page doesn't need real time updates, like a blog.
