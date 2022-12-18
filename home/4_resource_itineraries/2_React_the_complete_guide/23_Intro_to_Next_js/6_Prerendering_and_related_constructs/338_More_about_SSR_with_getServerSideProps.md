@@ -20,7 +20,7 @@ export function getServerSideProps() {
 - Returning `revalidate` does not work with `getServerSideProps`, since SSR, by definition runs on each request.
 
 
-## `getServerSideProps` "context" parameter
+## "context" parameter
 `getServerSideProps`'s first parameter is called "context".
 
 It's an object that has many useful attributes, like:
@@ -61,7 +61,7 @@ export function getServerSideProps(context) {
 4. **Cookies** - the request object has an additional attribute, called `cookies`, which is an object with string keys mapping to string values of cookies.
 
 
-## `getServerSideProps` return value
+## Return value
 The function must return an *object*. Attributes:
 1. `props` - props for the page component, must be an object. So `{ props: {} }` is the minimal return value.
 2. `notFound` - boolean. True returns the 404 page.
@@ -70,7 +70,7 @@ The function must return an *object*. Attributes:
 [Code example](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/10d26ba4876d4ba1243c8adb0839b347afb24a30)
 
 
-## When to use `getServerSideProps`
+## When to use SSR
 Prefer SSG, then ISR if it's possible - if data velocity is slow, or the page doesn't need real time updates, like a blog. 
 
 Otherwise use SSR - data velocity is high, a dashboard page.
