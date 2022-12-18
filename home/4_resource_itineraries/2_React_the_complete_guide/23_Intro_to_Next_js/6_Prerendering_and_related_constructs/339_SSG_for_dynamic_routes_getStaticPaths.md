@@ -13,6 +13,8 @@ There are several problems:
 1. Technically, issue with `getStaticProps` is that it runs only once, for a route.
 2. We may not have "all" possible movie names. But we also don't want to do SSR (assume we don't have a very capable server).
 
+So, SSG for dynamic routes. Also, we may not have a complete list of possible routes during build time.
+
 
 ## How
 The solution is to run `getStaticProps` for all the dynamic routes that we want, for the given page.
