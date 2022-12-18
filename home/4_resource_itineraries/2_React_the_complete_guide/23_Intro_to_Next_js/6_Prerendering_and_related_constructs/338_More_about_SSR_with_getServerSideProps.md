@@ -20,7 +20,7 @@ export function getServerSideProps() {
 - Returning `revalidate` does not work with `getServerSideProps`, since SSR, by definition runs on each request.
 
 
-## `getServerSideProps` parameter
+## `getServerSideProps` "context" parameter
 `getServerSideProps`'s first parameter is called "context".
 
 It's an object that has many useful attributes, like:
