@@ -68,7 +68,7 @@ The function must return a non-empty *object*. Attributes:
 3. `redirect` - send a redirect response. Shape - `{ destination: string, permanent: boolean }`. Destination can be internal or external. For old HTTP clients, send a `statusCode` attribute, and omit `permanent`.
 
 [Simple code example](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/87f32ea191fa16e12e7641cd7ecea0489b452e4a)
-[More realistic code example](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/7e75f3024dd337914382b4fa77d5a00ab9a153bf)
+[More realistic code example](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/d1dc8dca87e80711d3d2782b767c9fb975f0ef65)
 
 ## When to use SSR
 Prefer SSG, then ISR if it's possible - if data velocity is slow, or the page doesn't need real time updates, like a blog.
