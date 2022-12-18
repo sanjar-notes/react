@@ -20,7 +20,7 @@ Next.js provides us with 3 constructs, which may be used to change the level of 
 3. ISR - Incremental Server Rendering - build the page every 't' seconds, or some other criteria.
 
 ## SSG (Static Site Generation)
-This is a pre-rendering mechanism, where the server *tries* to build the page at "build time".
+This is a pre-rendering mechanism, where the server builds the page at "build time".
 
 In Next.js, the `getStaticProps` function is used for SSG. 
 
@@ -31,7 +31,7 @@ It is only available for pages. To use it export (normal not `default`) a functi
 Note that using SSG (or `getStaticProps`) doesn't mean one *has to* hydrate the whole page on build time. For example, if you have a fetch (or `useEffect`) request inside the component, it will be ignored by Next.js (since it pre-renders the first snapshot returned by the page component), but will still run on the client. Of course, this also means that the resulting changes won't be there in the pre-rendered UI, which is may or may not be OK.
 
 ## SSR (Server Side Rendering)
-This is a pre-rendering mechanism, where the server *tries* to build the page at every request.
+This is a pre-rendering mechanism, where the server builds the page on each request.
 
 **This is the "default" in Next.js**. One doesn't need to actually specify/code anything to enable this, the page component is enough. However, if one needs to run some server side code (for authentication, DB lookup etc), there is a way to do it - the `getServerSideProps` function.
 
