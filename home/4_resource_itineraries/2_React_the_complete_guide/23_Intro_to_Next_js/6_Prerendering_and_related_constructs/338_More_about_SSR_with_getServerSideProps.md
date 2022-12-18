@@ -58,6 +58,7 @@ export function getServerSideProps(context) {
 3. **Query params** - An object representing the query string, including dynamic route parameters. All values are strings. Examples:
 	- `/pages/help.js` with URL `/help?chatId=23` --> `{ chatId: '23'}`
 	- `/pages/[user].js` with URL `/sanjar?admin=yes` --> `{ admin: 'yes', user: 'sanjar'}`
+4. **Cookies** - the request object has an additional attribute, called `cookies`, which is an object with string keys mapping to string values of cookies.
 
 
 ## `getServerSideProps` return value
