@@ -57,4 +57,6 @@ This is safe though, from a functionality point of view, since Next.js will stil
 - **First snapshot only** - Only the first snapshot of the page component is considered for pre-rendering. So things like `useEffect` are ignored for pre-rendering. They are still included in the the bundle though. Because `get*Props` functions run before pre-rendering, they are always included. Example - [useEffect ignored](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/15abe08c666afbfb956ec906e244765a7fd0d1c9), [getStaticProps works fine](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/54f9dce6154cb7abaf3de710a622f5a660e8647f)
 - **Server side code remains hidden from client** - Both `getStaticProps` and `getServerSideProps` are a server-side construct. They are not shipped to the client, so it's safe to do sensitive computations here.
 
-Note: Using client side code (for example - browser APIs or React UI constructs like hooks) inside `getStaticProps` or `getServerSideProps` is an error, since they are purely server side constructs.
+Note: 
+1. Using client side code (for example - browser APIs or React UI constructs like hooks) inside `getStaticProps` or `getServerSideProps` is an error, since they are purely server side constructs.
+2. Both functions can be `async`. There are no changes required in the page component, since the component is run only when the pre-rendering function completes/promise resolves.
