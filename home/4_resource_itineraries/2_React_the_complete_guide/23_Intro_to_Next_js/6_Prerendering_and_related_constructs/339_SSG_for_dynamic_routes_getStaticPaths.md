@@ -80,3 +80,6 @@ Note: If `isFallback` is true, the page's props will be empty (as `getStaticProp
 Both options are still a part of SSG, and hence they don't automatically update the pages they may have generated for unlisted routes.
 
 To do so, use ISR, no special code required. i.e. in addition to returning `fallback` from `getStaticPaths`, also return `revalidate` from `getStaticProps`.
+
+
+Note: In any scenario, `getStaticPaths` runs only once - when the server is initialized. (FIXME, just confirm once)
