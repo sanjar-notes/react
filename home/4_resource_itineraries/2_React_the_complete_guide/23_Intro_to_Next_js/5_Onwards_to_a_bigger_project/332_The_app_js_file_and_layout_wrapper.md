@@ -46,6 +46,7 @@ Note: `_app.js` does is a helper page, and so does not take part in filename-rou
 
 [Code - app-wide navbar](https://github.com/exemplar-codes/nextjs-first-realistic-tutorial/commit/7020d006a5e22595b764213023efd2ee1d8a8101)
 
+Note: A `router` prop is also passed to the component by Next.js, which is an object that contains the path, queryParam etc. This is because we cannot use `useRouter` here (why though, idk - FIXME). This may be used to conditionally alter/select layouts, page title, metadata etc based on route - which is better than doing it at each page.
 
 ## Extras - global styles
 - Next.js recommends we put all "to be applied globally styles" inside the `_app.js` file only.
