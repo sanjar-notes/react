@@ -1,6 +1,21 @@
 # 347. Deploying Next.js projects
 Created Sunday 25 December 2022
 
+## Building - manual
+1. Copy the project code to a server.
+2. Run `npm run build`.
+3. To start Next.js server `npm start`
+
+That's it.
+
+Mentioning this in case I want to deploy manually, using Amazon EC2 (or something similar).
+
+Of course, Next.js is a fullstack framework, so we need a dynamic server. But, if all we want is SSG - no unseen dynamic route SSG, ISR, SSR or API routes, a static server will suffice. In this case all we need is `.next` folder generated after the build. 
+
+FIXME - how to up a static server for a Next project? Do it later.
+
+
+## Build, deploy and basic CI/CD - Vercel
 There are many options when it comes to deploying a Next.js project.
 
 We'll use [Vercel](https://vercel.com/) -  a hosting provider. It's the same company that created Next.js.
