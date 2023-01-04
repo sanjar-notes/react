@@ -1,4 +1,4 @@
-# 385. What and Why?
+# 385. What is testing and Why?
 Created Wednesday 4 January 2023
 
 - We *have* done testing in this course, but it manual testing.
