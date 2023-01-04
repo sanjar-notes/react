@@ -18,7 +18,7 @@ After the initial load on the client, the app follows a standard client-side rou
 
 
 ## What
-All pages, in Next.js, are kept in the pages folder. The name of the file in `pages` indicate the route it'll be pre-rendered for.
+All pages, in Next.js, are kept in the `pages` folder. The name of the file in `pages` indicate the route it'll be pre-rendered for.
 
 To specify nested routes, we basically make a folder, with the children pages (routes) being files or folders (for more nesting, if needed).
 

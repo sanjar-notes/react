@@ -18,6 +18,7 @@ Next.js has a simple solution. Use square brackets for of the route parameter pa
 Examples (request route <=> file in `pages/`):
 - `/{id}` - `[id].js`
 - `/news/{newsId}` - `/news/[newsId].js`
+- `/users/{id}/details` - `/users/[id]/details.js` (yes, dynamic routes can have child routes and so can be used as folder names).
 
 
 ## What
@@ -28,7 +29,7 @@ Accessing the route param is crucial for most pages, especially for data fetchin
 Next.js being a framework, has routing functionality (`next/router`) built into it.
 
 ### Reading the route param
-The route param is read using the `useRouter` hook provided by React. It returns an object with shape 
+The route param is read using the `useRouter` hook provided by Next. It returns an object with shape 
 ```js
 { 
   query: { [routeParamName]: '_routeParamValue_' }
