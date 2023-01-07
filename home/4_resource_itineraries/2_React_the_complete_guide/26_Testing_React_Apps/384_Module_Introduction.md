@@ -9,3 +9,5 @@ This course section is about *automated* testing of React apps.
 In this course section, we'll learn about:
 1. What testing is, in app development.
 2. How to test React apps - some libraries and tools.
+
+Note: this is a very brief introduction.
