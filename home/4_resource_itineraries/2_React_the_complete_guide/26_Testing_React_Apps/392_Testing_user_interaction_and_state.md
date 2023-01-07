@@ -8,6 +8,8 @@ We can interact using the `userEvent` object available as a default import from 
 
 It contains many events - click, scroll etc. The syntax for click is `userEvent.click(myButtonElement)`. FIXME: It's a synchronous operation, here atleast, is this always the case. [Code](https://github.com/exemplar-codes/testing-react-apps-first-tutorial/commit/1542ecea9755848f75c31548fb17ac5ae6125d7a).
 
+Having a stateful component didn't need any special treatment. FIXME: how to observe state?
+
 FIXME: I [can](https://github.com/exemplar-codes/testing-react-apps-first-tutorial/commit/08c221f7cc39d93f8f82045a80bfc23861cc60d6) click the element directly, just like vanilla JS.
 1. Is this discouraged?
 2. How is it different from `userEvent`?
