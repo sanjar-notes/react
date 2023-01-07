@@ -10,3 +10,7 @@ Technically, this is fine. But one should test stuff near the actual code, as mu
 Here, the wrapper was not a very heavy - UI wise, state wise or interaction wise, so it's fine.
 
 [Code](https://github.com/exemplar-codes/testing-react-apps-first-tutorial/commit/3fe21068240eb32e784ede688229b11092704198)
+
+FIXME:
+1. How to inspect at the component level, instead of text, role or some other native HTML way? Is it even possible with RTL? If yes/no, why?
+2. For testing a small change in a very big UI tree (since RTL renders the whole component tree by default), how to limit rendering children UI nodes, for performance and mocking that might be needed by descendants, the latter being more problematic, as it's not just about performance which could be ignored for once.
