@@ -9,7 +9,7 @@ Technically, this is fine. But one should test stuff near the actual code, as mu
 
 Here, the wrapper was not a very heavy - UI wise, state wise or interaction wise, so it's fine.
 
-[Code](https://github.com/exemplar-codes/testing-react-apps-first-tutorial/commit/3fe21068240eb32e784ede688229b11092704198)
+[Code](https://github.com/exemplar-codes/testing-react-apps-first-tutorial/commit/66bd9b82fef058091af10c7b998914a7e9f1d5b8)
 
 FIXME:
 1. How to inspect at the component level, instead of text, role or some other native HTML way? Is it even possible with RTL? If yes/no, why?
