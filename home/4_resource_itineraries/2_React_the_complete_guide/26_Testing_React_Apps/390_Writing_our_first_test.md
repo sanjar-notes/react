@@ -3,11 +3,11 @@ Created Wednesday 4 January 2023
 
 Advice: It's a good practice to write tests as close as possible to the actual code. Example - write tests for a button component in it's own file, instead of testing it in an integration/E2E/app wide test.
 
-## How
+## How (constructs and intent)
 ### Jest
-- **`test()`** - basic testing unit where assertions are done.
+- **`test()`** - basic testing unit where assertions are done. aka "test"
 - **`expect()`** - used for assertion.
-- **`describe()`** - nesting construct.
+- **`describe()`** - nesting construct. aka "test suite". Not for asserting.
  
 ### RTL (React Testing Library)
 - **`render()`** - renders components, virtually of course.
@@ -21,39 +21,54 @@ Advice: It's a good practice to write tests as close as possible to the actual c
 ## What (details)
 ### Jest
 No need to import, as these are globally auto-loaded (thanks to `setupTests.js`).
- - **`test`** - `test('some text', assertionCallback)`
-```jsx
-import HomePage from './some_path';
-test('shows text hello on home page', () => {
-	// Arrange
+ - **`test`**
+	 - Syntax - `test('some text', assertionCallback)`. 
+		```jsx
+		import HomePage from './some_path';
+		test('shows text hello on home page', () => {
+			// Arrange
+		
+			// Act
+		
+			// Assert, the focus of `test`
+		});
+		```
+	- Default pass - A test with no assertions "passes" by default.
+		```jsx
+		test('some text here', () => {}); // pass
 
-	// Act
+		// still, need to have both arguments.
+		test(); // fail
+		test('some text here'); // fail
+		```
+ - **`expect`**
+	 - Syntax - `expect(realValue).myMatcherHere(idealValue)`. 
+	 - Argument may be of any type - a JS variable or UI element. 
+	 - A matcher may have no argument.
+	 - Negative/complement  - `expect(realValue).not.myMatcherHere(idealValue)` for complement. Example:
+		```jsx
+		// assert presence/existence
+		// const helloElement = screen.getByText('Hello World!'); throws error
+		const helloElement = screen.getByText('Hello World!');
+		expect(helloElement).toBeInTheDocument();
+		
+		// assert absence
+		// const helloElement = screen.getByText('Hello World!'); throws error
+		const byeElement = screen.queryByText('Bye World!');
+		expect(byeElement).not.toBeInTheDocument();
+		```
+- **`describe`**
+	- Syntax - `describe('text here', callbackFunc)`
+	- Default pass - A suite with no assertions "passes" by default.
+		```jsx
+		describe('some text here', () => {}); // pass
 
-	// Assert, the focus of `test`
-});
-```
- - **`expect`** - `expect(realValue).myMatcherHere(idealValue)`. Matcher may or may not need an argument. Also `expect(realValue).not.myMatcherHere(idealValue)` for complement. Value can be anything - a JS variable or UI element. Example:
-```jsx
-// assert presence/existence
-// const helloElement = screen.getByText('Hello World!'); throws error
-const helloElement = screen.getByText('Hello World!');
-expect(helloElement).toBeInTheDocument();
 
-// assert absence
-// const helloElement = screen.getByText('Hello World!'); throws error
-const byeElement = screen.queryByText('Bye World!');
-expect(byeElement).not.toBeInTheDocument();
-```
-- **`describe`** - nesting construct. Not for asserting.
-```jsx
-describe('some text here', () => {
-	// setup code
-	
-	test();
+		// still, need to have both arguments.
+		describe(); // fail
+		describe('some text here'); // fail
+		```
 
-	describe();
-});
-```
 
 ### RTL (React Testing Library)
 These need to be imported in each test file.
