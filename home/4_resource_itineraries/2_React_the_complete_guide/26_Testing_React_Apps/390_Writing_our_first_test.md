@@ -13,9 +13,9 @@ Advice: It's a good practice to write tests as close as possible to the actual c
 - `render()` - renders components, virtually of course.
 - `screen()` - current state of the virtually rendered UI.
 - Inspectors are functions that grab elements from the virtual UI. They are of 3 types:
-	- `get*` - throws an error on not found. Maid - immediately get. Use - check existence.
-	- `query*` - doesn't throw an error on not found. Maid - ask politely. Use - check nonexistence.
-	- `find*` - returns a promise for on found/found. Maid - go on a quest. Use - check eventual existence/nonexistence.
+	- `get*` - get an element immediately. throws an error on not found. Maid - immediately get. Use - check existence.
+	- `query*` - same as `*get` except it doesn't throw an error on not found. Maid - ask politely. Use - check nonexistence.
+	- `find*` - get element asynchronously (i.e. poll the UI until element is found), returns a promise for on found/not-found. Maid - go on a quest. Use - check eventual existence/nonexistence, e.g. list appears only when API call succeeds.
 
 
 ## What (details)
