@@ -23,6 +23,7 @@ A simple way is to built in code, like `fetch`, `localStorage` etc. This paradig
 
 Obvious point - We want to test only the code we wrote, not other things - e.g. there's no need to test browser's `fetch` function, because it's assumed to be OK. Maybe the point Max was trying to make was that we should mock as little as possible - only parts that we are using in our app code.
 
+
 ## What
 - For mocking functions, use `jest.fn()` - it returns a function. It's better to use this than have a normal custom function, since `jest.fn()` has additional properties.
 - We are using the `mockResolvedValueOnce` property that is used to mock an async function. Example:
