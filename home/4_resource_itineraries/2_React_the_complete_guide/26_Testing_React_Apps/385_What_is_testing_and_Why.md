@@ -5,7 +5,7 @@ Created Wednesday 4 January 2023
 - Manual testing is not scalable, at all. It's also error prone.
 
 ## Why
-The sole goal of automated testing to detect regressions. That's it.
+The sole goal of automated testing to detect regressions (FIXME, sole?). That's it.
 
 A regression is said to have occurred if the code breaks when some changes are made to it, and it was working fine previously. Example - we made a change to a core UI component that is not backwards compatible, which broke some feature which used this component.
 
