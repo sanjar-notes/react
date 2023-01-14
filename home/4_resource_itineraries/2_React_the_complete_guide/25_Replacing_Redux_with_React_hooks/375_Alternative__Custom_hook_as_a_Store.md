@@ -27,4 +27,4 @@ Explanation (this was really hard to wrap mind around, code wise, but the idea i
 2. React hooks are a very powerful concept. When used properly, it feels like a custom version of React.
 3. Using Redux is fine, but such a custom hook may be used if the goal is to minimize the bundle at a bytes level.
 
-// rough comment - this section was OK, but it was too hairy for a demo. I'll stop here, I'm confident I can code this up if the situation demands.
+// rough comment - this section was OK, but it was too hairy for a demo. I'll stop here, I'm confident I can code this up if the situation demands. \_TAG_: skipped at the end, not the best use of my time.
