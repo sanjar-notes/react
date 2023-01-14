@@ -38,7 +38,7 @@ import AuthContext from './path_to_auth-context';
 const AppCommonAncestor = () => {
 	const [val, setVal] = useState(0);
 	
-	return (<AuthContext.Provider value={val, setVal}> 
+	return (<AuthContext.Provider value={{val, setVal}}> 
 			{/* code as usual */}
 			</AuthContext.Provider>);
 };
