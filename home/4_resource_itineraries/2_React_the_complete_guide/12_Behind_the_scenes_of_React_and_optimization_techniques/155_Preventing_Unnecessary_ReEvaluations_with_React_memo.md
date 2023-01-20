@@ -67,7 +67,9 @@ const MyButton = React.memo(
 
 
 ## Thoughts
-- The prevent re-run with component without props case should be default behavior. [More info](https://stackoverflow.com/questions/53074551/when-should-you-not-use-react-memo).
+- The prevent re-run with component without props case should be default behavior. 
+	- [More info](https://stackoverflow.com/questions/53074551/when-should-you-not-use-react-memo).
+	- Maybe not - what if the propless component uses `Math.random` or `new Date()`. Ignoring the opinions of React.Strict, how to do this - because re-evaluation does lead to change in UI even though props have not changed. *It's kind of like the external API are a "prop" that have changed* - this seems to be a good excuse to have the current behavior (i.e. re-rerun no matter what).
 - How does the hook work? My guess:
 	- React keeps a copy of two things internally:
 		- Props received in the latest evaluation.
