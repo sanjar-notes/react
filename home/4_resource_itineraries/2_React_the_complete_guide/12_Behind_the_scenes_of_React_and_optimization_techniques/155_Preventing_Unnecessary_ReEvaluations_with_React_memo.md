@@ -67,7 +67,7 @@ const MyButton = React.memo(
 
 
 ## Thoughts
-- `React.memo` is the 
+- The prevent re-run with component without props case should be default behavior. [More info](https://stackoverflow.com/questions/53074551/when-should-you-not-use-react-memo).
 - How does the hook work? My guess:
 	- React keeps a copy of two things internally:
 		- Props received in the latest evaluation.
