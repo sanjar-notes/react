@@ -76,7 +76,7 @@ const MyButton = React.memo(
 	- If props haven't changed, it just returns the stored return value of the latest evaluation to the parent.
 	- Note: the return value is stored "kind of" in the component itself (which was wrapped in `React.memo`), and not it's parent. This means that the parent is oblivious to the fact that it received a stored value instead of a newly computed one. FIXME(I'm not sure if the both props and return value are stored in the parent or not. Also need to find out if the parent knows if one of it's children value was a stored value, not a computed one, maybe the parent is aware, idk)
 - How to control re-evaluation w.r.t both state + props? FIXME (this was popular in class components). BTW: I never had to do this, during experiments or work, atleast knowingly. How would I do it without a new hook, approaches:
-	1. State changed, there are no props. FIXME: continue later: https://codesandbox.io/s/angry-agnesi-4e4be2?file=/src/App.js
+	1. State changed, there are no props. FIXME: continue later: https://codesandbox.io/s/angry-agnesi-4e4be2?file=/src/App.js. Also see [discussion on bailing out of state upates](https://github.com/facebook/react/issues/14110) - I actually encountered this somewhere in the Redux section, oh, [here](obsidian://open?vault=reactjs-notes&file=home%2F4_resource_itineraries%2F2_React_the_complete_guide%2F25_Replacing_Redux_with_React_hooks%2F372_Alternative__using_the_Context_API). 
 	```jsx
 	function stateComparator(prevState, currentState) { // true means don't re-evaluate
 		return ...; // some diffing logic
