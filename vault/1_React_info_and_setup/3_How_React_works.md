@@ -35,3 +35,7 @@ The generic algorithm for diffing trees is O(n<sup>3</sup>). But React uses a he
 2. The developer can hint at which [*child*](https://reactjs.org/docs/reconciliation.html#recursing-on-children) elements may be stable across different renders with a [key](https://reactjs.org/docs/reconciliation.html#keys) prop.
 
 ["In practice, these assumptions are valid for almost all practical use cases."](https://reactjs.org/docs/reconciliation.html#motivation)
+
+---
+
+I was fuzzy on the diffing details, and more importantly if React's optimization was even possible. Turns out the abstract node comparison part of the diffing algorithm is not the crux of React (it's important from a code POV though) - the major part that makes diff possible is the "layout conscious diff" (something skipped over by most tutorials). See [ChatGPT conversation](../../assets/React-reflow-repaint-ldiff.pdf)
