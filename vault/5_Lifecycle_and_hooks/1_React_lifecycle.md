@@ -20,8 +20,8 @@ Here're the phases:
 ![](../../assets/pasted_image002%201%201.png)
 
 Here's an image showing life-cycle methods of the phases:
-![](../../assets/Pasted%20image%2020220530020206.png)
+![](Pasted_image_20220530020206.png)
 
 Here's the list of life-cycle methods classified by type:
-![](../../assets/Pasted%20image%2020220702132009.png)
+![](Pasted_image_20220702132009.png)
 FIXME: merge the successive page into this
