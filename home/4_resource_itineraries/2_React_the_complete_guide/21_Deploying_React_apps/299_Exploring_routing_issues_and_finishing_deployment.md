@@ -48,5 +48,5 @@ My guess, it's something like this. The server side code actually has 2 _types_ 
 When a user makes a path request, it's mostly of the "page" type, so they get the main bundle, `react-router` kicks in and makes "asset" requests for the lazy entities, and they are fetched.
 
 See (Browser DevTool > Network tab screenshot):
-- Initial load ![Initial load](../../../../assets/Pasted%20image%2020221031010832.png)
-- Lazy loaded page ![Lazy loaded page](../../../../assets/Pasted%20image%2020221031010915.png)
+- Initial load ![Initial load](../../../../assets/299_Exploring_routing_issues_and_finishing_deployment-image-1.png)
+- Lazy loaded page ![Lazy loaded page](../../../../assets/299_Exploring_routing_issues_and_finishing_deployment-image-2.png)

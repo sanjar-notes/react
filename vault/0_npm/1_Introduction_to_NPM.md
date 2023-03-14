@@ -27,5 +27,5 @@ There are three types of packages at ``npm``:
 * package.json is a meta file that specifies dependencies of the project. It is configured before the development begins.
 * Three things are important for any project:
 
-![](../../assets/pasted_image.png)
+![](../../assets/1_Introduction_to_NPM-image-1.png)
 

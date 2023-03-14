@@ -18,7 +18,7 @@ By detecting regressions (by writing automated tests), we:
 4. **Generate data about code quality/architecture** - we generate useful data that might be kept in mind when making future changes.
 5. **Learn how to write good code** - consequence of \#4.
    
-![](../../../../assets/Pasted%20image%2020230104193538.png)
+![](../../../../assets/385_What_is_testing_and_Why-image-1.png)
 
 
 ## How
