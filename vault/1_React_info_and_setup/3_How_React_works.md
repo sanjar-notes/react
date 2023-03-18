@@ -15,6 +15,8 @@ React will change the DOM in the most optimum way, *practically* possible.
 ### React internals - Virtual DOM and the diffing algorithm
 To go from E --> R, React keeps two DOM trees in memory. These in memory DOM trees are called 'virtual DOM'. They are fast to work with, because they are not connected to the webpage. Let's call them pristine and dirty. 
 
+![](Pasted_image_20220530015128.png)
+
 Pristine is a copy of the current actual DOM, and dirty is initially nothing. 
 Steps React uses:
 1. When the next frame is specified, it creates the *dirty tree* based on it.
@@ -33,3 +35,7 @@ The generic algorithm for diffing trees is O(n<sup>3</sup>). But React uses a he
 2. The developer can hint at which [*child*](https://reactjs.org/docs/reconciliation.html#recursing-on-children) elements may be stable across different renders with a [key](https://reactjs.org/docs/reconciliation.html#keys) prop.
 
 ["In practice, these assumptions are valid for almost all practical use cases."](https://reactjs.org/docs/reconciliation.html#motivation)
+
+---
+
+I was fuzzy on the diffing details, and more importantly if React's optimization was even possible. Turns out the abstract node comparison part of the diffing algorithm is not the crux of React (it's important from a code POV though) - the major part that makes diff possible is the "layout conscious diff" (something skipped over by most tutorials). See [ChatGPT conversation](../../assets/React-reflow-repaint-ldiff.pdf)

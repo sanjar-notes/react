@@ -15,3 +15,5 @@ function OurComponent () {
 	return <div onClick={clicked}> Hello </div>;
 }
 ```
+
+FIXME: read and explain here if needed - https://reactjs.org/docs/events.html
