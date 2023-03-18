@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreactjs_notes_docu=self.webpackChunkreactjs_notes_docu||[]).push([[4015],{3748:e=>{e.exports=JSON.parse('{"permalink":"/reactjs-notes/blog/tags/facebook","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

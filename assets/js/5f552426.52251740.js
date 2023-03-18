@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreactjs_notes_docu=self.webpackChunkreactjs_notes_docu||[]).push([[1101],{4855:e=>{e.exports=JSON.parse('{"permalink":"/reactjs-notes/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
