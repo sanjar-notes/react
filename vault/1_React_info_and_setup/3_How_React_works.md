@@ -15,7 +15,7 @@ React will change the DOM in the most optimum way, *practically* possible.
 ### React internals - Virtual DOM and the diffing algorithm
 To go from E --> R, React keeps two DOM trees in memory. These in memory DOM trees are called 'virtual DOM'. They are fast to work with, because they are not connected to the webpage. Let's call them pristine and dirty. 
 
-![](Pasted_image_20220530015128.png)
+![](../../assets/3_How_React_works-image-1.png)
 
 Pristine is a copy of the current actual DOM, and dirty is initially nothing. 
 Steps React uses:

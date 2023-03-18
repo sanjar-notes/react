@@ -26,7 +26,7 @@ Additional Hooks:
 2. Custom Hooks: A custom Hook is basically a function of JavaScript. The Custom Hook working is similar to a regular function. The “use” at the beginning of the Custom Hook Name is required for React to understand that this is a custom Hook and also it will describe that this specific function follows the rules of Hooks. Moreover, developing custom Hooks will enable you for extracting component logic from within reusable functions.
 
 All hooks listed below:
-![](Pasted_image_20220530023311.png)
+![](../../assets/2_1_React_hooks-image-1.png)
 ---
 6. How does the performance of using Hooks will differ in comparison with the classes?
    - React Hooks will avoid a lot of overheads such as the instance creation, binding of events, etc., that are present with classes.
