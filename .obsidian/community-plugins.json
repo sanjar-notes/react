@@ -3,5 +3,6 @@
   "obsidian-linter",
   "templater-obsidian",
   "obsidian-timestamper",
-  "obsidian-diagrams-net"
+  "obsidian-diagrams-net",
+  "obsidian-attachment-name-formatting"
 ]
