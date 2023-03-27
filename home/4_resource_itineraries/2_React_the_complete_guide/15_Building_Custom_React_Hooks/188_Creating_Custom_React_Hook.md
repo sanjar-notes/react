@@ -2,8 +2,8 @@
 Created Saturday 23 July 2022
 
 ### Situation
-Create this. 
-![](../../../../assets/188_Creating_Custom_React_Hook-image-1.gif)
+Create this.
+![](assets/188_Creating_Custom_React_Hook-image-1.gif)
 Both counters start from 0, one increments and the other decrements, every 1 second.
 
 There are 2 known ways to do this:
@@ -48,36 +48,36 @@ It is also possible, that different components have similar parts, and neither o
 		2. Helps with code intellisense in most IDE/editors.
 		Note: not using a prefix `use` won't affect functionality. It's just a recommendation.
 - A hook can accept parameters, as it's a function.
-- Custom hooks may or may not have return values. 
+- Custom hooks may or may not have return values.
 - It is important to note that a state variable returned from a hook can act as the latest state. Every re-render will update the variable, without re-initializing the state (in the hook). *It just works*. Example:
 	```jsx
 	import {useState, useEffect} from 'react';
-	
+
 	function useCounter() {
 		const [count, setCount] = useState(0);
-		
+
 		useEffect(() => {
 			const timer = setTimeout(() => setCount(prevCount => prevCount + 1)
 			, 1000);
 
 			() => clearTimeout(timer);
 		});
-		
+
 		return count; // returning the state
 	}
-	
+
 	function App() {
 		const incrementiveCount = useCounter(); // state is updated on each re-render
-		
+
 		return <div>{incrementiveCount}</div>;
 	}
 	```
 ##### Use
 - To use a custom hook, import and use it like any other React hook.
-  
+
 ##### Behavior of hooks
 1. Each use of hook has it's own state, that is coupled with the component/hook it's being used in.
 2. The place where a custom hook is used(i.e. called) can be visualized as if the custom hook code was directly placed there. Functionally, this is how custom hooks behave. In short, *the hook gets attached to the component where it is being used*. FIXME: how are custom hooks implemented.
-   
+
 ### What
 See the code, [here](https://github.com/exemplar-codes/assorted-reactjs-apps/blob/f86d9b6343e848100cf6ef8ad53b01fde49c5762/src/Apps/CustomHookDemoCounter/CustomHookDemoCounter.jsx).

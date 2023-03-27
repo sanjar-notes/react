@@ -15,7 +15,7 @@ FIXME - why React
 
 *****
 
-![](../assets/3_React_Components-image-1.png)
+![](assets/3_React_Components-image-1.png)
 Principles in web dev over the years:
 
 1. Thinking in components

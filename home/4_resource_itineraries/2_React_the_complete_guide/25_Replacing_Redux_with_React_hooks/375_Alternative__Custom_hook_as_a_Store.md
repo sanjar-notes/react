@@ -28,6 +28,6 @@ Explanation (this was really hard to wrap mind around, code wise, but the idea i
 
 
 ## Conclusion
-This section was OK, but it was too hairy for a demo. I'll stop here, I'm confident I can code this up if the situation demands. Here's the [code - ZIP file](![](../../../../assets/replace-redux-06-bonus-multiple-slices.zip)) for multi-slice implementation of this demo project.
+This section was OK, but it was too hairy for a demo. I'll stop here, I'm confident I can code this up if the situation demands. Here's the [code - ZIP file](![](assets/replace-redux-06-bonus-multiple-slices.zip)) for multi-slice implementation of this demo project.
 
 \_TAG_: skipped at the end, not the best use of my time + I'm late.

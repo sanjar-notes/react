@@ -25,7 +25,7 @@ Example - code:
 ```
 
 Example - output:
-![](../../../../../assets/346_Adding_head_Metadata-image-1.png)
+![](assets/346_Adding_head_Metadata-image-1.png)
 
 
 ## How
@@ -43,7 +43,7 @@ import Head from 'next/head';
 export default MyPage() {
   return (
     <>
-	  <Head> 
+	  <Head>
 		<title>Home page</title>
 		<meta name="page destination" content="Home page" />
 		<meta name="language" content="en-us" />

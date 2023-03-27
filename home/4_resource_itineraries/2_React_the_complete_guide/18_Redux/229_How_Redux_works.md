@@ -10,4 +10,4 @@ The process continues 🔄.
 As evident, Redux has nothing to do with React. It's a standalone library.
 
 For React apps, we can subscribe in such a way that component relevant store changes causes re-render of the component.
-![](../../../../assets/229_How_Redux_works-image-1.png)
+![](assets/229_How_Redux_works-image-1.png)

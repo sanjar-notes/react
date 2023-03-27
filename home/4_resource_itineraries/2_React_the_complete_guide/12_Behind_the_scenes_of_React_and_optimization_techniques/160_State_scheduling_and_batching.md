@@ -24,16 +24,16 @@ Created Monday 11 July 2022
 	}
 	```
 - The component is re-evaluated (and re-rendered) only after the all state changes have been processed.
-  ![](../../../../assets/160_State_scheduling_and_batching-image-1.png)
+  ![](assets/160_State_scheduling_and_batching-image-1.png)
 - Use a callback in the state mutation function, if the state to be set depends on the previous state. Do this because the latest state from the batch is available as the param. Example:
 	```jsx
 	const [count, setCount] = useState(0);
-	
+
 	setCount(count + 1); // unsafe, not good
 	setCount(prevCount => prevCount + 1); // safe and better
 	```
 	Why do this? Because it could be the case that multiple state changes were batched and not all processed (i.e. re-evaluation has not taken place), so the state accessed is actually the one of the last component evaluation.
-	
+
 ### What
 - State change batching is practically unobservable (because React is fast).
 - The only issue can be the dependence of new state on the last change, which can be taken care of by using the callback version of the state mutation function (provided by `useState`).

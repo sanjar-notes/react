@@ -17,8 +17,8 @@ By detecting regressions (by writing automated tests), we:
 3. **Makes experimenting easy** - we can try out changes to our code without worrying about unknown regressions, because we can detect them.
 4. **Generate data about code quality/architecture** - we generate useful data that might be kept in mind when making future changes.
 5. **Learn how to write good code** - consequence of \#4.
-   
-![](../../../../assets/385_What_is_testing_and_Why-image-1.png)
+
+![](assets/385_What_is_testing_and_Why-image-1.png)
 
 
 ## How
@@ -33,7 +33,7 @@ By detecting regressions (by writing automated tests), we:
 Examples:
 1. Frontend web apps - we need a sample browser, where we automatically load, mimick events and see the result by inspecting the DOM.
 2. Backend web apps - we need a server running in test mode, where we mimick incoming requests and database reads/writes and verify if everything went OK.
-   
+
 We need 4 tools to do automated testing:
 1. Environment simulator - headless browser, inspected VM. We simulate the whole lifecycle of the app here, including setup, mimicking events, results etc.
 2. Environment inspector - DOM APIs, OS level inspector. We inspect changes, results for events that we mimick.

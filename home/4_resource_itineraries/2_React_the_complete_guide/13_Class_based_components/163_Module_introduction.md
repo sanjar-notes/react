@@ -6,7 +6,7 @@ Created Monday 14 July 2022
 # About classes in React
 - Classes are a computationally equivalent way to create React components.
 - Classes were the norm for building components before React 16.8, at-least for stateful components. Introduction of hooks made function based stateful components possible.
-	![](../../../../assets/163_Module_introduction-image-1.png)
+	![](assets/163_Module_introduction-image-1.png)
 - They are seldom used in new codebases, but they are still present in a majority of apps, libraries.
 
 ### What's in this section

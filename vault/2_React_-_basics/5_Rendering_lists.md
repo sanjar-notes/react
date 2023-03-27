@@ -22,7 +22,7 @@ Note: React can render sibling nodes, but a single outermost container is still 
 A simple way is to use **map** in JS, and this is used quite a lot.
 e.g Making a list of components and, then rendering it
 ```jsx
-const ninjaList = ninjas.map( 
+const ninjaList = ninjas.map(
 	ninja => (<div>
 				<div>Name: {ninja.name} </div>
 				<div>Age: {ninja.age} </div>
@@ -30,7 +30,7 @@ const ninjaList = ninjas.map(
 			</div>));
 return (<div> {ninjaList} </div>);	// render function
 ```
-![](../../assets/5_Rendering_lists-image-1.png)
+![](assets/5_Rendering_lists-image-1.png)
 *****
 ### Key attribute
 * While rendering lists of components, React may redo the whole array even if only a single component is pre-pended in the latest UI frame. The reason being that React compares the lists in a simple iterative way. This can lead to bad performance.
@@ -65,16 +65,16 @@ return (<div> {ninjaList} </div>);	// render function
 </ul>
 ```
 ### Conditions for key
-* The ideal candidate for the key attribute is the ID of the data being used. 
+* The ideal candidate for the key attribute is the ID of the data being used.
 * A less and sometimes buggy candidate is the index of the array, as available in map (`map(vari, index)`). It is buggy because a JSX element would change internally, but have an ID same as existing nodes, this would not update the existing JSX, as it should, resulting in an error.
 * An error shows if key is absent while rendering lists of JSX elements.
 - Always use keys attribute for when rendering lists of JSX elements.
-![](../../assets/5_Rendering_lists-image-2.png)
+![](assets/5_Rendering_lists-image-2.png)
 - Keys should be unique only among siblings, and don't have to be globally unique.
 * To remove the error, add the key attribute to each component being rendered.
 
 ```jsx
-const ninjaList = ninjas.map( 
+const ninjaList = ninjas.map(
 	ninja => (<div key={ninja.id}>
 				<div>Name: {ninja.name} </div>
 				<div>Age: {ninja.age} </div>

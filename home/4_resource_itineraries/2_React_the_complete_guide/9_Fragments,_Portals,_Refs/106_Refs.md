@@ -12,7 +12,7 @@ There are 3 parts to the code:
 3. Write code that reads, writes to using the ref. Note, this should be outside of any JSX. WHY? FIXME.
 
 - The ref variable has a property called `current` whose value is an object with name-values being element attributes (including `value` for `input`s). In short all attributes are present in `refVariable.current`.
-![](../../../../assets/106_Refs-image-1.png)
+![](assets/106_Refs-image-1.png)
 - The ref variable can be read/written from/into, and this will reflect in the component on the page.
 
 Here's an example with the 3 code parts:
