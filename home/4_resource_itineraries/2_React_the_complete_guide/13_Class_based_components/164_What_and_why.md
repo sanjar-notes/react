@@ -6,7 +6,7 @@ Created Monday 14 July 2022
 - With the exception of 'Error boundaries' - functional and class based components are equally valid for any kind of components, and are interoperable.
 
 ### Class vs function components - basic difference
-![](assets/164_What_and_why-image-1.png)
+![](/assets/164_What_and_why-image-1.png)
 1. Functions return JSX directly. Classes need to have a function named `render` that returns the JSX.
 2. Functions have `useState` for working with state which provides both the current value and a mutator for state. Classes store state as an instance variable named `state` and use the React provided mutator called `setState`.
 3. Functions don't have to use the `this` keyword, almost always. Classes have to use `this` almost everywhere.

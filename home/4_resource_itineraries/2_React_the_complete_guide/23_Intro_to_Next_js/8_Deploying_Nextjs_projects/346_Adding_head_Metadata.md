@@ -25,7 +25,7 @@ Example - code:
 ```
 
 Example - output:
-![](assets/346_Adding_head_Metadata-image-1.png)
+![](/assets/346_Adding_head_Metadata-image-1.png)
 
 
 ## How

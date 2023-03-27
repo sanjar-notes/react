@@ -24,7 +24,7 @@ Created Monday 11 July 2022
 	}
 	```
 - The component is re-evaluated (and re-rendered) only after the all state changes have been processed.
-  ![](assets/160_State_scheduling_and_batching-image-1.png)
+  ![](/assets/160_State_scheduling_and_batching-image-1.png)
 - Use a callback in the state mutation function, if the state to be set depends on the previous state. Do this because the latest state from the batch is available as the param. Example:
 	```jsx
 	const [count, setCount] = useState(0);

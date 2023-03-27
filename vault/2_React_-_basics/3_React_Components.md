@@ -14,7 +14,7 @@ So this is a 2 step process - create units and then combine them.
 
 #### What
 * React is all about components.
-![](assets/3_React_Components-image-1.png)
+![](/assets/3_React_Components-image-1.png)
 * All component names should start with a capital letter(very important - CamelCase) - React generally treats lowercase elements as standard HTML elements.
 * Each component is generally kept in a file of it's own. Both `.js` and `.jsx` are valid file extensions. I prefer `.jsx` because it helps in differentiation UI files and logic-only files.
 * Every component exports a class or a function that returns **one and only one** wrapped JSX element(like a div or React.Fragment tag-for multiple components).

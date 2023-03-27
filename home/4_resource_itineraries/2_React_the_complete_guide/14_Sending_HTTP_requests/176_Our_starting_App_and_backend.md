@@ -11,13 +11,13 @@ Created Monday 18 July 2022
 - A backend app may use either or both. REST is the more prevalent and popular one, GraphQL is a younger
 
 Similarities and differences
-![](assets/176_Our_starting_App_and_backend-image-1.png)
+![](/assets/176_Our_starting_App_and_backend-image-1.png)
 
 Essentially, difference between the two is the consumption style. Of course, the backend-app is also implemented differently. The query, in case of GraphQL, should abide by the GraphQL query specification.
-![](assets/176_Our_starting_App_and_backend-image-2.png)
-![](assets/176_Our_starting_App_and_backend-image-3.png)
-![](assets/176_Our_starting_App_and_backend-image-4.png)
-![](assets/176_Our_starting_App_and_backend-image-5.png)
+![](/assets/176_Our_starting_App_and_backend-image-2.png)
+![](/assets/176_Our_starting_App_and_backend-image-3.png)
+![](/assets/176_Our_starting_App_and_backend-image-4.png)
+![](/assets/176_Our_starting_App_and_backend-image-5.png)
 
 When should one use REST, or GraphQL?
 - **REST**

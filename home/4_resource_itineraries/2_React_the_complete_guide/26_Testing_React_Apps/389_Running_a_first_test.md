@@ -22,4 +22,4 @@ test("renders learn react link", () => {
 ```
 4. **Running the test(s)** - Run all tests using `npm test`, this will run all `.test.js*` files. It generates a report - successes/failures/errors. For selected file(s) pass the path/pattern.
 
-![](assets/389_Running_a_first_test-image-1.png)
+![](/assets/389_Running_a_first_test-image-1.png)
