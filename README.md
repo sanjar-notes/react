@@ -35,7 +35,4 @@ Or see the [notes website(experimental)](https://sanjar-notes.github.io/reactjs-
 
 These are notes (mental models) I made while doing [this Udemy course(released 2020)](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/).
 
-I have tried to compress and classify all information into manageable chunks.
-
-As said earlier, I didn't have a *why*, so the notes may be a little unoptimized. Will try to make them comfortable soon.
-
+I have tried to compress and classify information into manageable chunks.
