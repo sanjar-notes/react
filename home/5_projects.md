@@ -1,4 +1,4 @@
-# 4. Projects
+# 5. Projects
 Created Thursday 13 February 2022
 
 1. [Assorted React Apps](https://github.com/exemplar-codes/assorted-reactjs-apps) - a project to play with React, has many sub-projects.
