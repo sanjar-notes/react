@@ -4,5 +4,6 @@
   "templater-obsidian",
   "obsidian-timestamper",
   "obsidian-diagrams-net",
-  "obsidian-attachment-name-formatting"
+  "obsidian-attachment-name-formatting",
+  "obsidian-hider"
 ]
