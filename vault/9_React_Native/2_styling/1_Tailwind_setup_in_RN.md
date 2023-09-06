@@ -28,10 +28,12 @@ Claimed features:
 - **styling based on parent state** - automatically style children based upon parent pseudo classes (docs)
 - children styles - create simple layouts based upon parent class
 
+
 ## Arbitrary values in Nativewind
 For arbitrary values - colors like `text-[red]` doesn't work, but sizing like `w-[100px]` does work. This is practically fine, since color system is a much "visible" thing than spacing, and so, is usually enforced more strictly in the design system.
 
 Wait, `text-[#ff0000]` does work (`text-[red]` doesn't). FIXME (why?)
+
 
 ## Setup for NativeWind
 - Follow the [quickstart](https://www.nativewind.dev/quick-starts/react-native-cli) steps.
