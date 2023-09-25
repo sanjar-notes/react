@@ -1,6 +1,6 @@
 # React.js
 
-[Live link](https://sanjar-notes.github.io/reactjs-notes/home/4_resource_itineraries/2_React_the_complete_guide/12_Behind_the_scenes_of_React_and_optimization_techniques/152_How_React_Really_Works.md)
+[Live link](https://sanjar-notes.github.io/react/home/4_resource_itineraries/2_React_the_complete_guide/12_Behind_the_scenes_of_React_and_optimization_techniques/152_How_React_Really_Works)
 
 ## Why
 My needs:
