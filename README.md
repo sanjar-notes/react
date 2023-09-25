@@ -25,11 +25,11 @@ React provides:
 
 React is a declarative way to build user interfaces.
 > [React](https://reactjs.org/) is a *library* to *create* and *reuse* your own HTML tags.
-> 
+>
 > &mdash; Me when I started using React
 
 ## Usage
-Browse them here on GitHub or just clone the repo, it's [markdown](https://www.markdowntutorial.com/) 🙌.
+Browse them here on GitHub or just clone the repo, it's [markdown](https://www.markdowntutorial.com/) 🙌. Start reading from [here](/vault/1_React_info_and_setup/3_How_React_works.md)
 
 Or see the [notes website(experimental)](https://sanjar-notes.github.io/reactjs-notes/docs/home/resource_itineraries/React_the_complete_guide/Behind_the_scenes_of_React_and_optimization_techniques/How_React_Really_Works)
 
