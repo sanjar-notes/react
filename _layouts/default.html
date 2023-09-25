@@ -1,0 +1,54 @@
+<div class="PageNavigation">
+  {% if page.previous.url %}
+  <a class="prev" href="{{page.previous.url}}"
+    >&laquo; {{page.previous.title}}</a
+  >
+  {% endif %} {% if page.next.url %}
+  <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+  {% endif %}
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <style>
+      .PageNavigation {
+        font-size: 14px;
+        display: block;
+        width: auto;
+        overflow: hidden;
+      }
+
+      .PageNavigation a {
+        display: block;
+        width: 50%;
+        float: left;
+        margin: 1em 0;
+      }
+
+      .PageNavigation .next {
+        text-align: right;
+      }
+    </style>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <div class="PageNavigation">
+        {% if page.previous.url %}
+        <a class="prev" href="{{page.previous.url}}"
+          >&laquo; {{page.previous.title}}</a
+        >
+        {% endif %} {% if page.next.url %}
+        <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+        {% endif %}
+      </div>
+    </nav>
+    <h1>{{ page.title }}</h1>
+    <section>{{ content }}</section>
+    <footer>&copy; to me</footer>
+  </body>
+</html>
