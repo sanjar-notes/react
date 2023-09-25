@@ -2,6 +2,8 @@
 plugins:
   - jekyll-relative-links
   - jekyll_pre
+  - jekyll-toc
+  # - moonwalk # dark, light mode
 relative_links:
   enabled: true
   collections: true
