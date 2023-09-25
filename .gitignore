@@ -1,4 +1,5 @@
 .vscode/
 .obsidian/workspace.json
 .DS_Store
-
+.env
+node_modules
