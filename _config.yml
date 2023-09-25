@@ -10,3 +10,9 @@ relative_links:
 include:
   - README.md
   - LICENSE.md
+  
+defaults:
+  - scope:
+      path: ""
+    values:
+      toc: true
