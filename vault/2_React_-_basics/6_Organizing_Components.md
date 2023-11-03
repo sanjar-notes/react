@@ -1,7 +1,7 @@
 # 6. Organizing Components
 Created Wednesday 09 September 2020
 
-FIXME, write about - destructure props, smart vs dumb, headless components, styleProps/classProps, slots, propSets, dependencyInversion for generic buttons, core + common + page-components + pages directory, constants in enums, util functions in a dedicated file.
+FIXME, write about - destructure props, smart vs dumb, headless components, styleProps/classProps, slots, propSets, dependencyInversion for generic buttons, core + common + page-components + pages directory, constants in enums, util functions in a dedicated file, custom hooks, component/page <--> Redux thunk <--> endpoint file arch.
 #### Why
 React is all about components and so it's normal to have more than 100 components in a project. Due to which organization becomes more important.
 

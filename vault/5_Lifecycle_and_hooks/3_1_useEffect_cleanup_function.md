@@ -51,3 +51,25 @@ See this
 Here the timeouts will be set and unset when the user is typing, and finally one will be run if the user stops typing. This reduces network calls, and when they have typed successfully, a request is sent.
 
 This way of validating typed input is called "de-bouncing". An example where this is used - GitHub new repo name does not exist tick mark, Gmail new username 'taken' validation.
+
+### Debounce util
+Debounce is not a hard thing. In fact, a util can be created so one doesn't have to think about the details of the construct.
+
+```js
+function debounceUtil(cb, time) {
+  let stateOfReturnFuncs;
+
+  function returnFunc() {
+    clearTimeout(state); // clear existing state (i.e. timer)
+    stateOfReturnFuncs = setTimeout(cb, time); // start new timer, but save self also
+  }
+
+  return returnFunc;
+}
+
+const eventHandler = debounceUtil((event) => { }, 1000);
+
+// sanity check
+// eventHandler ran once -> timer started, awaiting custom code run
+// eventHandler ran again (before previous) -> cleared older timer -> timer started again, awaiting custom code run
+```

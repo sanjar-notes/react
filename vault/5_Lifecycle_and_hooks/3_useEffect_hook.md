@@ -1,24 +1,24 @@
 # 110. useEffect hook
 Created Tuesday 08 March 2022
 
-#### What is an effect, aka "side effect"?
+## What is an effect, aka "side effect"?
 The main job of React is to:
 1. Render UI
 2. React to user input.
 
 Tasks other than these 2 are "side effects". Example - http requests, computation, timers, using `localStorage`, listening to user input etc. Note that some normal ops can also be considered side-effects - like listening to user input for validation.
 
-### Why
+## Why
 Side effects cannot be coded "as is" into the component function, because:
 - They'll be executed each time the component is rendered, i.e. function is executed. This may be very expensive, or not needed.
 - If the side effects change state (using `useState`), then this will trigger an infinite loop. How: `side-effect` --> `change state` --> `re-render due to change state` --> `side-effect` 🔁 and so on.
 
 So how do we code side effects into components, in a controllable way. The answer is the `useEffect` hook.
 
-### How
+## How
 Syntax of `useEffect`:
 ```jsx
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 
 const MyComponent() {
 	...
@@ -31,19 +31,19 @@ It has two pieces:
 1. Dependency array - just variables. React keeps track of these.
 2. A function that runs *after* every render if any dependencies have changed, including the first render (independent of dependency array). Side effect code goes into this function.
 
-###### Note on dependency array
+### Note on dependency array
 1. If dependency = `undefined`, i.e. absent. Function will run after every render.
 2. If dependency = [] (empty array), the function will execute once, i.e. after first render.
 3. If the dependency array has any candidates, the function will run after every render, given the dependencies have changed.
 4. In-built functions, second element of `useState()` array, or anything defined outside the component should not be passed as a dependency, because it has no effect. Basically, only pass stuff that is changed/can change inside the component function (or its parent).
 
-### What
+## What
 - `useEffect` is the solution to the problem of placement (and therefore execution) of side-effect (s) code.
 - `useEffect` is not like `useState`. i.e. it won't trigger re-render due dependency array change. It will do so only if state is changed inside the function, which is not the question here. Again, to reiterate - `useEffect` runs the function after every render if any dependency has changed.
 - Additionally, `useEffect` may be used as a refactor to repeated code, due to presence of a dependency array.
 - `useEffect` is good for times when a state is dependent on other states, given the dependent states are kept in the dependency array. This will lead to the latest state being considered during state updation (FIXME: latest, really?).
 
-###### When to use `useEffect`?
+## When to use `useEffect`?
 FIXME - can be made better
 
 Use it when:
