@@ -1,12 +1,12 @@
 # 4. Two way Binding
 Created Monday 07 February 2022
 
-#### Why
+## Why
 In forms, we usually need to save the state to then do a PUT/PATCH call to the server asynchronously. This is easily done using `useState`. But how do we reset inputs to their default value (or blank).
 
-Binding state to change in input is a binding. But we can also bind the input attribute `value` to the state. This way, when we clear the state, the inputs are also reset, on submission. This is a **two way binding**. And it's mostly used in forms.
+Binding state to change in input tag is one-way binding. But we can also bind the input attribute `value` to the state. This way, when we clear the state (programmatically), the inputs are also reset (in UI), on submission. This is a **two way binding**. And it's mostly used in forms.
 
-#### How
+## How
 Here's a component that uses two way binding:
 ```jsx
 import React, { useState } from "react";
@@ -95,3 +95,16 @@ export default ExpenseForm;
 ```
 
 As said, it's quite useful in forms.
+
+
+## What
+To add two way binding, create a state and use both the value and state updater function (as onchange) on the UI element.
+```jsx
+const [name, setName] = useState('');
+
+// setName -> changes value and re-renders -> new UI has new `value` prop. Ok
+// User event -> triggers onchange -> changes value and re-renders -> new UI has new `value` prop. Ok
+// i.e. 2 way binding achieved
+
+return <input value={name} onChange={(e) => setName(e.target.value)} />;
+```

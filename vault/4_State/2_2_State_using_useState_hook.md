@@ -1,16 +1,16 @@
 # 2. State using useState hook
 Created Saturday 24 January 2022
 
-#### Why
+## Why
 This is an implementation of state, so that components are redrawn when state is mutated explicitly. Note that state remains detached from the component lifecycle.
 
-#### How
+## How
 A life-cycle method (informally called a hook) is used. It is added to the component's code.
 
 A variable is captured as state and managed by the hook.
 When an update call using the hook is made, the component is re-rendered. So UI is synced with the state.
 
-#### What
+## What
 Here's the syntax:
 1. Import `useState` from `react`.
 2. Capture a variable using `useState`, and also get back an updater function. Add this code in the component.
@@ -36,7 +36,7 @@ function MyComponent (props) {
 ```
 Also see [project commit](https://github.com/exemplar-codes/expense-tracker-react/commit/45d42efca9e80754120da43d5989c05519a2965f).
 
-###### General algorithm for `useState`
+## General flow of `useState`
 For the skeleton:
 ```JSX
 function MyComponent {
@@ -58,5 +58,5 @@ is:
 3.  Step 2 repeats.
 Note: `const` is OK for the read variable, because we never assign (`=`) anything to it. It's changed internally.
 
-#### Computation of initialState
-If the initial state is a large computation, we would not want to include it in the component, because it would execute on every re-render. Instead, pass a function to `useState` instead of the intial value. This function will only be run once (when the component first renders), and never again. This way the computation is done only once, as needed.
+## Computation of initial state
+If the initial state is a large computation, we would not want to include it in the component non-markup code, because it would execute on every re-render. The workaround is to pass a function to `useState` instead of a value (variable). This function will only be run once (when the component first renders), and never again. This way the "initial state" computation is done only once.
