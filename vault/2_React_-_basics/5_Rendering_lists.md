@@ -31,7 +31,7 @@ const ninjaList = ninjas.map(
 return (<div> {ninjaList} </div>);	// render function
 ```
 ![](/assets/5_Rendering_lists-image-1.png)
-*****
+
 ### Key attribute
 * While rendering lists of components, React may redo the whole array even if only a single component is pre-pended in the latest UI frame. The reason being that React compares the lists in a simple iterative way. This can lead to bad performance.
 - To avoid this bad performance, React can be given a hint via the "key" string attribute on the list JSX element (can be HTML element or custom, although in case key is passed to custom element it *won't* be available to it via prop).
