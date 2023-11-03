@@ -102,3 +102,10 @@ Note:
 ### Questions
 1. Can a reducer in a slice access values from another slice? No, each reducer can access only slice in it's data. If two slices wish to use each other's data, they should be combined into a single slice OR one can do some acrobatics to get reducers to share data.
 2. Can two slices have data with the same name? Yes, there's no scope of collision as reducers are confined to their own slices. This may cause confusion amongst developers of the project, though. See [code](https://github.com/exemplar-codes/react-redux-demo/commit/8d2ef9f3838979384acec94cb51cf64bfcaff0ca).
+
+
+FIXME: 
+- mention that `createStore`, `createSlice`, `reducer` (with getState), `createAsyncThunk`, `createSelector` are the important things. Everything else is an add on.
+- RTK is good enough to be used. Redux (vanilla) can be ignored.
+- Side-effects though discouraged, can still be called form async thunks.
+- Mentions the few [issues](https://github.com/sanjar-notes/react/issues/33) with RTK

@@ -35,14 +35,17 @@ function reducerFunc(state, action) {
 }
 
 function MyComponent () {
-
 	const [stateVar, dispatchFunc] = useReducer(reducerFunc, intialState);
 	
 	return (<>
 			...
 			{state.name}
 			...
-			<button onClick={ ()=>dispatchFunc({type: 'CASE_VAL', payload: 'arg'}) }>Name<button>
+			<button 
+				onClick={()=>dispatchFunc({type: 'CASE_VAL', payload: 'arg'}) }
+			>
+			  Name
+			<button>
 			...
 			</>);
 }

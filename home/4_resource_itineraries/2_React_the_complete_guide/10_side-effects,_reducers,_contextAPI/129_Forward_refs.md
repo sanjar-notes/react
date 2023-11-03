@@ -4,13 +4,15 @@ Created Tuesday 06 May 2022
 
 ### Why
 - The `useRef` hooks works on HTML elements only, and not custom components.
-The forward ref functionality let's one add refs to custom components too, so that they can be controlled directly (without the need of state/re-renders).
+- The forward ref functionality let's one add refs to custom components too, so that they can be controlled directly (without the need of state/re-renders).
 - It's rarely used.
+- Used to pass control of "ref" state to children.
+- Practically, used to pass control of parent to child. Example: a collapsible wrapper component exposes a ref it's "slots", which may be used to `open`, `close`, `toggle` the popup as well as let the child know if the popup is visible or not.
 
 ### How
 Here's an example. We use ref on a custom component, just like a ref is added to an HTML element.
 ```jsx
-import {useRef} from 'react';
+import { useRef } from 'react';
 
 function MainApp() {
 	const inputRef = useRef();

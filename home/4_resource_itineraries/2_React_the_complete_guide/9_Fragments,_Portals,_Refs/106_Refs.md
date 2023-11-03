@@ -3,7 +3,8 @@ Created Friday 4 March 2022
 - [ ] in vault
 
 ### Why
-Refs (short for references) is a way to access DOM nodes directly in React. It is used to read, and rarely, write to DOM nodes. It is especially useful in forms where we need to read `input` elements for values on submission.
+- Refs (short for references) is a way to access DOM nodes directly in React. It is used to read, and rarely, write to DOM nodes. It is especially useful in forms where we need to read `input` elements for values on submission.
+- Usage 2: have state independent of re-renders.
 
 ### How
 There are 3 parts to the code:
