@@ -1,18 +1,18 @@
 # 4. PropTypes and defaultProps
 Created Sunday 06 September 2020
 
-#### Why
+## Why
 The props we use in React components are supposed to be of a certain type. But this is not indicated anywhere. This can cause wrong type of props to be received by the rendering component. To avoid this, we use the `prop-types` npm library, which lets us created `console` level error checks for the type of props received.
 
 Note that we could use `TypeScript` if we wanted to use a type for variables, but it is an overhead to use `TypeScript`. `prop-types` is a lighter solution for specifying types.
 
 Also, sometimes we are supposed to receive a prop but it is not passed, this can break our component because of `undefined`. To get rid of this, we can specify default values of the props, so errors like this are caught.
 
-#### How
-`propTypes` is a library.
+## How
+`propTypes` is a [library](https://www.npmjs.com/package/prop-types).
 `defaultProps` are already included in `create-react-app` projects.
 
-It is to be noted that we are specifying props that are being received, not being sent. This is because sent ones are already known - they may be a prop or created just here.
+It is to be noted that we are specifying props of the current component - i.e. props that are being received, not being sent. This is because sent ones are already known - they may be a prop or created just here.
 
 Also, note that for both `propTypes` and `defaultProps`, while receiving props, it does not matter if we use a props object or de-structure them. Just make sure the names of the receiving props are named correctly during specification.
 
@@ -24,8 +24,8 @@ MyComponent.propTypes = { // lowercase start
 MyComponent.defaultProps = {} //lowercase start
 ```
 
-#### What
-###### PropTypes
+## What
+### PropTypes
 To use `propTypes`, first install it in the project (`npm i prop-types`) and import it in the *receiving* component.
 ```jsx
 import PropTypes from 'prop-types'; // for using type constants, so capital
@@ -76,7 +76,7 @@ MyReceivingComponent.propTypes = { // lowercase propTypes
 - For more types, see https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes
 
 ---
-###### defaultProps
+### defaultProps
 The syntax for this is:
 ```jsx
 // MyReceivingComponent is defined, class or functional component
@@ -89,7 +89,7 @@ MyReceivingComponent.defaultProps = {
 
 That' all.
 
-#### Single child for wrapper
+### Single child for wrapper
 To specify that a single component is wrapper around our component (see [3_Wrapper_components](3_Wrapper_components.md)), do this:
 ```jsx
 MyComponent.propTypes = {

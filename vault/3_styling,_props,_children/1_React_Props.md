@@ -2,11 +2,10 @@
 Created Sunday 06 September 2020
 
 #### Why
-React components should be reusable, so there's a need associate data with a component, which it uses in rendering itself.
+React components should be reusable, so there's a need to associate data with a component, which it uses in rendering its JSX.
 
 #### How
 Everything in React is a component. And the whole UI is nothing but a tree of these components.
-
 * An easy way to store data for a component is to store the data as key-value attributes of the component, just like HTML attributes.
 * Only attributes passed to a component can be accessed by it, this is an organizing principle in React. The parent passes some of its data to child components as attributes. This is done for two reasons:
 	* Reusablity: data changes the component behaviour, stuff that it renders.

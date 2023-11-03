@@ -13,12 +13,13 @@ function Component(){
 ```
 
 #### CSS in a file
-Nothing changes in the CSS file, it's just normal CSS and selectors are based on id, class and HTML tag name.
+Nothing changes in the CSS file, all types of selectors are possible in the CSS file. And id and classes can be used in JSX via `className` prop.
+
 To use it, import the CSS file, like so:
 ```jsx
 import './Component.css'; // imported
 ```
-**Importing CSS file is not scoped to the existing component, and is applied globally.** So it's better to use classes on elements.
+**Imported CSS file is not scoped to the existing component, and is applied globally.** So it's better to use classes on elements.
 
 Now for the CSS features:
 1. id - remains the same. Can be used on HTML elements only, not JSX elements. Of course, one may use id and trickle down the prop, but it's not advised.
