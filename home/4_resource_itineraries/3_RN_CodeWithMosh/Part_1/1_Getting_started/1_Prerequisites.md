@@ -5,3 +5,5 @@ Must know basic
 - CSS - flex, positioning, misc properties
 - JS
 - React. We'll be using functional components and hooks here
+
+Course assumes no existing knowledge about mobile dev

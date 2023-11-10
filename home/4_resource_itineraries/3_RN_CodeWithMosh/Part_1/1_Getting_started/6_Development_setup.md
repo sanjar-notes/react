@@ -1,8 +1,8 @@
 # 6. Development setup
 Created Tue Nov 7, 2023 at 9:45 AM
 
-- Make sure `node` version >=12
-- Install [Expo](https://docs.expo.dev/get-started/installation/) on computer: `npm install -g expo`
+- Make sure `node` version >=18 (Tested with 18), and use `npm` only
+- ~~Install [Expo](https://docs.expo.dev/get-started/installation/) on computer: `npm install -g expo`~~ `npx create-expo-app AppName` is enough
 - Install Expo on real phone - it's available on [app stores](https://play.google.com/store/apps/details?id=host.exp.exponent&pcampaignid=web_share)
 
 - vscode is fine as an editor. Helpful vscode plugins
