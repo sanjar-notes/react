@@ -13,7 +13,7 @@ Created Wed Nov 15, 2023 at 3:08 AM
 - Used to get dimensions of the screen.
 -  There are two args - `'screen'`(whole device) or `'window'` (space used by app).
 - on iOS, both screen/window return are the same value.
-- Con: the values don't update when device orientation is changed. The issue exists even if the component is re-rendered somehow. This can be fixed by a hook (discussed later).
+- Con: the values don't update when device orientation is changed. They do change if the component re-renders.
 ```jsx
 import { Dimensions } from "react-native";
 
