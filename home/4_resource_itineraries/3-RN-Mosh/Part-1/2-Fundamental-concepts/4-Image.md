@@ -2,8 +2,8 @@
 Created Tue Nov 14, 2023 at 11:44 PM
 
 - Core component for rendering images
-- Can render both local and remote images
-- Can also render image fro local disk (Camera photos)
+- Can render both local and network images
+- `require()` is needed for network images
 
 ```jsx
 import { Image } from 'react-native';
@@ -23,8 +23,9 @@ function MyComponent() {
 - `source.uri` - URI of image. Or base64 encoded string equivalent.
 - `style` - used for specifying height, width of local images.
 - `blurRadius={2}` for blur effect
-
+- Does not have `onPress` event
 
 &nbsp;
+- [`resizeMode`](https://reactnative.dev/docs/image#resizemode) - used if fetched image is different from screen size.
 - `loadingIndicatorSource`, similar to `source`. Is used to show a image until the image loads
 - `onError = (event) => {event.error}` is available.
