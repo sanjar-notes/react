@@ -26,7 +26,7 @@ Lessons:
 
 ![](../../../../../assets/Pasted-image-20231118232621.png)
 
-[Code](https://github.com/exemplar-codes/DoneWithIt/commit/c1cba8525377f03ccc8144c694f30199bdfad76f)
+[Code](https://github.com/exemplar-codes/DoneWithIt/commit/08bfa59cc029fcd1fb2d7f5acc0de739e0bd654d)
 
 ## Tip - enums, colors
 Colors and enums, especially business logic ones should be stored in `/app/constants/`
