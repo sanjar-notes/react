@@ -20,8 +20,11 @@ function MyComponent() {
 - Has many non-manual or special event handlers.
 
 ## `SafeAreaView` (ios only)
+
+[Ready to use component](https://github.com/exemplar-codes/DoneWithIt/commit/29779a0cc1fa906b1c7f6eff4f43a6900d296354)
+
 - This is also a core component. Almost exactly like `View`.
-- Used to prevent overflow of app UI into the system UI (top bar, navigation bar).
+- Its used to prevent overflow of app UI into the system UI (top bar, navigation bar).
 - It only works for iOS, and is used to avoid the top notch for newer iPhones. For Android a hack needs to be done.
 
 - Use when: if the app UI for a screen is flowing onto system UI. Then wrap the component with `SafeAreaView`. That's it.
