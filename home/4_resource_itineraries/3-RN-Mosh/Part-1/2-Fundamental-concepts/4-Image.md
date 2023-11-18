@@ -31,7 +31,7 @@ function MyComponent() {
 - `loadingIndicatorSource`, similar to `source`. Is used to show a image until the image loads
 - `onError = (event) => {event.error}` is available.
 
-## `ImageBackground`
+## `<ImageBackground />`
 A core component for rendering an image in the background with `children` rendering in the foreground.
 
 Usage
