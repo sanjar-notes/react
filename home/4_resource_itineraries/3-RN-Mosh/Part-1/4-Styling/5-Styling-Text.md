@@ -1,6 +1,8 @@
 # 5. Styling Text
 Created Sun Nov 19, 2023 at 3:17 AM
 
+[Code](https://github.com/exemplar-codes/DoneWithIt/commit/b9fb64b5c92c0fcdbbb765e477b1a8ca2a81c8d2)
+
 ## Style props
 - `color` string. Examples: `'red'`,  `'#ff0000'`
 - `fontWeight` - string. Examples: `'600'`, `'bold'`, `'normal'`. JS number won't work.
