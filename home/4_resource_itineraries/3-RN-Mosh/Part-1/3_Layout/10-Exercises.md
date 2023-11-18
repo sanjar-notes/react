@@ -27,3 +27,35 @@ Lessons:
 ![](../../../../../assets/Pasted-image-20231118232621.png)
 
 [Code](https://github.com/exemplar-codes/DoneWithIt/commit/c1cba8525377f03ccc8144c694f30199bdfad76f)
+
+## Tip - enums, colors
+Colors and enums, especially business logic ones should be stored in `/app/constants/`
+```jsx
+// product.js
+export const ORDER_TYPES = {
+  PREPAID: 'prepaid',
+  COD: 'cash-on-delivery',
+}
+
+export const PRODUCT_MODULES = {
+  EXPLORE: 'explore',
+  ORDER: 'order',
+  PAYMENT: 'payment',
+  HELP: 'help',
+  TRACK_ORDER: 'track-order'
+}
+```
+
+```jsx
+export const COLORS = {
+  DARK: '#000000',
+  LIGHT: '#fffff',
+  PRIMARY: '#ff0000',
+  SECONDARY: '#0000ff',
+}
+```
+
+This helps us:
+1. Avoid typo bugs, and provides auto-completes
+2. Some light documentation for variations of product
+3. Searching code faster, when a module or variation breaks
