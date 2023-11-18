@@ -19,8 +19,8 @@ function MyComponent() {
 - Optionally, has `nativeId` prop that can be used to [locate](https://stackoverflow.com/questions/52483374/can-i-use-the-prop-nativeid-to-locate-a-view-in-native-code) element in native module code (Kotlin).
 - Has many non-manual or special event handlers.
 
-## `SafeAreaView`
-- This is also core component. Almost exactly like `View`.
+## `SafeAreaView` (ios only)
+- This is also a core component. Almost exactly like `View`.
 - Used to prevent overflow of app UI into the system UI (top bar, navigation bar).
 - It only works for iOS, and is used to avoid the top notch for newer iPhones. For Android a hack needs to be done.
 
@@ -29,3 +29,11 @@ function MyComponent() {
 - Should be used as a top level wrapper? By default, no.
 	- Yes - if the app is intended to never flow into system UI. Wrapper is fine.
 	- No - if app asymmetric behavior, i.e. has some screens that are intended to flow into system UI, then per screen wrapping should be done.
+
+- For Android, `SafeAreaView` behaves exactly like `View`. the workaround for overflow protection is `StatusBar.currentHeight`:
+	```jsx
+	import { StatusBar } from 'react-native';
+	
+	return <View styles={{ marginTop: StatusBar.currentHeight }}></View>
+	```
+	 This doesn't affect iOS though. So if the target is both Android and iOS, both `SafeAreaView` and `StatusBar.currentHeight` (conditional based `Platform`) are used.
