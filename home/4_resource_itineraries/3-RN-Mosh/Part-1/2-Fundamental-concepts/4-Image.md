@@ -19,11 +19,12 @@ function MyComponent() {
 }
 ```
 
-- `alt` - description of image used for fallback
-- `source`
-- `source.uri` - URI of image. Or base64 encoded string equivalent.
+- `source={{require("../flag.png")}` for local image
+- `source={{ uri: "http://", width, height }` for external image. Or base64 encoded string equivalent.
+
 - `style` - used for specifying height, width of local images.
-- `blurRadius={2}` for blur effect
+- `blurRadius={2}` for blur effect. Very useful.
+- `alt` - description of image used for fallback
 - Does not have `onPress` event
 
 &nbsp;

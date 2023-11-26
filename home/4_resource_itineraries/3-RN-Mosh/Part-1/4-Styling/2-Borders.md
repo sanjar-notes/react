@@ -1,7 +1,7 @@
 # 2. Borders
 Created Sun Nov 19, 2023 at 2:10 AM
 
-- there's no `border` shorthand. So at-least 2 (color and width) are needed.
+- there's no `border` shorthand. So at-least 1  (width) are needed.
 - style props
 	- `borderWidth`
 	- `borderColor`
