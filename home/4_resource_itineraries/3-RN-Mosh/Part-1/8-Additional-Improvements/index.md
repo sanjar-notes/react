@@ -1,0 +1,1 @@
+Nothing new here. Some points about keeping various listItems but have one context-less list that takes them as prop.
