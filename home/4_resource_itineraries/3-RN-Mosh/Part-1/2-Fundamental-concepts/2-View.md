@@ -40,3 +40,20 @@ function MyComponent() {
 	return <View styles={{ marginTop: StatusBar.currentHeight }}></View>
 	```
 	 This doesn't affect iOS though. So if the target is both Android and iOS, both `SafeAreaView` and `StatusBar.currentHeight` (conditional based `Platform`) are used.
+
+## `ScrollView`
+By default `View` takes full width, but just content height. i.e. "align stretch" and "justify start".
+
+Even if content is too large, the `View` does not get a scroll bar, i.e. the extra content is just inaccessible.
+
+`ScrollView` is a core component that solves this problem.
+
+But it has a few quirk about height, and an easy workaround.
+- Styles prop is called `contentContainerStyle`, and usual `styles` wont work.
+- The scroll direction can be set using `horizontal`, `vertical` boolean props. Only one direction at a time. Default `vertical`
+- The scroll direction can be set using `horizontal`, `vertical` boolean props. Only one direction at a time.
+
+Major quirk and workaround:
+- By default, it takes the whole height (and whole width, like View). To fix the height issue, especially in horizontal mode, just wrap the `ScrollView` with a `View` and set `ScrollView`'s height to be "100%". Nice hack. [See code](https://github.com/exemplar-codes/DoneWithIt/commit/eedf8ca18bc2e352505c18a9c725284bc8b599da).
+
+FIXME: for scroll in both directions, a normal (vertical) `ScrollView`  with each child being a `horizontal` a ScrollView works.
