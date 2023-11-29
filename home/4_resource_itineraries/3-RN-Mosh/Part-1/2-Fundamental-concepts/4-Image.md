@@ -1,6 +1,7 @@
 # 4. Image
 Created Tue Nov 14, 2023 at 11:44 PM
 
+[Custom component for image - uncontrolled and controlled](https://github.com/exemplar-codes/DoneWithIt/commit/077c55daa028a7e15dae95d381e54533b293a414)
 ## `<Image />`
 - Core component for rendering images
 - Can render both local and network images
