@@ -56,4 +56,12 @@ But it has a few quirk about height, and an easy workaround.
 Major quirk and workaround:
 - By default, it takes the whole height (and whole width, like View). To fix the height issue, especially in horizontal mode, just wrap the `ScrollView` with a `View` and set `ScrollView`'s height to be "100%". Nice hack. [See code](https://github.com/exemplar-codes/DoneWithIt/commit/eedf8ca18bc2e352505c18a9c725284bc8b599da).
 
+<details><summary>Some events</summary>
+
+- `onScroll`: `e.nativeEvent.contentOffset` is {x, y} = scrolled distance. (initially 0, max=overflow_size)
+- `onContentSizeChange`: `e` = new size (a number)
+</details>
+
 FIXME: for scroll in both directions, a normal (vertical) `ScrollView`  with each child being a `horizontal` a ScrollView works.
+
+ScrollView is quite powerful, and has snapping capabilities too, see [docs](https://reactnative.dev/docs/scrollview#removeclippedsubviews)- the most essential being `snapToOffsets`
