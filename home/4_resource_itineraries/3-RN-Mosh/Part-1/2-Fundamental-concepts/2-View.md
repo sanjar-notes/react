@@ -48,19 +48,20 @@ Even if content is too large, the `View` does not get a scroll bar, i.e. the ext
 
 `ScrollView` is a core component that solves this problem.
 
-But it has a few quirk about height, and an easy workaround.
-- Styles prop is called `contentContainerStyle`, and usual `styles` wont work.
-- The scroll direction can be set using `horizontal`, `vertical` boolean props. Only one direction at a time. Default `vertical`
-- The scroll direction can be set using `horizontal`, `vertical` boolean props. Only one direction at a time.
+Props:
+- `contentContainerStyle` - for style. usual `styles` doesn't work.
+- Scroll direction - `horizontal`, `vertical` boolean props. Only one direction at a time. Default `vertical`
 
 Major quirk and workaround:
 - By default, it takes the whole height (and whole width, like View). To fix the height issue, especially in horizontal mode, just wrap the `ScrollView` with a `View` and set `ScrollView`'s height to be "100%". Nice hack. [See code](https://github.com/exemplar-codes/DoneWithIt/commit/eedf8ca18bc2e352505c18a9c725284bc8b599da).
 
-<details><summary>Some events</summary>
-
-- `onScroll`: `e.nativeEvent.contentOffset` is {x, y} = scrolled distance. (initially 0, max=overflow_size)
+Events
+- `onScroll`: `e.nativeEvent.contentOffset` is {x, y} = scrolled distance. (initially 0, max=overflow_size). `.contentSize`, `.layoutMeasurement` is also available, which give the large vs fixed size, respectively.
 - `onContentSizeChange`: `e` = new size (a number)
-</details>
+
+Methods (via ref):
+1. `ref.current.scrollTo({ x, y, animated: true })`
+2. `ref.current.scrollToEnd({animated})` - helpful since don't have to calculate ScrollView size manually. For start `scrollTo({ x: 0 })` would do.
 
 FIXME: for scroll in both directions, a normal (vertical) `ScrollView`  with each child being a `horizontal` a ScrollView works.
 
