@@ -30,4 +30,10 @@ One needs to create a wrapper that uses `<Image />`.
 - SVG files would be saved to `/app/assets` and a exporter file can be created `/app/assets/index.js` with entries for each SVG.
 - Make sure `fill="currentColor"` in SVGs, so color gets applied to SVG strokes.
 
-FIXME, add code.
+Trick for NativeWind controlling size - wrap `Image` by `View` and set Image height and width to 100%.
+```jsx
+({ src, classes = "w-12 h-12" }) => 
+  <View className={classes}>
+    <Image width="100%" height="100%" resizeMode="cover"/>
+  <View>
+```
