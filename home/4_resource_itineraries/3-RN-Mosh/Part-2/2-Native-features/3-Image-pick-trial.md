@@ -1,7 +1,7 @@
 # 1. Image pick trial
 Created Wed Nov 29, 2023 at 1:17 AM
 
-- `expo-image-picker` allows image selection from camera and local storage
+- [`expo-image-picker`](https://docs.expo.dev/versions/latest/sdk/imagepicker/#imagepickeroptions) allows image selection from camera and local storage
 
 ## Permission via picker library
 The ImagePicker library provides a static function that returns status of the permission. It's async and results can vary depending upon what the user selected for permissions.
