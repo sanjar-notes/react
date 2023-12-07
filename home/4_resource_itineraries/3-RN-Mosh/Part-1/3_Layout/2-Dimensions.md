@@ -8,7 +8,7 @@ Created Wed Nov 15, 2023 at 3:08 AM
 
 ## Prefer dp for fixes sizes
 (FIXME: why?)
-![](../../../../../assets/dp.jpeg)
+![](../../../../../assets/2-Dimensions-image-1-5fd022eb.jpeg)
 ## `Dimensions` API
 - Used to get dimensions of the screen.
 -  There are two args - `'screen'`(whole device) or `'window'` (space used by app).

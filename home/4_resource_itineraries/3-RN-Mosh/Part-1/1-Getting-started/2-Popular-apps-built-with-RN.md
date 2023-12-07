@@ -12,4 +12,4 @@ Some popular high traffic apps built with RN
 - Uber Eats
 
 
-![](../../../../../assets/2_Popular_apps_built_with_RN-image-1.png)
+![](../../../../../assets/2-Popular-apps-built-with-RN-image-1-8e61879b.png)

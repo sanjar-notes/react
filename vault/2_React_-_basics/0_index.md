@@ -14,7 +14,7 @@ FIXME - why React
 
 
 ## UI layers in web apps
-![](/assets/3_React_Components-image-1.png)
+![](../../assets/0_index-image-1-4fa49474.png)
 Principles in web dev over the years:
 
 1. Thinking in components

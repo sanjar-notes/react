@@ -11,7 +11,7 @@ In an pure SPA, an empty shell (something like `<div id="root" />`) is sent as t
 	2. **Late first data request** - even if a bundle is small and the SPA loads fast, "data" still has to be fetched from the server. This "fetch" request will only be run *after* the SPA has loaded properly. So total time = HTML/CSS download + bundle download + "data" fetch. Whereas a static site would just have HTML/CSS/vanillaJS download.
 
 *Pure SPA first page*
-![](/assets/318_1st_key_feature_SSR-image-1.png)
+![](../../../../../assets/318_1st_key_feature_SSR-image-1-c9bfacde.png)
 
 
 ## How
@@ -20,7 +20,7 @@ All these issues are solved using a technique called server-side rendering (SSR)
 2. Native load times - the browser gets a full page (with data) on first request. In the meantime, the SPA bundle download finishes. All subsequent interactions happen exactly like a pure SPA, which we want of course, coz no reloads/latency (the original reason for making an SPA).
 
 *SSR first page*
-![](/assets/318_1st_key_feature_SSR-image-2.png)
+![](../../../../../assets/318_1st_key_feature_SSR-image-2-c9bfacde.png)
 
 **Catch**: Of course, we need to generate the first page at run-time on the server, in other words a static-server/CDN is not enough at all. We can solve this partially by pre-rendering pages and caching them on a CDN using some smart heuristic/strategy, atleast for fast changing public pages.
 

@@ -10,4 +10,4 @@ Created Tue Nov 7, 2023 at 9:37 AM
 
 We'll use Expo here. The project structure is simpler in Expo apps.
 
-![](../../../../../assets/4_Expo-image-1.png)
+![](../../../../../assets/4-Expo-image-1-8e61879b.png)

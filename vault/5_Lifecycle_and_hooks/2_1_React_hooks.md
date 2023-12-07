@@ -26,7 +26,7 @@ There are two types of Hooks in React. They are:
 - `useLayoutEffect()`: It is used for the reading layout from the DOM and re-rendering synchronously.
 
 All hooks listed below:
-![](/assets/2_1_React_hooks-image-1.png)
+![](../../assets/2_1_React_hooks-image-1-f7b4f799.png)
 
 ## Custom Hooks
 A custom Hook is basically a function of JavaScript. The Custom Hook working is similar to a regular function. The “use” at the beginning of the Custom Hook Name is required for React to understand that this is a custom Hook and also it will describe that this specific function follows the rules of Hooks. Moreover, developing custom Hooks will enable you for extracting component logic from within reusable functions.

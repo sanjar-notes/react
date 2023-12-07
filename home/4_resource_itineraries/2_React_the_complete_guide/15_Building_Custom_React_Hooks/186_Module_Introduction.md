@@ -3,7 +3,7 @@ Created Wednesday 20 July 2022
 
 - Custom hooks are a way to re-use logic across components.
 - Custom hooks are not something *new*/*non-obvious*. They are just the practice of the DRY principle.
-![](/assets/186_Module_Introduction-image-1.png)
+![](../../../../assets/186_Module_Introduction-image-1-89681f93.png)
 - We have already worked with React hooks, which are important and unique.
 - There are 3 rules for hooks in React. The rules are:
 	1. Don't call them inside nested functions, i.e. call them only in component functions.

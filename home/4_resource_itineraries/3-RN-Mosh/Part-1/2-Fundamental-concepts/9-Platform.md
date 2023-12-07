@@ -38,17 +38,17 @@ The default behavior of RN apps is that they try to take up the whole screen spa
 
 The code renders like this (Android on left, iOS on right).
 There's no top bar safety/margin (both overflow to top bar)
-![](../../../../../assets/Pasted-image-20231115025049.png)
+![](../../../../../assets/9-Platform-image-1-7b845a63.png)
 
 After using SafeAreaView (Android no change, iOS notch avoided):
-![](../../../../../assets/Pasted-image-20231115025221.png)
+![](../../../../../assets/9-Platform-image-2-7b845a63.png)
 
 After using only padding (no SafeAreaView) `StatusBar.currentHeight`
 Android fixed, iOS broken:
-![](../../../../../assets/Pasted-image-20231115025433.png)
+![](../../../../../assets/9-Platform-image-3-7b845a63.png)
 
 With SafeAreaView and conditional Android margin of `StatusBar.currentHeight`. Both fixed:
-![](../../../../../assets/Pasted-image-20231115025559.png)
+![](../../../../../assets/9-Platform-image-4-7b845a63.png)
 
 Final code:
 ```jsx

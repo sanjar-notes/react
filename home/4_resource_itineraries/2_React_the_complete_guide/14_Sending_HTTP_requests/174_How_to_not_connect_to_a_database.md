@@ -4,7 +4,7 @@ Created Monday 18 July 2022
 ##### Talking to a DB directly from client side app
 - Browser-side apps don't, and shouldn't directly talk to databases.
 - If an app does, the it's very badly written and highly unsecure app.
-![](/assets/174_How_to_not_connect_to_a_database-image-1.png)
+![](../../../../assets/174_How_to_not_connect_to_a_database-image-1-d81ad2d1.png)
 But why?
 - This is difficult to do (technically).
 - All client side code is available to the user (i.e. via the browser dev tools, for example). Connecting *directly* to a database in a client app would, thus, expose database credentials to the outside world, which is not desirable and a huge security concern.
@@ -20,7 +20,7 @@ We employ a "back-end app" as a bridge between the client-app (React in this cas
 
 Note: The database and back-end app may or may not be running on the same physical machine. It does not matter either way, it's irrelevant to the client-app.
 
-![](/assets/174_How_to_not_connect_to_a_database-image-2.png)
+![](../../../../assets/174_How_to_not_connect_to_a_database-image-2-d81ad2d1.png)
 
 The back-end app has all the credentials of the database, and as it's code/data is not accessible to the client-side (in general, i.e. except what is allowed to be transmitted), there's no security issue.
 

@@ -17,11 +17,11 @@ There are four different phases in the lifecycle of React component. They are:
 4. **Unmounting**: In this last phase of the component lifecycle, the component will be removed from the DOM or will be unmounted from the browser DOM. This phase will have the lifecycle method named `componentWillUnmount`.
 
 Here're the phases:
-![](/assets/1_React_lifecycle-image-1.png)
+![](../../assets/1_React_lifecycle-image-1-f7b4f799.png)
 
 Here's an image showing life-cycle methods of the phases:
-![](/assets/1_React_lifecycle-image-2.png)
+![](../../assets/1_React_lifecycle-image-2-f7b4f799.png)
 
 Here's the list of life-cycle methods classified by type:
-![](/assets/1_React_lifecycle-image-3.png)
+![](../../assets/1_React_lifecycle-image-3-f7b4f799.png)
 FIXME: merge the successive page into this

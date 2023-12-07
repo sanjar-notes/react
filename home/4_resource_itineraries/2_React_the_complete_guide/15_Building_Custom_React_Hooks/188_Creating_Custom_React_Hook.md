@@ -3,7 +3,7 @@ Created Saturday 23 July 2022
 
 ### Situation
 Create this.
-![](/assets/188_Creating_Custom_React_Hook-image-1.gif)
+![](../../../../assets/188_Creating_Custom_React_Hook-image-1-89681f93.gif)
 Both counters start from 0, one increments and the other decrements, every 1 second.
 
 There are 2 known ways to do this:

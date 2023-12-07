@@ -12,7 +12,7 @@ Created Thu Nov 16, 2023 at 2:15 AM
 	- `components`
 
 ## Exercise 1 - WelcomeScreen
-![](../../../../../assets/Pasted-image-20231118232608.png)
+![](../../../../../assets/10-Exercises-image-1-5fd022eb.png)
 Lessons
 - Work with images, esp in the background
 - `width`/`height` for fixing dimensions as opposed to `basis`/`grow`/`shrink`
@@ -24,7 +24,7 @@ Lessons:
 - Prevent app UI overflow into system
 - Fixing image sizes (esp big to small) - `<Image resizeMethod="scale" />`
 
-![](../../../../../assets/Pasted-image-20231118232621.png)
+![](../../../../../assets/10-Exercises-image-2-5fd022eb.png)
 
 [Code](https://github.com/exemplar-codes/DoneWithIt/commit/08bfa59cc029fcd1fb2d7f5acc0de739e0bd654d)
 
