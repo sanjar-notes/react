@@ -31,5 +31,5 @@ span.xterm-bold {
 
 /* hide top bar of terminal */
 .workspace-tab-header-container:has(div[aria-label*="terminal" i]) {
-  display: none !important;
+  /* display: none !important; */
 }
