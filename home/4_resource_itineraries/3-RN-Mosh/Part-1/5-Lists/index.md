@@ -1,3 +1,6 @@
+# 5. Lists
+Created Sat Dec 30, 2023 at 1:09 PM
+
 Have added as written notes. See [OneNote](https://onedrive.live.com/redir?resid=1AFE2D221CFD3E54%21137&page=Edit&wd=target%285-lists.one%7Ceda0ce80-9b1a-a843-80fd-2934049b8b04%2F%29&wdorigin=717)
 
 ## Topics

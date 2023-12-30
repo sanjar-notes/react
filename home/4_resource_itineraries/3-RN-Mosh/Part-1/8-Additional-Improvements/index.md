@@ -1,6 +1,5 @@
-# index
-Created Sat Dec 30, 2023 at 9:09 AM
-
+# 8. Additional Improvements
+Created Sat Dec 30, 2023 at 1:07 PM
 
 Nothing new here. Some points about keeping various listItems but have one context-less list that takes them as prop.
 
