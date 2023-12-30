@@ -1,5 +1,19 @@
 Hand written notes done. See [OneNote](https://onedrive.live.com/redir?resid=1AFE2D221CFD3E54%21137&page=Edit&wd=target%287-forms.one%7C3df3c2cf-33e8-6746-a1f1-2d6d057a4b01%2F%29&wdorigin=717)
 
+## Topics
+1. Introduction
+2. Building-the-Login-Form
+3. Building-Better-Forms-with-Formik
+4. Form-Validation-with-Yup
+5. Building-the-ErrorMessage-Component
+6. The-Touched-State
+7. Building-the-Field-Component
+8. Building-the-SubmitButton-Component
+9. Building-the-Form-Component
+10. Organizing-Components
+12. Building-the-Listing-Edit-Screen
+13. Fixing-the-Placeholder-Color
+
 ## Formik and Yup
 - Formik is available for RN
 - Yup can be used for validation. Works since it's just a JS validation library

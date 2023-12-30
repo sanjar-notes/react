@@ -41,7 +41,7 @@ import { FlatList } from 'react-native';
 ```
 
 ### Events
- - `onRefresh`
+ - `onRefresh` - pull to refresh event
 
 ### Methods
 - `scrollToEnd({ animated?: true })`

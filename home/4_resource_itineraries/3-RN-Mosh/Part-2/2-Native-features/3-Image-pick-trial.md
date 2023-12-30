@@ -49,7 +49,7 @@ export default function App() {
     console.log(granted);
   };
 
-  const cameraFlow = async () => {
+  const imagePickerFlow = async () => {
     const { assets, canceled = false } = await ImagePicker.launchImageLibraryAsync({
       allowsMultipleSelection: true, // default false
     });
@@ -61,7 +61,7 @@ export default function App() {
   return (
     <View style={{ paddingTop: 100 }}>
       <Button title="Permission flow" onPress={permissionFlow} />
-      <Button title="Camera flow" onPress={cameraFlow} />
+      <Button title="imagePickerFlow flow" onPress={imagePickerFlow} />
     </View>
   );
 }
