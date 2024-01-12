@@ -29,10 +29,8 @@ React is a declarative way to build user interfaces.
 > &mdash; Me when I started using React
 
 ## Usage
-Browse them here on GitHub or just clone the repo, it's [markdown](https://www.markdowntutorial.com/) 🙌.
-
-Or see the [notes website(experimental)](https://sanjar-notes.github.io/reactjs-notes/docs/home/resource_itineraries/React_the_complete_guide/Behind_the_scenes_of_React_and_optimization_techniques/How_React_Really_Works)
-
+-Browse them here on GitHub or just clone the repo, it's [markdown](https://www.markdowntutorial.com/) 🙌. Or see the [notes website(experimental)](https://sanjar-notes.github.io/reactjs-notes/docs/home/resource_itineraries/React_the_complete_guide/Behind_the_scenes_of_React_and_optimization_techniques/How_React_Really_Works)
+- Pre-requisites: basic HTML, CSS, JS. And some [JS syntax sugars](https://kentcdodds.com/blog/javascript-to-know-for-react)
 ---
 
 These are notes (mental models) I made while doing [this Udemy course(released 2020)](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/).
