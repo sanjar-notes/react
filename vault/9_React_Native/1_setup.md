@@ -1,1 +1,0 @@
-Follow React Native CLI steps from official site. Expo is good, but not enough for long term stuff.

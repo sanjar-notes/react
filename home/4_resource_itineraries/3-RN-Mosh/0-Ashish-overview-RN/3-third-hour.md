@@ -1,1 +1,0 @@
-better(as per Ashish) than max's course: https://codewithmosh.com/p/the-ultimate-react-native-course-part1
