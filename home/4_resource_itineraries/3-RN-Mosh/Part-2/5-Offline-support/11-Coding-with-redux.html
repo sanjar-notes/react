@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*! ADAPTED
+    Typeplate : Starter Kit
+    URL ........... http://typeplate.com
+    Version ....... 3.0.2
+    Github ........ https://github.com/typeplate/starter-kit
+    Authors ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+    License ....... Creative Commmons Attribution 3.0
+    License URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
+    */
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-rendering: optimizeLegibility;
+        line-height: 1;
+        margin-top: 0;
+        color: #222;
+      }
+
+      blockquote + figcaption cite {
+        display: block;
+        font-size: inherit;
+        text-align: right;
+      }
+
+      body {
+        word-wrap: break-word;
+      }
+
+      pre code {
+        word-wrap: normal;
+      }
+
+      body {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        color: #444;
+      }
+
+      h1 {
+        font-size: 2em;
+        /* 2*16 = 32 */
+      }
+
+      h2 {
+        font-size: 1.5em;
+        /* 1.5*16 = 24 */
+      }
+
+      h3 {
+        font-size: 1.17em;
+        /* 1.17*16 = 18.72 */
+      }
+
+      h4 {
+        font-size: 1em;
+        /* 1*16 = 16 */
+      }
+
+      h5 {
+        font-size: 0.83em;
+        /* 0.83*16 = 13.28 */
+      }
+
+      h6 {
+        font-size: 0.75em;
+        /* 0.75*16 = 12 */
+      }
+
+      h1 {
+        margin: 2.42424rem 0 1.454544rem;
+      }
+
+      h2 {
+        margin: 2.0202rem 0 1.21212rem;
+      }
+
+      h3 {
+        margin: 1.61616rem 0 1rem;
+      }
+
+      h4 {
+        margin: 1.21212rem 0 1;
+      }
+
+      h5 {
+        margin: 0.80808rem 0;
+      }
+
+      h6 {
+        margin: 0.70707rem 0;
+      }
+
+      p {
+        margin: auto auto 1.5rem;
+      }
+
+      small {
+        font-size: 65%;
+      }
+
+      input,
+      abbr,
+      acronym,
+      blockquote,
+      code,
+      kbd,
+      q,
+      samp,
+      var {
+        -webkit-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+      }
+
+      pre {
+        white-space: pre;
+      }
+
+      pre code {
+        white-space: -moz-pre-wrap;
+        white-space: pre-wrap;
+      }
+
+      code {
+        white-space: pre;
+        font-family: SF Mono, Consolas, Dejavu Sans Mono, Menlo, monospace;
+      }
+
+      abbr {
+        -webkit-font-variant: small-caps;
+        -moz-font-variant: small-caps;
+        -ms-font-variant: small-caps;
+        font-variant: small-caps;
+        font-weight: 600;
+        text-transform: lowercase;
+        color: gray;
+      }
+
+      abbr[title]:hover {
+        cursor: help;
+      }
+
+      /* FROM http://purecss.io/layouts/side-menu/  adapted to remove pure classes*/
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        color: #444;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+      }
+
+      code,
+      pre {
+        background-color: #f5f5f5;
+        color: #444;
+        border-radius: 2px;
+        text-shadow: 0px 1px 0px white;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+      }
+
+      pre code {
+        border: none;
+        box-shadow: none;
+      }
+
+      pre {
+        padding: 0.5em;
+      }
+
+      code {
+        display: inline-block;
+        padding: 0 0.5em;
+        line-height: 1.4;
+        font-size: 0.9em;
+      }
+
+      table {
+        border-spacing: 0;
+        margin-bottom: 1.5rem;
+      }
+
+      table th,
+      table td {
+        padding: 0.3em 0.7em;
+      }
+
+      table th {
+        background-color: #f4f4f4;
+        border-bottom: 2px solid #444;
+      }
+
+      table td {
+        border: 1px solid #f5f5f5;
+      }
+
+      /* Add transition to containers so they can push in and out. */
+
+      #layout,
+      #menu,
+      .menu-link {
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+
+      /* This is the parent `<div>` that contains the menu and the content area. */
+
+      #layout {
+        position: relative;
+        padding-left: 0;
+      }
+
+      #layout.active #menu {
+        left: 250px;
+        width: 250px;
+      }
+
+      #layout.active .menu-link {
+        left: 250px;
+      }
+
+      /* The content `<div>` is where all your content goes. */
+
+      .content {
+        margin: 50px auto;
+        padding: 0 2em;
+        max-width: 80ex;
+        line-height: 1.6em;
+      }
+
+      /*
+      The `#menu` `<div>` is the parent `<div>` that contains the menu that
+      appears on the left side of the page.
+      */
+
+      #menu {
+        margin-left: -250px;
+        /* "#menu" width */
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        /* so the menu or its navicon stays above all content */
+        background: #f4f4f4;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.9em;
+      }
+
+      @media print {
+        #menu,
+        .menu-link {
+          display: none !important;
+        }
+      }
+
+      a,
+      a * {
+        text-decoration: none;
+        color: #2483cc;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: #2483cc;
+      }
+
+      /* All anchors inside the menu should be styled like this. */
+
+      #menu a {
+        display: block;
+        padding: 0.5em 0.5em;
+      }
+
+      #menu a:first-letter {
+        text-transform: capitalize;
+      }
+
+      #menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 1em 0.5em;
+      }
+
+      #menu ul ul {
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        border-left: 4px solid rgba(255, 255, 255, 0.5);
+      }
+
+      /* Change color of the anchor links on hover/focus. */
+
+      #menu li a:hover,
+      #menu li a:focus {
+        background: rgba(255, 255, 255, 0.4);
+      }
+
+      /* This styles the selected menu item `<li>`. */
+
+      #menu li a.active {
+        background: rgba(0, 0, 0, 0.05);
+      }
+
+      /* This styles a link within a selected menu item `<li>`. */
+
+      #menu li a.active {
+        color: #222;
+      }
+
+      /* This styles the menu heading. */
+
+      #menu li.heading {
+        font-size: 0.9em;
+        text-transform: uppercase;
+        color: #000;
+      }
+
+      #menu li.heading > * {
+        padding: 0.5em;
+        display: block;
+      }
+
+      #menu li.heading a {
+        color: #0c68af;
+      }
+
+      /* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+      /*
+      `.menu-link` represents the responsive menu toggle that shows/hides on
+      small screens.
+      */
+
+      .menu-link {
+        position: fixed;
+        display: block;
+        /* show this only on small screens */
+        top: 0;
+        left: 0;
+        /* "#menu width" */
+        font-size: 10px;
+        /* change this value to increase/decrease button size */
+        z-index: 10;
+        width: 2em;
+        height: auto;
+        padding: 1.6em 1.2em;
+        border-radius: 0 2px 2px 0;
+      }
+
+      .menu-link:hover {
+        background: #f4f4f4;
+      }
+
+      .menu-link span {
+        position: relative;
+        display: block;
+      }
+
+      .menu-link span,
+      .menu-link span:before,
+      .menu-link span:after {
+        background-color: #555;
+        width: 100%;
+        height: 0.2em;
+        border-radius: 1em;
+      }
+
+      .menu-link span:before,
+      .menu-link span:after {
+        position: absolute;
+        margin-top: -0.6em;
+        content: " ";
+      }
+
+      .menu-link span:after {
+        margin-top: 0.6em;
+      }
+
+      /* Hides the menu at `48em`, but modify this based on your app's needs. */
+
+      @media (min-width: 48em) {
+        .header,
+        .content {
+          padding-left: 2em;
+          padding-right: 2em;
+        }
+
+        #layout {
+          padding-left: 250px;
+          /* left col width "#menu" */
+          left: 0;
+        }
+        #menu {
+          left: 250px;
+        }
+
+        .menu-link {
+          position: fixed;
+          left: 250px;
+          display: none;
+        }
+
+        #layout.active .menu-link {
+          left: 250px;
+        }
+      }
+
+      @media (max-width: 48em) {
+        /* Only apply this when the window is small. Otherwise, the following case results in extra padding on the left:
+         * Make the window small.
+         * Tap the menu to trigger the active state.
+         * Make the window large again.
+         */
+        #layout.active {
+          position: relative;
+          left: 250px;
+        }
+      }
+
+      /* Heading anchors and permalinks */
+      h1[id],
+      h2[id],
+      h3[id],
+      h4[id],
+      h5[id],
+      h6[id] {
+        position: relative;
+      }
+      .heading-anchor-permalink {
+        /* Position the permalink to the left of the title */
+        position: absolute;
+        right: 100%;
+        /* Add some spacing as padding to not lose the hover */
+        padding-right: 0.6rem;
+        /* Make it only visible on heading hover, see below */
+        opacity: 0;
+      }
+      h1[id]:hover .heading-anchor-permalink,
+      h2[id]:hover .heading-anchor-permalink,
+      h3[id]:hover .heading-anchor-permalink,
+      h4[id]:hover .heading-anchor-permalink,
+      h5[id]:hover .heading-anchor-permalink,
+      h6[id]:hover .heading-anchor-permalink {
+        opacity: 0.5;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <div id="layout">
+      <!-- Menu toggle -->
+      <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+      </a>
+      <nav id="menu">
+        <ul>
+<li><a class="" href="../../../../../README.html">README</a></li>
+<li class="heading"><span>home</span></li>
+<ul>
+<li><a class="" href="../../../../1_motivation.html">1 motivation</a></li>
+<li><a class="" href="../../../../2_resources.html">2 resources</a></li>
+<li><a class="" href="../../../../3_roadmap.html">3 roadmap</a></li>
+<li class="heading"><span>4 resource itineraries</span></li>
+<ul>
+<li><a class="" href="../../../0_List_of_resources.html">0 List of resources</a></li>
+<li><a class="" href="../../../1_Complete_Web_Developer_2020.html">1 Complete Web Developer 2020</a></li>
+<li class="heading"><span>2 React the complete guide</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/0_Course_info.html">0 Course info</a></li>
+<li class="heading"><span>10 side effects, reducers, contextAPI</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/110_useEffect_hook.html">110 useEffect hook</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/114_useEffect_cleanup_function.html">114 useEffect cleanup function</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/117_useReducer_hook.html">117 useReducer hook</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/121_Introducing_React_Context_(Context_API).html">121 Introducing React Context (Context API)</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/122_Using_React_Context_API.html">122 Using React Context API</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/123_Context_Limitations.html">123 Context Limitations</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/127_Rules_of_hooks.html">127 Rules of hooks</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/10_side-effects,_reducers,_contextAPI/129_Forward_refs.html">129 Forward refs</a></li>
+</ul>
+<li class="heading"><span>11 FoodOrder app</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/11_FoodOrder_app/133_Adding_a_header_component.html">133 Adding a header component</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/11_FoodOrder_app/137_Adding_a_form.html">137 Adding a form</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/11_FoodOrder_app/141_Managing_cart_and_modal_state.html">141 Managing cart and modal state</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/11_FoodOrder_app/149_Using_the_useEffect_hook.html">149 Using the useEffect hook</a></li>
+</ul>
+<li class="heading"><span>12 Behind the scenes of React and optimization techniques</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/12_Behind_the_scenes_of_React_and_optimization_techniques/151_Module_Introduction.html">151 Module Introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/12_Behind_the_scenes_of_React_and_optimization_techniques/152_How_React_Really_Works.html">152 How React Really Works</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/12_Behind_the_scenes_of_React_and_optimization_techniques/153_Component_updates_in_action.html">153 Component updates in action</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/12_Behind_the_scenes_of_React_and_optimization_techniques/154_A_closer_look_at_child_component_re_evaluation.html">154 A closer look at child component re evaluation</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/12_Behind_the_scenes_of_React_and_optimization_techniques/155_Preventing_Unnecessary_ReEvaluations_with_React_memo.html">155 Preventing Unnecessary ReEvaluations with React memo</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/12_Behind_the_scenes_of_React_and_optimization_techniques/156_Prevent_function_re_creation_with_useCallback.html">156 Prevent function re creation with useCallback</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/12_Behind_the_scenes_of_React_and_optimization_techniques/157_useCallback_and_its_dependencies.html">157 useCallback and its dependencies</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/12_Behind_the_scenes_of_React_and_optimization_techniques/159_Component_instance_and_state.html">159 Component instance and state</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/12_Behind_the_scenes_of_React_and_optimization_techniques/160_State_scheduling_and_batching.html">160 State scheduling and batching</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/12_Behind_the_scenes_of_React_and_optimization_techniques/161_Optimizing_with_useMemo.html">161 Optimizing with useMemo</a></li>
+</ul>
+<li class="heading"><span>13 Class based components</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/13_Class_based_components/163_Module_introduction.html">163 Module introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/13_Class_based_components/164_What_and_why.html">164 What and why</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/13_Class_based_components/165_Adding_a_first_class_based_component.html">165 Adding a first class based component</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/13_Class_based_components/166_Working_with_state_and_events.html">166 Working with state and events</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/13_Class_based_components/167_Component_lifecycles_in_class_components.html">167 Component lifecycles in class components</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/13_Class_based_components/169_Context_API_with_class_components.html">169 Context API with class components</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/13_Class_based_components/170_Class_vs_function_components_a_summary.html">170 Class vs function components a summary</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/13_Class_based_components/171_Introducing_Error_Boundaries.html">171 Introducing Error Boundaries</a></li>
+</ul>
+<li class="heading"><span>14 Sending HTTP requests</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/14_Sending_HTTP_requests/173_Module_Introduction.html">173 Module Introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/14_Sending_HTTP_requests/174_How_to_not_connect_to_a_database.html">174 How to not connect to a database</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/14_Sending_HTTP_requests/175_Using_the_Star_Wars_API.html">175 Using the Star Wars API</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/14_Sending_HTTP_requests/176_Our_starting_App_and_backend.html">176 Our starting App and backend</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/14_Sending_HTTP_requests/177_Sending_a_GET_request.html">177 Sending a GET request</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/14_Sending_HTTP_requests/178_Using_async_await.html">178 Using async await</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/14_Sending_HTTP_requests/180_Handling_HTTP_errors.html">180 Handling HTTP errors</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/14_Sending_HTTP_requests/182_Preparing_the_project_for_the_next_steps.html">182 Preparing the project for the next steps</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/14_Sending_HTTP_requests/183_Sending_a_POST_request.html">183 Sending a POST request</a></li>
+</ul>
+<li class="heading"><span>15 Building Custom React Hooks</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/15_Building_Custom_React_Hooks/186_Module_Introduction.html">186 Module Introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/15_Building_Custom_React_Hooks/187_What_are_Custom_hooks.html">187 What are Custom hooks</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/15_Building_Custom_React_Hooks/188_Creating_Custom_React_Hook.html">188 Creating Custom React Hook</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/15_Building_Custom_React_Hooks/188_z_A_doubt_about_custom_hooks.html">188 z A doubt about custom hooks</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/15_Building_Custom_React_Hooks/191_A_more_realistic_example_of_custom_hook.html">191 A more realistic example of custom hook</a></li>
+</ul>
+<li class="heading"><span>16 Forms and user input detailed</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/16_Forms_and_user_input_detailed/197_Module_introduction.html">197 Module introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/16_Forms_and_user_input_detailed/199_Whats_so_complex_about_forms.html">199 Whats so complex about forms</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/16_Forms_and_user_input_detailed/200_Dealing_with_form_submission_and_user_input.html">200 Dealing with form submission and user input</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/16_Forms_and_user_input_detailed/201_Adding_Basic_Validation.html">201 Adding Basic Validation</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/16_Forms_and_user_input_detailed/202_Providing_validation_feedback.html">202 Providing validation feedback</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/16_Forms_and_user_input_detailed/203_Handling_the_was_untouched_state.html">203 Handling the was untouched state</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/16_Forms_and_user_input_detailed/204_Reacting_on_lost_focus.html">204 Reacting on lost focus</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/16_Forms_and_user_input_detailed/205_Refactoring_and_deriving_states.html">205 Refactoring and deriving states</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/16_Forms_and_user_input_detailed/206_Managing_overall_form_validity.html">206 Managing overall form validity</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/16_Forms_and_user_input_detailed/207_Adding_a_custom_input_hook.html">207 Adding a custom input hook</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/16_Forms_and_user_input_detailed/211_Summary.html">211 Summary</a></li>
+</ul>
+<li class="heading"><span>17 Continue with FoodOrder app</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/17_Continue_with_FoodOrder_app/214_Module_introduction.html">214 Module introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/17_Continue_with_FoodOrder_app/215_Moving_available_meals_to_the_backend.html">215 Moving available meals to the backend</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/17_Continue_with_FoodOrder_app/219_Adding_a_checkout_form.html">219 Adding a checkout form</a></li>
+</ul>
+<li class="heading"><span>18 Redux</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/18_Redux/226_Module_introduction.html">226 Module introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/18_Redux/227_Another_look_at_state_in_React_apps.html">227 Another look at state in React apps</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/18_Redux/228_Redux_vs_React_Context.html">228 Redux vs React Context</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/18_Redux/229_How_Redux_works.html">229 How Redux works</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/18_Redux/230_1_Core_Redux_with_React.html">230 1 Core Redux with React</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/18_Redux/230_Core_Redux.html">230 Core Redux</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/18_Redux/231_Redux_with_React.html">231 Redux with React</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/18_Redux/237_Redux_with_React_for_class_components.html">237 Redux with React for class components</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/18_Redux/241_Redux_challenges_and_Introducing_Redux_Toolkit.html">241 Redux challenges and Introducing Redux Toolkit</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/18_Redux/242_React_Toolkit_working.html">242 React Toolkit working</a></li>
+</ul>
+<li class="heading"><span>19 Advanced Redux INCOMPLETE</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/19_Advanced_Redux_INCOMPLETE/250_Module_Introduction.html">250 Module Introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/19_Advanced_Redux_INCOMPLETE/251_Redux_and_side_effects.html">251 Redux and side effects</a></li>
+</ul>
+<li class="heading"><span>20 MultiPage SPA React Router</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/266_Module_Introduction.html">266 Module Introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/267_What_is_Routing_and_Why.html">267 What is Routing and Why</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/268_Installing_React_Router.html">268 Installing React Router</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/269_Defining_and_using_Routes.html">269 Defining and using Routes</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/270_Working_with_Links.html">270 Working with Links</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/271_Using_NavLinks.html">271 Using NavLinks</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/274_1_exact_and_v5_matching_criteria.html">274 1 exact and v5 matching criteria</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/274_2_Switch.html">274 2 Switch</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/275_Nested_routes.html">275 Nested routes</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/276_Redirecting_the_user.html">276 Redirecting the user</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/277_272_Dynamic_Routes.html">277 272 Dynamic Routes</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/283_Adding_a_not_found_page.html">283 Adding a not found page</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/284_Programmatic_navigation.html">284 Programmatic navigation</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/285_Prompt_before_navigation.html">285 Prompt before navigation</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/286_Working_with_Query_Params.html">286 Working with Query Params</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/288_Writing_more_flexible_Routing_code.html">288 Writing more flexible Routing code</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/289_v5_Summary.html">289 v5 Summary</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/290_Upgrading_to_React_Router_v6.html">290 Upgrading to React Router v6</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/20_MultiPage_SPA_React_Router/292_v6_4_SKIPPED.html">292 v6 4 SKIPPED</a></li>
+</ul>
+<li class="heading"><span>21 Deploying React apps</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/21_Deploying_React_apps/294_Module_Introduction.html">294 Module Introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/21_Deploying_React_apps/295_Deployment_steps.html">295 Deployment steps</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/21_Deploying_React_apps/296_Adding_Lazy_loading.html">296 Adding Lazy loading</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/21_Deploying_React_apps/297_Building_the_code_for_production.html">297 Building the code for production</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/21_Deploying_React_apps/298_Getting_started_with_deployment.html">298 Getting started with deployment</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/21_Deploying_React_apps/299_Exploring_routing_issues_and_finishing_deployment.html">299 Exploring routing issues and finishing deployment</a></li>
+</ul>
+<li class="heading"><span>22 Adding authentication to React apps</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/22_Adding_authentication_to_React_apps/301_Module_introduction.html">301 Module introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/22_Adding_authentication_to_React_apps/302_What_How_and_Why.html">302 What How and Why</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/22_Adding_authentication_to_React_apps/303_Adding_user_signup.html">303 Adding user signup</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/22_Adding_authentication_to_React_apps/304_Three_basic_flows.html">304 Three basic flows</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/22_Adding_authentication_to_React_apps/309_Polishing_the_UI_redirects.html">309 Polishing the UI redirects</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/22_Adding_authentication_to_React_apps/310_Logout.html">310 Logout</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/22_Adding_authentication_to_React_apps/311_Protected_pages.html">311 Protected pages</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/22_Adding_authentication_to_React_apps/312. Persisting login state.html">312. Persisting login state</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/22_Adding_authentication_to_React_apps/313. Auto-logout.html">313. Auto logout</a></li>
+</ul>
+<li class="heading"><span>23 Intro to Next js</span></li>
+<ul>
+<li class="heading"><span>1 Basic Info</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/1_Basic_Info/316_Module_introduction.html">316 Module introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/1_Basic_Info/317_What_is_Next_js.html">317 What is Next js</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/1_Basic_Info/318_1st_key_feature_SSR.html">318 1st key feature SSR</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/1_Basic_Info/319_2nd_key_feature_simplifed_routing_file-based.html">319 2nd key feature simplifed routing file based</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/1_Basic_Info/320_3rd_key_feature_fullstack_utilities.html">320 3rd key feature fullstack utilities</a></li>
+</ul>
+<li class="heading"><span>2 Project setup and first page</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/2_Project_setup_and_first_page/321_Creating_a_new_Next_app.html">321 Creating a new Next app</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/2_Project_setup_and_first_page/322_Analyzing_Next_app_project_structure.html">322 Analyzing Next app project structure</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/2_Project_setup_and_first_page/323_Adding_first_pages.html">323 Adding first pages</a></li>
+</ul>
+<li class="heading"><span>3 Nested and dynamic pages</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/3_Nested_and_dynamic_pages/324_Nested_paths_and_pages.html">324 Nested paths and pages</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/3_Nested_and_dynamic_pages/325_Creating_dynamic_pages_with_parameters.html">325 Creating dynamic pages with parameters</a></li>
+</ul>
+<li class="heading"><span>4 Links</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/4_Links/326_Links.html">326 Links</a></li>
+</ul>
+<li class="heading"><span>5 Onwards to a bigger project</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/5_Onwards_to_a_bigger_project/328_Onwards_to_a_bigger_project.html">328 Onwards to a bigger project</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/5_Onwards_to_a_bigger_project/331_Outputting_a_List_of_meetups.html">331 Outputting a List of meetups</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/5_Onwards_to_a_bigger_project/332_The_app_js_file_and_layout_wrapper.html">332 The app js file and layout wrapper</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/5_Onwards_to_a_bigger_project/333_Programmatic_navigation.html">333 Programmatic navigation</a></li>
+</ul>
+<li class="heading"><span>6 Prerendering and related constructs</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/6_Prerendering_and_related_constructs/335_How_pre-rendering_works_and_problems_we_face.html">335 How pre rendering works and problems we face</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/6_Prerendering_and_related_constructs/338_More_about_SSR_with_getServerSideProps.html">338 More about SSR with getServerSideProps</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/6_Prerendering_and_related_constructs/339_SSG_for_dynamic_routes_getStaticPaths.html">339 SSG for dynamic routes getStaticPaths</a></li>
+</ul>
+<li class="heading"><span>7 API Routes</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/7_API_Routes/341_Introducing_API_Routes.html">341 Introducing API Routes</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/7_API_Routes/342_Working_with_MongoDB.html">342 Working with MongoDB</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/7_API_Routes/343_Continuing_with_the_project.html">343 Continuing with the project</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/7_API_Routes/344_More_about_API_routes.html">344 More about API routes</a></li>
+</ul>
+<li class="heading"><span>8 Deploying Nextjs projects</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/8_Deploying_Nextjs_projects/346_Adding_head_Metadata.html">346 Adding head Metadata</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/23_Intro_to_Next_js/8_Deploying_Nextjs_projects/347_Deploying_Nextjs_projects.html">347 Deploying Nextjs projects</a></li>
+</ul>
+</ul>
+<li><a class="" href="../../../2_React_the_complete_guide/24_Animating_React_apps_DEFERRING.html">24 Animating React apps DEFERRING</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/25_Replacing_Redux_with_React_Hooks_DEFERRING.html">25 Replacing Redux with React Hooks DEFERRING</a></li>
+<li class="heading"><span>25 Replacing Redux with React hooks</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/25_Replacing_Redux_with_React_hooks/369_Module_introduction.html">369 Module introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/25_Replacing_Redux_with_React_hooks/371_Why_would_you_replace_Redux.html">371 Why would you replace Redux</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/25_Replacing_Redux_with_React_hooks/372_Alternative__using_the_Context_API.html">372 Alternative  using the Context API</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/25_Replacing_Redux_with_React_hooks/375_Alternative__Custom_hook_as_a_Store.html">375 Alternative  Custom hook as a Store</a></li>
+</ul>
+<li class="heading"><span>26 Testing React Apps</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/384_Module_Introduction.html">384 Module Introduction</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/385_What_is_testing_and_Why.html">385 What is testing and Why</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/386_Understanding_different_kinds_of_tests.html">386 Understanding different kinds of tests</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/387_What_to_Test_and_How_to_Test.html">387 What to Test and How to Test</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/388_Understanding_the_Techinical_setup_and_tools_involved.html">388 Understanding the Techinical setup and tools involved</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/389_Running_a_first_test.html">389 Running a first test</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/390_Writing_our_first_test.html">390 Writing our first test</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/391_Grouping_tests_together_with_test_suites.html">391 Grouping tests together with test suites</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/392_Testing_user_interaction_and_state.html">392 Testing user interaction and state</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/393_Testing_Connected_Components.html">393 Testing Connected Components</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/394_Testing_Asynchronous_Code.html">394 Testing Asynchronous Code</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/395_Working_with_Mocks.html">395 Working with Mocks</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/26_Testing_React_Apps/396. Summary_and_Further_Resources.html">396. Summary and Further Resources</a></li>
+</ul>
+<li><a class="" href="../../../2_React_the_complete_guide/5_Until_section_5.html">5 Until section 5</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/6_Styling_in_React_INCOMPLETE.html">6 Styling in React INCOMPLETE</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/7_Debugging_React_apps.html">7 Debugging React apps</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/8_Practice_Project.html">8 Practice Project</a></li>
+<li class="heading"><span>9 Fragments, Portals, Refs</span></li>
+<ul>
+<li><a class="" href="../../../2_React_the_complete_guide/9_Fragments,_Portals,_Refs/103_Fragments.html">103 Fragments</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/9_Fragments,_Portals,_Refs/105_Portals.html">105 Portals</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/9_Fragments,_Portals,_Refs/106_Refs.html">106 Refs</a></li>
+<li><a class="" href="../../../2_React_the_complete_guide/9_Fragments,_Portals,_Refs/107_controlled_vs_uncontrolled_components.html">107 controlled vs uncontrolled components</a></li>
+</ul>
+</ul>
+<li class="heading"><a class="" href="../../index.html">RN Mosh</a></li>
+<ul>
+<li class="heading"><span>Ashish overview RN</span></li>
+<ul>
+<li><a class="" href="../../0-Ashish-overview-RN/1-first-hour.html">first hour</a></li>
+<li><a class="" href="../../0-Ashish-overview-RN/2-second-hour.html">second hour</a></li>
+<li><a class="" href="../../0-Ashish-overview-RN/3-third-hour.html">third hour</a></li>
+</ul>
+<li class="heading"><span>Part 1</span></li>
+<ul>
+<li class="heading"><a class="" href="../../Part-1/1-Getting-started/index.html">Getting started</a></li>
+<ul>
+<li><a class="" href="../../Part-1/1-Getting-started/1-Prerequisites.html">Prerequisites</a></li>
+<li><a class="" href="../../Part-1/1-Getting-started/11-Logging.html">Logging</a></li>
+<li><a class="" href="../../Part-1/1-Getting-started/12-Debugging.html">Debugging</a></li>
+<li><a class="" href="../../Part-1/1-Getting-started/13-Expo-publish.html">Expo publish</a></li>
+<li><a class="" href="../../Part-1/1-Getting-started/2-Popular-apps-built-with-RN.html">Popular apps built with RN</a></li>
+<li><a class="" href="../../Part-1/1-Getting-started/3-What-is-React-Native.html">What is React Native</a></li>
+<li><a class="" href="../../Part-1/1-Getting-started/4-Expo.html">Expo</a></li>
+<li><a class="" href="../../Part-1/1-Getting-started/6-Development-setup.html">Development setup</a></li>
+<li><a class="" href="../../Part-1/1-Getting-started/7-First-app.html">First app</a></li>
+<li><a class="" href="../../Part-1/1-Getting-started/8-Emulators.html">Emulators</a></li>
+
+</ul>
+<li class="heading"><a class="" href="../../Part-1/2-Fundamental-concepts/index.html">Fundamental concepts</a></li>
+<ul>
+<li><a class="" href="../../Part-1/2-Fundamental-concepts/1-Core-Components-and-APIs.html">Core Components and APIs</a></li>
+<li><a class="" href="../../Part-1/2-Fundamental-concepts/2-View.html">View</a></li>
+<li><a class="" href="../../Part-1/2-Fundamental-concepts/3-Text.html">Text</a></li>
+<li><a class="" href="../../Part-1/2-Fundamental-concepts/4-Image.html">Image</a></li>
+<li><a class="" href="../../Part-1/2-Fundamental-concepts/5-Touchables.html">Touchables</a></li>
+<li><a class="" href="../../Part-1/2-Fundamental-concepts/6-Button.html">Button</a></li>
+<li><a class="" href="../../Part-1/2-Fundamental-concepts/7-Alert.html">Alert</a></li>
+<li><a class="" href="../../Part-1/2-Fundamental-concepts/8-StyleSheet.html">StyleSheet</a></li>
+<li><a class="" href="../../Part-1/2-Fundamental-concepts/9-Platform.html">Platform</a></li>
+
+</ul>
+<li class="heading"><a class="" href="../../Part-1/3_Layout/index.html">3 Layout</a></li>
+<ul>
+<li><a class="" href="../../Part-1/3_Layout/10-Exercises.html">Exercises</a></li>
+<li><a class="" href="../../Part-1/3_Layout/2-Dimensions.html">Dimensions</a></li>
+<li><a class="" href="../../Part-1/3_Layout/3-Detecting-Orientation-Changes.html">Detecting Orientation Changes</a></li>
+<li><a class="" href="../../Part-1/3_Layout/4-Flexbox.html">Flexbox</a></li>
+<li><a class="" href="../../Part-1/3_Layout/9-Absolute-and-Relative-Positioning.html">Absolute and Relative Positioning</a></li>
+
+</ul>
+<li class="heading"><a class="" href="../../Part-1/4-Styling/index.html">Styling</a></li>
+<ul>
+<li><a class="" href="../../Part-1/4-Styling/1-Introduction.html">Introduction</a></li>
+<li><a class="" href="../../Part-1/4-Styling/10-Exercises.html">Exercises</a></li>
+<li><a class="" href="../../Part-1/4-Styling/2-Borders.html">Borders</a></li>
+<li><a class="" href="../../Part-1/4-Styling/3-Shadows.html">Shadows</a></li>
+<li><a class="" href="../../Part-1/4-Styling/4-Paddings-and-Margins.html">Paddings and Margins</a></li>
+<li><a class="" href="../../Part-1/4-Styling/5-Styling-Text.html">Styling Text</a></li>
+<li><a class="" href="../../Part-1/4-Styling/6-Encapsulating-Styles-And-Wrappers.html">Encapsulating Styles And Wrappers</a></li>
+<li><a class="" href="../../Part-1/4-Styling/7-Icons.html">Icons</a></li>
+<li><a class="" href="../../Part-1/4-Styling/8-Platform-specific-Code.html">Platform specific Code</a></li>
+<li><a class="" href="../../Part-1/4-Styling/9-Organizing-Styles.html">Organizing Styles</a></li>
+
+</ul>
+<li class="heading"><a class="" href="../../Part-1/5-Lists/index.html">Lists</a></li>
+<ul>
+<li><a class="" href="../../Part-1/5-Lists/1-FlatList.html">FlatList</a></li>
+<li><a class="" href="../../Part-1/5-Lists/10-Multiple-FlatLists.html">Multiple FlatLists</a></li>
+<li><a class="" href="../../Part-1/5-Lists/6-Swipes.html">Swipes</a></li>
+<li><a class="" href="../../Part-1/5-Lists/7-Deleting-item-aka-inner-click.html">Deleting item aka inner click</a></li>
+
+</ul>
+<li class="heading"><a class="" href="../../Part-1/6-Input-Components/index.html">Input Components</a></li>
+<ul>
+<li><a class="" href="../../Part-1/6-Input-Components/2-TextInput.html">TextInput</a></li>
+<li><a class="" href="../../Part-1/6-Input-Components/5-Switch.html">Switch</a></li>
+<li><a class="" href="../../Part-1/6-Input-Components/6-DatePicker.html">DatePicker</a></li>
+<li><a class="" href="../../Part-1/6-Input-Components/7-DropdownPicker.html">DropdownPicker</a></li>
+<li><a class="" href="../../Part-1/6-Input-Components/8-Modal.html">Modal</a></li>
+
+</ul>
+<li class="heading"><a class="" href="../../Part-1/7-Forms/index.html">Forms</a></li>
+<ul>
+
+</ul>
+<li class="heading"><a class="" href="../../Part-1/8-Additional-Improvements/index.html">Additional Improvements</a></li>
+<ul>
+
+</ul>
+</ul>
+<li class="heading"><span>Part 2</span></li>
+<ul>
+<li class="heading"><a class="" href="../2-Native-features/index.html">Native features</a></li>
+<ul>
+<li><a class="" href="../2-Native-features/1-Native-feature-intro.html">Native feature intro</a></li>
+<li><a class="" href="../2-Native-features/15-Getting-Location.html">Getting Location</a></li>
+<li><a class="" href="../2-Native-features/3-Image-pick-trial.html">Image pick trial</a></li>
+
+</ul>
+<li class="heading"><a class="" href="../3-Navigation/index.html">Navigation</a></li>
+<ul>
+<li><a class="" href="../3-Navigation/1-Basic-code.html">Basic code</a></li>
+<li><a class="" href="../3-Navigation/2-Rules.html">Rules</a></li>
+<li><a class="" href="../3-Navigation/3-Tab-navigators.html">Tab navigators</a></li>
+<li><a class="" href="../3-Navigation/4-Route-enums-in-React-Native.html">Route enums in React Native</a></li>
+
+</ul>
+<li class="heading"><a class="" href="../4-Networking/index.html">Networking</a></li>
+<ul>
+<li><a class="" href="../4-Networking/1-1-Intro.html">1 Intro</a></li>
+<li><a class="" href="../4-Networking/1-2-Inspecting-API-calls.html">2 Inspecting API calls</a></li>
+<li><a class="" href="../4-Networking/10-Loading-animations.html">Loading animations</a></li>
+<li><a class="" href="../4-Networking/12-Sending-images.html">Sending images</a></li>
+<li><a class="" href="../4-Networking/14-Progress.html">Progress</a></li>
+<li><a class="" href="../4-Networking/17-Progress-bar-UI.html">Progress bar UI</a></li>
+<li><a class="" href="../4-Networking/2-Slow-connection-and-loader.html">Slow connection and loader</a></li>
+
+</ul>
+<li class="heading"><a class="" href="index.html">Offline support</a></li>
+<ul>
+<li><a class="" href="1-Intro.html">Intro</a></li>
+<li><a class="" href="10-1-Caching-images.html">1 Caching images</a></li>
+<li><a class="" href="10-2-Thumbnails-loader.html">2 Thumbnails loader</a></li>
+<li><a class="active" href="11-Coding-with-redux.html">Coding with redux</a></li>
+<li><a class="" href="12-Storing-user-actions-when-offline.html">Storing user actions when offline</a></li>
+<li><a class="" href="13-Showing-offline-notice.html">Showing offline notice</a></li>
+<li><a class="" href="2-Offline-strategies.html">Offline strategies</a></li>
+<li><a class="" href="3-Detecting-network-status.html">Detecting network status</a></li>
+<li><a class="" href="4-Caching.html">Caching</a></li>
+<li><a class="" href="5-AsyncStorage.html">AsyncStorage</a></li>
+<li><a class="" href="7-The-cache-layer.html">The cache layer</a></li>
+<li><a class="" href="8-Coding-the-cache-layer.html">Coding the cache layer</a></li>
+<li><a class="" href="9-Usage-of-cache-layer.html">Usage of cache layer</a></li>
+
+</ul>
+<li class="heading"><a class="" href="../6-Authentication/index.html">Authentication</a></li>
+<ul>
+<li><a class="" href="../6-Authentication/1-Auth-Flow.html">Auth Flow</a></li>
+<li><a class="" href="../6-Authentication/10-Persist-across-restarts.html">Persist across restarts</a></li>
+<li><a class="" href="../6-Authentication/16-Overlay.html">Overlay</a></li>
+<li><a class="" href="../6-Authentication/2-JWT-lib.html">JWT lib</a></li>
+
+</ul>
+<li class="heading"><a class="" href="../7-Notifications/index.html">Notifications</a></li>
+<ul>
+<li><a class="" href="../7-Notifications/1-Intro-to-push-notifications.html">Intro to push notifications</a></li>
+<li><a class="" href="../7-Notifications/2-Push-notification-providers.html">Push notification providers</a></li>
+<li><a class="" href="../7-Notifications/3-Flow.html">Flow</a></li>
+<li><a class="" href="../7-Notifications/4-Getting-push-notification-token.html">Getting push notification token</a></li>
+<li><a class="" href="../7-Notifications/6-Send-test-notification.html">Send test notification</a></li>
+<li><a class="" href="../7-Notifications/7-1-Notifications-from-the-server.html">1 Notifications from the server</a></li>
+<li><a class="" href="../7-Notifications/7-2-Detect-notification.html">2 Detect notification</a></li>
+<li><a class="" href="../7-Notifications/8-1-Navigate-on-notification.html">1 Navigate on notification</a></li>
+<li><a class="" href="../7-Notifications/8-2-Local-notifications.html">2 Local notifications</a></li>
+
+</ul>
+<li class="heading"><a class="" href="../8-Distribution/index.html">Distribution</a></li>
+<ul>
+<li><a class="" href="../8-Distribution/10-Distributing-to-the-App-store.html">Distributing to the App store</a></li>
+<li><a class="" href="../8-Distribution/11-Building-the-android-app.html">Building the android app</a></li>
+<li><a class="" href="../8-Distribution/12-Distributing-to-playstore.html">Distributing to playstore</a></li>
+<li><a class="" href="../8-Distribution/13-OTA-updates.html">OTA updates</a></li>
+<li><a class="" href="../8-Distribution/2-App-Icon.html">App Icon</a></li>
+<li><a class="" href="../8-Distribution/3-Optimize-assets.html">Optimize assets</a></li>
+<li><a class="" href="../8-Distribution/4-Optimize-bundle.html">Optimize bundle</a></li>
+<li><a class="" href="../8-Distribution/5-Error-reporting.html">Error reporting</a></li>
+<li><a class="" href="../8-Distribution/6-Environment-management.html">Environment management</a></li>
+<li><a class="" href="../8-Distribution/7-Expo-publish.html">Expo publish</a></li>
+<li><a class="" href="../8-Distribution/8-Build-standalone-apps.html">Build standalone apps</a></li>
+<li><a class="" href="../8-Distribution/9-Build-the-ios-app.html">Build the ios app</a></li>
+
+</ul>
+</ul>
+
+</ul>
+</ul>
+<li><a class="" href="../../../../5_projects.html">5 projects</a></li>
+</ul>
+<li class="heading"><span>tooling</span></li>
+<ul>
+<li><a class="" href="../../../../../tooling/README.html">README</a></li>
+<li class="heading"><span>obsidian templates</span></li>
+<ul>
+<li><a class="" href="../../../../../tooling/obsidian-templates/README.html">README</a></li>
+<li class="heading"><span>templater</span></li>
+<ul>
+<li><a class="" href="../../../../../tooling/obsidian-templates/templater/timestamp.html">timestamp</a></li>
+<li><a class="" href="../../../../../tooling/obsidian-templates/templater/title_and_date.html">title and date</a></li>
+<li><a class="" href="../../../../../tooling/obsidian-templates/templater/w2h.html">w2h</a></li>
+</ul>
+</ul>
+</ul>
+<li class="heading"><span>vault</span></li>
+<ul>
+<li class="heading"><span>0 npm</span></li>
+<ul>
+<li><a class="" href="../../../../../vault/0_npm/1_Introduction_to_NPM.html">1 Introduction to NPM</a></li>
+<li><a class="" href="../../../../../vault/0_npm/2_Node_and_NPM.html">2 Node and NPM</a></li>
+<li><a class="" href="../../../../../vault/0_npm/3_Installing_and_using_NPM_packages.html">3 Installing and using NPM packages</a></li>
+</ul>
+<li class="heading"><span>1 React info and setup</span></li>
+<ul>
+<li><a class="" href="../../../../../vault/1_React_info_and_setup/0_SPA_W2H.html">0 SPA W2H</a></li>
+<li class="heading"><span>1 create react app</span></li>
+<ul>
+<li><a class="" href="../../../../../vault/1_React_info_and_setup/1_create-react-app/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../vault/1_React_info_and_setup/1_create-react-app/1_Folder_structure.html">1 Folder structure</a></li>
+<li><a class="" href="../../../../../vault/1_React_info_and_setup/1_create-react-app/2_Making_files_and_folders.html">2 Making files and folders</a></li>
+<li><a class="" href="../../../../../vault/1_React_info_and_setup/1_create-react-app/3_React_ecosystem.html">3 React ecosystem</a></li>
+</ul>
+<li><a class="" href="../../../../../vault/1_React_info_and_setup/2_Why_React.html">2 Why React</a></li>
+<li><a class="" href="../../../../../vault/1_React_info_and_setup/3_How_React_works.html">3 How React works</a></li>
+<li><a class="" href="../../../../../vault/1_React_info_and_setup/4_Migrating_to_Vite.html">4 Migrating to Vite</a></li>
+<li><a class="" href="../../../../../vault/1_React_info_and_setup/5_Environment_variables.html">5 Environment variables</a></li>
+<li><a class="" href="../../../../../vault/1_React_info_and_setup/6_Dev_Tools.html">6 Dev Tools</a></li>
+</ul>
+<li class="heading"><span>2 React   basics</span></li>
+<ul>
+<li><a class="" href="../../../../../vault/2_React_-_basics/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../vault/2_React_-_basics/1_JSX.html">1 JSX</a></li>
+<li class="heading"><span>2 React Components</span></li>
+<ul>
+<li><a class="" href="../../../../../vault/2_React_-_basics/2_React_Components/0_React_elements.html">0 React elements</a></li>
+<li><a class="" href="../../../../../vault/2_React_-_basics/2_React_Components/1_Components.html">1 Components</a></li>
+<li><a class="" href="../../../../../vault/2_React_-_basics/2_React_Components/2_Function_based_component.html">2 Function based component</a></li>
+</ul>
+<li><a class="" href="../../../../../vault/2_React_-_basics/2_importing_and_exporting_in_React.html">2 importing and exporting in React</a></li>
+<li><a class="" href="../../../../../vault/2_React_-_basics/3_React_Components.html">3 React Components</a></li>
+<li><a class="" href="../../../../../vault/2_React_-_basics/4_Conditional_rendering_in_JSX.html">4 Conditional rendering in JSX</a></li>
+<li><a class="" href="../../../../../vault/2_React_-_basics/5_Rendering_lists.html">5 Rendering lists</a></li>
+<li><a class="" href="../../../../../vault/2_React_-_basics/6_Organizing_Components.html">6 Organizing Components</a></li>
+</ul>
+<li class="heading"><span>3 styling, props, children</span></li>
+<ul>
+<li><a class="" href="../../../../../vault/3_styling,_props,_children/1_1_PropTypes_and_defaultProps.html">1 1 PropTypes and defaultProps</a></li>
+<li><a class="" href="../../../../../vault/3_styling,_props,_children/1_React_Props.html">1 React Props</a></li>
+<li class="heading"><span>2 Styles in React</span></li>
+<ul>
+<li><a class="" href="../../../../../vault/3_styling,_props,_children/2_Styles in React/1_Problem_of_styling_in_component_based_apps.html">1 Problem of styling in component based apps</a></li>
+<li><a class="" href="../../../../../vault/3_styling,_props,_children/2_Styles in React/2_Normal_styling.html">2 Normal styling</a></li>
+<li><a class="" href="../../../../../vault/3_styling,_props,_children/2_Styles in React/3_Dynamic_styling.html">3 Dynamic styling</a></li>
+<li><a class="" href="../../../../../vault/3_styling,_props,_children/2_Styles in React/4_CSS_modules.html">4 CSS modules</a></li>
+<li><a class="" href="../../../../../vault/3_styling,_props,_children/2_Styles in React/5_Styled_components.html">5 Styled components</a></li>
+</ul>
+<li><a class="" href="../../../../../vault/3_styling,_props,_children/3_Wrapper_components.html">3 Wrapper components</a></li>
+</ul>
+<li class="heading"><span>4 State</span></li>
+<ul>
+<li><a class="" href="../../../../../vault/4_State/1_Events_and_handlers_in_React.html">1 Events and handlers in React</a></li>
+<li><a class="" href="../../../../../vault/4_State/2_1_What_is_state.html">2 1 What is state</a></li>
+<li><a class="" href="../../../../../vault/4_State/2_2_State_using_useState_hook.html">2 2 State using useState hook</a></li>
+<li><a class="" href="../../../../../vault/4_State/3_Working_with_multiple_states.html">3 Working with multiple states</a></li>
+<li><a class="" href="../../../../../vault/4_State/4_Two_way_binding.html">4 Two way binding</a></li>
+<li><a class="" href="../../../../../vault/4_State/5_Lifting_state_up.html">5 Lifting state up</a></li>
+<li class="heading"><span>6 State management</span></li>
+<ul>
+<li><a class="" href="../../../../../vault/4_State/6_State_management/1_State_management_W2H.html">1 State management W2H</a></li>
+</ul>
+</ul>
+<li class="heading"><span>5 Lifecycle and hooks</span></li>
+<ul>
+<li><a class="" href="../../../../../vault/5_Lifecycle_and_hooks/1_1_React_lifecycle_methods.html">1 1 React lifecycle methods</a></li>
+<li><a class="" href="../../../../../vault/5_Lifecycle_and_hooks/1_React_lifecycle.html">1 React lifecycle</a></li>
+<li><a class="" href="../../../../../vault/5_Lifecycle_and_hooks/1_React_lifecycle_hooks_TO_BE_DELETED.html">1 React lifecycle hooks TO BE DELETED</a></li>
+<li><a class="" href="../../../../../vault/5_Lifecycle_and_hooks/2_1_React_hooks.html">2 1 React hooks</a></li>
+<li><a class="" href="../../../../../vault/5_Lifecycle_and_hooks/2_1_Why_React_hooks.html">2 1 Why React hooks</a></li>
+<li><a class="" href="../../../../../vault/5_Lifecycle_and_hooks/2_2_Deriving_all_hooks_from_lifecycle.html">2 2 Deriving all hooks from lifecycle</a></li>
+<li><a class="" href="../../../../../vault/5_Lifecycle_and_hooks/3_1_useEffect_cleanup_function.html">3 1 useEffect cleanup function</a></li>
+<li><a class="" href="../../../../../vault/5_Lifecycle_and_hooks/3_useEffect_hook.html">3 useEffect hook</a></li>
+</ul>
+<li class="heading"><a class="" href="../../../../../vault/6_More_aspects_of_React/index.html">6 More aspects of React</a></li>
+<ul>
+<li><a class="" href="../../../../../vault/6_More_aspects_of_React/1_Routing.html">1 Routing</a></li>
+<li><a class="" href="../../../../../vault/6_More_aspects_of_React/2_Architecture_beyond_HTML.html">2 Architecture beyond HTML</a></li>
+<li><a class="" href="../../../../../vault/6_More_aspects_of_React/3_Unidirectional_data_flow_and_Flux.html">3 Unidirectional data flow and Flux</a></li>
+<li><a class="" href="../../../../../vault/6_More_aspects_of_React/4_Code_splitting.html">4 Code splitting</a></li>
+<li><a class="" href="../../../../../vault/6_More_aspects_of_React/5_Redux.html">5 Redux</a></li>
+
+</ul>
+<li class="heading"><a class="" href="../../../../../vault/8_Misc/index.html">8 Misc</a></li>
+<ul>
+<li><a class="" href="../../../../../vault/8_Misc/1_Building_the_deployable.html">1 Building the deployable</a></li>
+<li><a class="" href="../../../../../vault/8_Misc/1_Testing_of_React_apps.html">1 Testing of React apps</a></li>
+<li><a class="" href="../../../../../vault/8_Misc/2-Routing-enums-web.html">Routing enums web</a></li>
+
+</ul>
+<li class="heading"><span>9 React Native</span></li>
+<ul>
+<li><a class="" href="../../../../../vault/9_React_Native/1_setup.html">1 setup</a></li>
+<li class="heading"><span>2 styling</span></li>
+<ul>
+<li><a class="" href="../../../../../vault/9_React_Native/2_styling/1_Tailwind_setup_in_RN.html">1 Tailwind setup in RN</a></li>
+</ul>
+<li><a class="" href="../../../../../vault/9_React_Native/3_Basics.html">3 Basics</a></li>
+</ul>
+</ul>
+</ul>
+      </nav>
+      <article id="main" class="content">
+        <h1 id="11.-coding-with-redux">11. Coding with redux <a class="heading-anchor-permalink" href="#11.-coding-with-redux">#</a></h1>
+<p>Created Sat Dec 30, 2023 at 1:55 PM</p>
+<p>We added caching very quickly by overriding axios.
+An alternative is to use “redux-persist” to persist the whole Redux store.</p>
+<p>This may be needed if the same data needs to be in sync at multiple places in the app.</p>
+<p>FIXME: is ‘redux-persist’ straightforward to do?</p>
+
+      </article>
+    </div>
+    <script>
+      // Load contents.json if you need it
+    </script>
+    <script>
+      // FROM http://purecss.io/js/ui.js
+      (function(window, document) {
+        var layout = document.getElementById("layout"),
+          menu = document.getElementById("menu"),
+          menuLink = document.getElementById("menuLink");
+
+        function toggleClass(element, className) {
+          var classes = element.className.split(/\s+/),
+            length = classes.length,
+            i = 0;
+
+          for (; i < length; i++) {
+            if (classes[i] === className) {
+              classes.splice(i, 1);
+              break;
+            }
+          }
+          // The className is not found
+          if (length === classes.length) {
+            classes.push(className);
+          }
+
+          element.className = classes.join(" ");
+        }
+
+        menuLink.onclick = function(e) {
+          var active = "active";
+
+          e.preventDefault();
+          toggleClass(layout, active);
+          toggleClass(menu, active);
+          toggleClass(menuLink, active);
+        };
+      })(this, this.document);
+    </script>
+  </body>
+</html>
