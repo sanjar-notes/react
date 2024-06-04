@@ -24,5 +24,8 @@
   },
   "showInlineTitle": false,
   "showIndentGuide": true,
-  "foldHeading": true
+  "foldHeading": true,
+  "defaultViewMode": "preview",
+  "propertiesInDocument": "hidden",
+  "rightToLeft": false
 }
