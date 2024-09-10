@@ -53,7 +53,7 @@ Props:
 - Scroll direction - `horizontal`, `vertical` boolean props. Only one direction at a time. Default `vertical`
 
 Major quirk and workaround:
-- By default, it takes the whole height (and whole width, like View). To fix the height issue, especially in horizontal mode, just wrap the `ScrollView` with a `View` and set `ScrollView`'s height to be "100%". Nice hack. [See code](https://github.com/exemplar-codes/DoneWithIt/commit/eedf8ca18bc2e352505c18a9c725284bc8b599da).
+- Fixed size scrollview - By default, it takes the whole height (and whole width, like View). To fix the height issue, especially in horizontal mode, just wrap the `ScrollView` with a `View` (explicit size) and set `ScrollView`'s height to be "100%". Nice hack. [See code](https://github.com/exemplar-codes/DoneWithIt/commit/eedf8ca18bc2e352505c18a9c725284bc8b599da).
 
 Events
 - `onScroll`: `e.nativeEvent.contentOffset` is {x, y} = scrolled distance. (initially 0, max=overflow_size). `.contentSize`, `.layoutMeasurement` is also available, which give the large vs fixed size, respectively.

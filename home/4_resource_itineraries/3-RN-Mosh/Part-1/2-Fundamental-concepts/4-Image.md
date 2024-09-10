@@ -21,7 +21,7 @@ function MyComponent() {
 ```
 
 - `source={{require("../flag.png")}` for local image
-- `source={{ uri: "http://", width, height }` for external image. Or base64 encoded string equivalent.
+- `source={{ uri: "http://", width, height }}` for external image. Or base64 encoded string equivalent.
 
 - `style` - used for specifying height, width of local images.
 - `blurRadius={2}` for blur effect. Very useful.

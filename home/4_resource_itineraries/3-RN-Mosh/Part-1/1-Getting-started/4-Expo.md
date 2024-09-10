@@ -1,7 +1,7 @@
 # 4. Expo
 Created Tue Nov 7, 2023 at 9:37 AM
 
-- Expo is a framework built on top of React Native. It provides a extra components and other utilities generally missing from React Native (since it's a library)
+- Expo is a framework built on top of React Native. It provides axtra components and other utilities generally missing from React (since it's a library)
 - Expo is beginner friendly, and most problems of RNCLI (due to setup mistakes or otherwise) are taken care of, in Expo.
 
 - The alternative to expo is React Native CLI, which is the default way to start and build apps in React Native
