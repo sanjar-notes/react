@@ -1,12 +1,8 @@
 # 1. Vitest
 Created Wed Sep 11, 2024 at 11:24 AM
 
-## Components of a UI testing suite
-- Runner - structure tests in nested blocks, run them.
-- Coverage - Build charts and track how much of the code is covered by the tests.
-- Assertions - Comparators for output vs. ideal output, used to verify that the actual results match expected results.
-- Mocks - ability to mock functions, API calls. Since real calls can be expensive/inefficient. Also used to check various scenarios.
-- Snapshots - capture the rendered output or the component's state at a specific moment in time, and store it as a "snapshot". Later tests compare the current output with the saved snapshot to detect unintended changes in the UI or logic. This helps ensure that the UI hasn't changed unexpectedly over time.
+## What is Vitest?
+Vitest is a JavaScript testing framework that serves as a test runner. It's used to write and execute test cases for JavaScript and TypeScript projects, similar to Jest. It provides test utilities, handles test files, and executes tests in a fast and efficient manner.
 
 ## Why Vitest
 Vite tooling is uniquely fast. So we're switching app tooling to Vite.
