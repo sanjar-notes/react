@@ -8,7 +8,7 @@ As mentioned earlier, we need 4 tools:
 4. Test runner
 
 We will be using the following tools to test React apps:
-1. Jest - general purpose JavaScript test runner and assertion library
+1. Vitest/Jest - general purpose JavaScript test runner and assertion library
 2. React-Testing-Library - renderer and inspector for React apps
 
 `create-react-app` has both set up by default.

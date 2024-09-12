@@ -7,6 +7,7 @@ Here, we're talking about **automated tests** only.
 
 ## Types of automated tests
 Based on scope/scale of the test.
+
 | Name        | Scope                                                           | Typical count | Importance     | Effort needed |
 | ----------- | --------------------------------------------------------------- | ------------- | -------------- | ------------- |
 | Unit        | individual building blocks tested in isolation                  | 100s - 1000s  | Most important | Less          |

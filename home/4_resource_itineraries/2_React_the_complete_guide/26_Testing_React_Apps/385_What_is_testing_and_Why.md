@@ -36,6 +36,6 @@ Examples:
 
 We need 4 tools to do automated testing:
 1. Environment simulator - headless browser, inspected VM. We simulate the whole lifecycle of the app here, including setup, mimicking events, results etc.
-2. Environment inspector - DOM APIs, OS level inspector. We inspect changes, results for events that we mimick.
+2. Environment inspector - DOM APIs, OS level inspector. We inspect changes, results for events that we mimic.
 3. Assertion tool - compare resultant environment values with ideal values, to see if they match, strictly or loosely. This is kind of a library/syntax-sugar thing, so we don't have to write stuff from scratch.
 4. Test runner - a tool that runs various tests and creates/prints reports of what failed/succeeded. This tool also understands/specifies how tests are written - e.g. files, suites, clauses and single tests.
