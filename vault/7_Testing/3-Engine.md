@@ -25,7 +25,7 @@ This is a simulated browser used for testing.
 - waitUntilComplete - waits for all operations on the page to complete (fetch, timers etc)
 - waitForNavigation
 ### jsdom
-- Supported by Vitest and RTL by default.
+- Supported by Vitest and RTL by default. But you do need to install it.
 - Cookies
 - [List of CSS selectors](https://github.com/dperini/nwsapi/wiki/CSS-supported-selectors)
 

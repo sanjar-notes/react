@@ -47,4 +47,15 @@ async function app() {
 app();
 ```
 
+## How to test localhost React without hardcoded link
+TBD
+- One simple trick is simply doing `page.goto("http://localhost:5173")`
 
+## API mocking
+- Need to mock because staging is slow.
+- Store responses for all APIs and their params/filters. "Very complex".
+  - How will update? Run the test suite with Real APIs, store those results, and use them for fast tests.
+
+## Q: Effort to migrate puppeteer <-> playwright?
+Not too hard. Syntactic changes mostly.
+https://playwright.dev/docs/puppeteer#migration-principles

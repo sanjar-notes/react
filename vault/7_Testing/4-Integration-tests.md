@@ -1,10 +1,10 @@
 # 4. Integration tests
 Created Tue Sep 17, 2024 at 11:35 AM
 
+TLDR; choosing Playwright, due to better DX (debugging) and IDE support.
 ## Cypress
 - Intro - https://youtu.be/BQqzfHQkREo?si=CnOPLuI5EkPYPehP
 - Docs - https://docs.cypress.io/guides/overview/why-cypress/
-
 - [Notion - Testing volopay priorities](https://www.notion.so/sanjarcode/Testing-volopay-10420b93200480619b2fed5a9ed90d51?pvs=4)
 
 ### Features
@@ -23,6 +23,8 @@ Created Tue Sep 17, 2024 at 11:35 AM
 	- Has lesser open bugs.
 	- Faster (than Cypress) - runs tests in parallel. A [tad faster](https://www.checklyhq.com/blog/puppeteer-vs-selenium-vs-playwright-speed-comparison/) than Puppeteer.
 	- Less stable than Puppeteer.
+	- [Debugging is simpler](https://playwright.dev/docs/debug#vs-code-debugger) - can be done in vscode, and realtime UI stepping is supported. Live debugging can also be done.
+	- Can record videos. Useful for failed tests.
 
 - Even in headless mode it still runs a real browser, just with no UI. So headed vs headless is not much difference, perf wise, except the DX (no distractions) and that PW can run in CICD.
 ### Features
@@ -36,11 +38,9 @@ Created Tue Sep 17, 2024 at 11:35 AM
 ## Puppeteer
 Playwright > Puppeteer as per online opinion.
 But both have almost the same functionality.
-
 ### Features
--  Has more plugins than PW. Pro.
+- Codegen
+- Has more plugins than PW. Pro.
 - Supports only JS.
 - More community support. Preferred for beginner level (test) teams, and fast deadlines.
-## How to test localhost React without hardcoded link
-TBD
-- One simple trick is simply doing `page.goto("http://localhost:5173")`
+- Con: Puppeteer does not offer a way to handle file downloads in a programmatic way

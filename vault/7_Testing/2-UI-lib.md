@@ -34,6 +34,10 @@ So you would need 2 extra things - a framework and a environment, in order to us
 
 See https://kentcdodds.com/blog/testing-implementation-details
 ## RTL with Vite ?
+Works fine.
+
+Some points
+- `@testing-library/jest-dom` is not needed. Vitest already has it.
 
 ## Reading - Testing library
 - [x] Getting started
