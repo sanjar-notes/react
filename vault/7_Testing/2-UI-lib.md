@@ -38,6 +38,10 @@ Works fine.
 
 Some points
 - `@testing-library/jest-dom` is not needed. Vitest already has it.
+- Linters for React Testing Library.
+	- [eslint-plugin-testing-library](https://github.com/testing-library/eslint-plugin-testing-library). [Config](https://github.com/testing-library/eslint-plugin-testing-library?tab=readme-ov-file#eslint-overrides)
+	- [eslint-plugin-jest-dom](https://github.com/testing-library/eslint-plugin-jest-dom). [Config](https://github.com/testing-library/eslint-plugin-jest-dom?tab=readme-ov-file#recommended-configuration)
+	- Make sure you lint only test files with these packages, so add them as glob override.
 
 ## Reading - Testing library
 - [x] Getting started
