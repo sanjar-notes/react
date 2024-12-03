@@ -59,3 +59,14 @@ TBD
 ## Q: Effort to migrate puppeteer <-> playwright?
 Not too hard. Syntactic changes mostly.
 https://playwright.dev/docs/puppeteer#migration-principles
+
+
+## Filtering output in Vitest
+https://github.com/vitest-dev/vitest/issues/1700
+```js
+// vite.config.js:test
+
+onConsoleLog(log) {
+	return !["core/Image", "Image"].some((antiFilter) =>log.includes(antiFilter));
+}
+```
